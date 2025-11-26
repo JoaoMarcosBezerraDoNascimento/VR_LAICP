@@ -1,0 +1,86 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\joahi\\AR_Zillia\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{11717F12-C21A-483A-014D-4E865095DFB1}|Assembly-CSharp.csproj|c:\\users\\joahi\\ar_zillia\\assets\\scripts\\uimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11717F12-C21A-483A-014D-4E865095DFB1}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\uimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11717F12-C21A-483A-014D-4E865095DFB1}|Assembly-CSharp.csproj|C:\\Users\\joahi\\AR_Zillia\\assets\\scripts\\cell_pedidos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11717F12-C21A-483A-014D-4E865095DFB1}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\cell_pedidos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11717F12-C21A-483A-014D-4E865095DFB1}|Assembly-CSharp.csproj|C:\\Users\\joahi\\AR_Zillia\\assets\\scripts\\controle_menus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11717F12-C21A-483A-014D-4E865095DFB1}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\controle_menus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11717F12-C21A-483A-014D-4E865095DFB1}|Assembly-CSharp.csproj|C:\\Users\\joahi\\AR_Zillia\\assets\\scripts\\cell_pecas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11717F12-C21A-483A-014D-4E865095DFB1}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\cell_pecas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Controle_Menus.cs",
+              "DocumentMoniker": "C:\\Users\\joahi\\AR_Zillia\\Assets\\Scripts\\Controle_Menus.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Controle_Menus.cs",
+              "ToolTip": "C:\\Users\\joahi\\AR_Zillia\\Assets\\Scripts\\Controle_Menus.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Controle_Menus.cs",
+              "ViewState": "AgIAAGIAAAAAAAAAAAAuwH0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T02:42:49.615Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UIManager.cs",
+              "DocumentMoniker": "C:\\Users\\joahi\\AR_Zillia\\Assets\\Scripts\\UIManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UIManager.cs",
+              "ToolTip": "C:\\Users\\joahi\\AR_Zillia\\Assets\\Scripts\\UIManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UIManager.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAqwCUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T18:39:43.997Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Cell_Pecas.cs",
+              "DocumentMoniker": "C:\\Users\\joahi\\AR_Zillia\\Assets\\Scripts\\Cell_Pecas.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Cell_Pecas.cs",
+              "ToolTip": "C:\\Users\\joahi\\AR_Zillia\\Assets\\Scripts\\Cell_Pecas.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Cell_Pecas.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T18:26:24.616Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Cell_Pedidos.cs",
+              "DocumentMoniker": "C:\\Users\\joahi\\AR_Zillia\\Assets\\Scripts\\Cell_Pedidos.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Cell_Pedidos.cs",
+              "ToolTip": "C:\\Users\\joahi\\AR_Zillia\\Assets\\Scripts\\Cell_Pedidos.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Cell_Pedidos.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAuwDAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T18:26:19.286Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
