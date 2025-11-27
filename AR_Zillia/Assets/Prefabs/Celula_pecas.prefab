@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 560217722928549059}
   - component: {fileID: 6416588768073670942}
   - component: {fileID: 794180957306423437}
+  - component: {fileID: 4475224444608102849}
   m_Layer: 5
   m_Name: Celula_pecas
   m_TagString: Untagged
@@ -71,6 +72,24 @@ MonoBehaviour:
   m_FlexibleWidth: -1
   m_FlexibleHeight: -1
   m_LayoutPriority: 1
+--- !u!114 &4475224444608102849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1052268251255500293}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8afe85598f1d58f4c9181f39dbbb128d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  txttipo: {fileID: 7450132992187800357}
+  txtserial: {fileID: 2884628524588382379}
+  txtdivergencia: {fileID: 1213149537418403368}
+  txtcomentario: {fileID: 464302560030607288}
+  txtgarantia: {fileID: 8742183352243220001}
+  botaoAbrirMenuComentario: {fileID: 7355551098119845453}
 --- !u!1 &2413503891542280045
 GameObject:
   m_ObjectHideFlags: 0
@@ -98,7 +117,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2413503891542280045}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

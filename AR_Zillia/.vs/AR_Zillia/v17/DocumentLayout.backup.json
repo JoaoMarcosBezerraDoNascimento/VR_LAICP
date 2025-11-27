@@ -7,7 +7,7 @@
       "RelativeMoniker": "D:0:0:{11717F12-C21A-483A-014D-4E865095DFB1}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\uimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{11717F12-C21A-483A-014D-4E865095DFB1}|Assembly-CSharp.csproj|c:\\users\\joahi\\ar_zillia\\assets\\scripts\\cell_pedidos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{11717F12-C21A-483A-014D-4E865095DFB1}|Assembly-CSharp.csproj|C:\\Users\\joahi\\AR_Zillia\\assets\\scripts\\cell_pedidos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{11717F12-C21A-483A-014D-4E865095DFB1}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\cell_pedidos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -49,7 +49,7 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\UIManager.cs",
               "ToolTip": "C:\\Users\\joahi\\AR_Zillia\\Assets\\Scripts\\UIManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\UIManager.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAA+wCUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAqwCUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-25T18:39:43.997Z",
               "EditorCaption": ""
@@ -76,8 +76,7 @@
               "RelativeToolTip": "Assets\\Scripts\\Cell_Pedidos.cs",
               "ViewState": "AgIAABUAAAAAAAAAAAAuwDAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-25T18:26:19.286Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-25T18:26:19.286Z"
             }
           ]
         }

@@ -1,6 +1,8 @@
-using System.Collections.Generic;
+Ôªøusing System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using System.Collections;
+using UnityEngine.UI;
 
 public class Controle_Menus : MonoBehaviour
 {
@@ -35,10 +37,12 @@ public class Controle_Menus : MonoBehaviour
     [Header("RMA")]
     public GameObject rmaCellPrefab;
     public Transform rmaContentParent;
+    public ScrollRect scrollPedidos;
 
-    [Header("PeÁas")]
+    [Header("Pe√ßas")]
     public GameObject pecaCellPrefab;
     public Transform pecaContentParent;
+    public ScrollRect scrollPecas;
 
     void Start()
     {
@@ -47,10 +51,10 @@ public class Controle_Menus : MonoBehaviour
 
     void CarregarHistorico()
     {
-        // Verifica se o prefab È o correto
+        // Verifica se o prefab √© o correto
         if (rmaCellPrefab.GetComponent<Cell_Pedidos>() == null)
         {
-            Debug.LogError("O prefab atribuÌdo em rmaCellPrefab N√O possui Cell_Pedidos!");
+            Debug.LogError("O prefab atribu√≠do em rmaCellPrefab N√ÉO possui Cell_Pedidos!");
         }
 
         // Carrega JSON
@@ -65,11 +69,11 @@ public class Controle_Menus : MonoBehaviour
         foreach (Transform child in rmaContentParent)
             Destroy(child.gameObject);
 
-        // Limpa peÁas
+        // Limpa pe√ßas
         foreach (Transform child in pecaContentParent)
             Destroy(child.gameObject);
 
-        // Cria cÈlulas RMA
+        // Cria c√©lulas RMA
         foreach (var item in lista.rmas)
         {
             GameObject cellObj = Instantiate(rmaCellPrefab, rmaContentParent);
@@ -77,17 +81,17 @@ public class Controle_Menus : MonoBehaviour
             Cell_Pedidos cell = cellObj.GetComponent<Cell_Pedidos>();
             if (cell == null)
             {
-                Debug.LogError("Prefab instanciado N√O possui Cell_Pedidos!");
+                Debug.LogError("Prefab instanciado N√ÉO possui Cell_Pedidos!");
                 continue;
             }
 
             string chegada = item.data_chegada.Length >= 5 ? item.data_chegada.Substring(0, 5) : item.data_chegada;
             string saida = item.data_saida.Length >= 5 ? item.data_saida.Substring(0, 5) : item.data_saida;
 
-            // Passa a lista de peÁas para a cÈlula
+            // Passa a lista de pe√ßas para a c√©lula
             cell.DefinirPecas(item.pecas);
 
-            // Configura cÈlula
+            // Configura c√©lula
             cell.Configurar(
                 item.numero_pedido_rma,
                 item.cliente,
@@ -96,15 +100,16 @@ public class Controle_Menus : MonoBehaviour
                 MostrarPecas
             );
         }
+        StartCoroutine(VoltarScrollParaTopo());
     }
 
     void MostrarPecas(List<PecaItem> pecas)
     {
-        // Limpa lista atual
+        Debug.Log(">>> MOSTRAR PECAS FOI CHAMADO <<<");
+
         foreach (Transform child in pecaContentParent)
             Destroy(child.gameObject);
 
-        // Cria cada peÁa
         foreach (var p in pecas)
         {
             GameObject pecaObj = Instantiate(pecaCellPrefab, pecaContentParent);
@@ -117,9 +122,21 @@ public class Controle_Menus : MonoBehaviour
 
             if (tipoTMP != null) tipoTMP.text = p.tipo.ToString();
             if (serialTMP != null) serialTMP.text = p.serial;
-            if (garantiaTMP != null) garantiaTMP.text = p.garantia ? "Sim" : "N„o";
-            if (divergenciaTMP != null) divergenciaTMP.text = p.divergencia ? "Sim" : "N„o";
+            if (garantiaTMP != null) garantiaTMP.text = p.garantia ? "Sim" : "N√£o";
+            if (divergenciaTMP != null) divergenciaTMP.text = p.divergencia ? "Sim" : "N√£o";
             if (comentarioTMP != null) comentarioTMP.text = p.comentario;
         }
+
+        // üî• Aqui ele sobe pro topo de forma garantida
+        StartCoroutine(VoltarScrollParaTopo());
     }
+
+    IEnumerator VoltarScrollParaTopo()
+    {
+        yield return null; // espera 1 frame
+        scrollPecas.verticalNormalizedPosition = 1f;
+        scrollPedidos.verticalNormalizedPosition = 1f;
+    }
+
+
 }

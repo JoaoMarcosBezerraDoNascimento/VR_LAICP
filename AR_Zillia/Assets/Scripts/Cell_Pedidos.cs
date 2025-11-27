@@ -43,6 +43,8 @@ public class Cell_Pedidos : MonoBehaviour
 
             // Depois troca a tela
             UIManager.instance.MostrarTelaPecas();
+            Debug.Log(">>> BOTAO CLICADO <<<");
+
         });
     }
 }
