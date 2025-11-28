@@ -105,6 +105,7 @@ GameObject:
   - component: {fileID: 7816795194188397277}
   - component: {fileID: 1387300212266672346}
   - component: {fileID: 7355551098119845453}
+  - component: {fileID: 6056778242045330380}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -225,6 +226,23 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &6056778242045330380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2413503891542280045}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b43e0c7a380b9fc4a94af901a29e178a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nomeDoIndicador: XRHand_IndexTip
+  distanciaLimite: 0.03
+  distanciaAtual: 0
+  botao: {fileID: 7355551098119845453}
+  delayInicial: 1
 --- !u!1 &3049127588496945941
 GameObject:
   m_ObjectHideFlags: 0
@@ -293,6 +311,7 @@ GameObject:
   - component: {fileID: 6847826659661938567}
   - component: {fileID: 528715538319299062}
   - component: {fileID: 406859024328771156}
+  - component: {fileID: 7464478622862119378}
   m_Layer: 5
   m_Name: BT_RESET
   m_TagString: Untagged
@@ -414,6 +433,23 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &7464478622862119378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3305402571296131278}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b43e0c7a380b9fc4a94af901a29e178a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nomeDoIndicador: XRHand_IndexTip
+  distanciaLimite: 0.04
+  distanciaAtual: 0
+  botao: {fileID: 406859024328771156}
+  delayInicial: 1
 --- !u!1 &3670250863453638567
 GameObject:
   m_ObjectHideFlags: 0
@@ -1523,6 +1559,7 @@ GameObject:
   - component: {fileID: 3591202855733732705}
   - component: {fileID: 3340279355229790844}
   - component: {fileID: 5099869894794317490}
+  - component: {fileID: 2029674752229327511}
   m_Layer: 5
   m_Name: BT_REC
   m_TagString: Untagged
@@ -1644,6 +1681,23 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &2029674752229327511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7774971416108913648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b43e0c7a380b9fc4a94af901a29e178a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nomeDoIndicador: XRHand_IndexTip
+  distanciaLimite: 0.04
+  distanciaAtual: 0
+  botao: {fileID: 5099869894794317490}
+  delayInicial: 1
 --- !u!1 &8369902806421351065
 GameObject:
   m_ObjectHideFlags: 0
@@ -2106,6 +2160,7 @@ GameObject:
   - component: {fileID: 7972566031906025309}
   - component: {fileID: 7062407483382265653}
   - component: {fileID: 6129568805404129250}
+  - component: {fileID: 1142367012273192115}
   m_Layer: 5
   m_Name: BT_SEND
   m_TagString: Untagged
@@ -2227,3 +2282,20 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1142367012273192115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9005811268505595037}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b43e0c7a380b9fc4a94af901a29e178a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nomeDoIndicador: XRHand_IndexTip
+  distanciaLimite: 0.04
+  distanciaAtual: 0
+  botao: {fileID: 6129568805404129250}
+  delayInicial: 1

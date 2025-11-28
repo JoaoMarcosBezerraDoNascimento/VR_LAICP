@@ -3,20 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\joahi\\Documents\\Projetos\\VR_LAICP\\AR_Zillia\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{11717F12-C21A-483A-014D-4E865095DFB1}|Assembly-CSharp.csproj|c:\\users\\joahi\\documents\\projetos\\vr_laicp\\ar_zillia\\assets\\scripts\\passthroughcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{11717F12-C21A-483A-014D-4E865095DFB1}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\passthroughcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{11717F12-C21A-483A-014D-4E865095DFB1}|Assembly-CSharp.csproj|C:\\Users\\joahi\\Documents\\Projetos\\VR_LAICP\\AR_Zillia\\assets\\scripts\\acionabotaopordistancia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11717F12-C21A-483A-014D-4E865095DFB1}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\acionabotaopordistancia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\joahi\\Documents\\Projetos\\VR_LAICP\\AR_Zillia\\Assets\\Scripts\\MouseViaHand3D.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\MouseViaHand3D.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{11717F12-C21A-483A-014D-4E865095DFB1}|Assembly-CSharp.csproj|c:\\users\\joahi\\documents\\projetos\\vr_laicp\\ar_zillia\\assets\\scripts\\pinchscrollvr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11717F12-C21A-483A-014D-4E865095DFB1}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pinchscrollvr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11717F12-C21A-483A-014D-4E865095DFB1}|Assembly-CSharp.csproj|C:\\Users\\joahi\\Documents\\Projetos\\VR_LAICP\\AR_Zillia\\assets\\scripts\\controle_menus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11717F12-C21A-483A-014D-4E865095DFB1}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\controle_menus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{11717F12-C21A-483A-014D-4E865095DFB1}|Assembly-CSharp.csproj|C:\\Users\\joahi\\Documents\\Projetos\\VR_LAICP\\AR_Zillia\\assets\\scripts\\canvasfollow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{11717F12-C21A-483A-014D-4E865095DFB1}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\canvasfollow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{11717F12-C21A-483A-014D-4E865095DFB1}|Assembly-CSharp.csproj|C:\\Users\\joahi\\Documents\\Projetos\\VR_LAICP\\AR_Zillia\\assets\\scripts\\controle_menus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{11717F12-C21A-483A-014D-4E865095DFB1}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\controle_menus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{11717F12-C21A-483A-014D-4E865095DFB1}|Assembly-CSharp.csproj|C:\\Users\\joahi\\Documents\\Projetos\\VR_LAICP\\AR_Zillia\\assets\\scripts\\passthroughcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11717F12-C21A-483A-014D-4E865095DFB1}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\passthroughcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\joahi\\Documents\\Projetos\\VR_LAICP\\AR_Zillia\\Assets\\Scripts\\MouseViaHand3D.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\MouseViaHand3D.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{11717F12-C21A-483A-014D-4E865095DFB1}|Assembly-CSharp.csproj|C:\\Users\\joahi\\Documents\\Projetos\\VR_LAICP\\AR_Zillia\\assets\\scripts\\uimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -42,7 +50,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Controle_Menus.cs",
               "DocumentMoniker": "C:\\Users\\joahi\\Documents\\Projetos\\VR_LAICP\\AR_Zillia\\Assets\\Scripts\\Controle_Menus.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Controle_Menus.cs",
@@ -56,19 +64,44 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "PassthroughControl.cs",
-              "DocumentMoniker": "C:\\Users\\joahi\\Documents\\Projetos\\VR_LAICP\\AR_Zillia\\Assets\\Scripts\\PassthroughControl.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\PassthroughControl.cs",
-              "ToolTip": "C:\\Users\\joahi\\Documents\\Projetos\\VR_LAICP\\AR_Zillia\\Assets\\Scripts\\PassthroughControl.cs",
-              "RelativeToolTip": "Assets\\Scripts\\PassthroughControl.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Title": "AcionaBotaoPorDistancia.cs",
+              "DocumentMoniker": "C:\\Users\\joahi\\Documents\\Projetos\\VR_LAICP\\AR_Zillia\\Assets\\Scripts\\AcionaBotaoPorDistancia.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\AcionaBotaoPorDistancia.cs",
+              "ToolTip": "C:\\Users\\joahi\\Documents\\Projetos\\VR_LAICP\\AR_Zillia\\Assets\\Scripts\\AcionaBotaoPorDistancia.cs",
+              "RelativeToolTip": "Assets\\Scripts\\AcionaBotaoPorDistancia.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwDIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-27T14:51:55.06Z",
+              "WhenOpened": "2025-11-28T03:37:27.045Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "PinchScrollVR.cs",
+              "DocumentMoniker": "C:\\Users\\joahi\\Documents\\Projetos\\VR_LAICP\\AR_Zillia\\Assets\\Scripts\\PinchScrollVR.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PinchScrollVR.cs",
+              "ToolTip": "C:\\Users\\joahi\\Documents\\Projetos\\VR_LAICP\\AR_Zillia\\Assets\\Scripts\\PinchScrollVR.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PinchScrollVR.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T03:38:49.381Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PassthroughControl.cs",
+              "DocumentMoniker": "C:\\Users\\joahi\\Documents\\Projetos\\VR_LAICP\\AR_Zillia\\Assets\\Scripts\\PassthroughControl.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PassthroughControl.cs",
+              "ToolTip": "C:\\Users\\joahi\\Documents\\Projetos\\VR_LAICP\\AR_Zillia\\Assets\\Scripts\\PassthroughControl.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PassthroughControl.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-27T14:51:55.06Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "MouseViaHand3D.cs",
               "DocumentMoniker": "C:\\Users\\joahi\\Documents\\Projetos\\VR_LAICP\\AR_Zillia\\Assets\\Scripts\\MouseViaHand3D.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\MouseViaHand3D.cs",
@@ -79,19 +112,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "CanvasFollow.cs",
               "DocumentMoniker": "C:\\Users\\joahi\\Documents\\Projetos\\VR_LAICP\\AR_Zillia\\Assets\\Scripts\\CanvasFollow.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\CanvasFollow.cs",
               "ToolTip": "C:\\Users\\joahi\\Documents\\Projetos\\VR_LAICP\\AR_Zillia\\Assets\\Scripts\\CanvasFollow.cs",
               "RelativeToolTip": "Assets\\Scripts\\CanvasFollow.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAAAAoAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAQAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-27T12:44:16.044Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "UIManager.cs",
               "DocumentMoniker": "C:\\Users\\joahi\\Documents\\Projetos\\VR_LAICP\\AR_Zillia\\Assets\\Scripts\\UIManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\UIManager.cs",
@@ -103,7 +136,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "Cell_Pecas.cs",
               "DocumentMoniker": "C:\\Users\\joahi\\Documents\\Projetos\\VR_LAICP\\AR_Zillia\\Assets\\Scripts\\Cell_Pecas.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Cell_Pecas.cs",
@@ -115,7 +148,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "Cell_Pedidos.cs",
               "DocumentMoniker": "C:\\Users\\joahi\\Documents\\Projetos\\VR_LAICP\\AR_Zillia\\Assets\\Scripts\\Cell_Pedidos.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Cell_Pedidos.cs",
