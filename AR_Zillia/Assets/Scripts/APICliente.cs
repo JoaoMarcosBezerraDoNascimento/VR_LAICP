@@ -1,34 +1,39 @@
 using UnityEngine;
-using TMPro;
 using UnityEngine.UI;
+using TMPro;
 using UnityEngine.Networking;
 using System.Text;
 using System.Collections;
 
 public class APICliente : MonoBehaviour
 {
-    [Header("Referências")]
-    public TMP_Text campoEntrada;
-    public TMP_Text campoResposta;
+    public GameObject campoEntrada;
+    public GameObject campoResposta;
     public Button botaoEnviar;
+    public string IP;
+    public string Porta;
+    public string Rota;
 
-    // Use o IP da sua máquina
-    private const string URL = "http://192.168.0.10:8000/processar";
+    private string URL;
 
     void Start()
     {
+        URL = "http://" + IP + ":" + Porta + "/" + Rota;
+        Debug.Log("URL usada: " + URL);
+
         botaoEnviar.onClick.AddListener(Enviar);
     }
 
-    void Enviar()
+    public void Enviar()
     {
-        string texto = campoEntrada.text;
+        string texto = campoEntrada.GetComponent<TMP_Text>().text;
+        Debug.Log("Texto coletado: " + texto);
+
         StartCoroutine(ChamarAPI(texto));
     }
 
     IEnumerator ChamarAPI(string texto)
     {
-        // JSON correto para FastAPI
         string json = "{\"prompt\":\"" + texto + "\"}";
 
         UnityWebRequest request = new UnityWebRequest(URL, "POST");
@@ -37,23 +42,31 @@ public class APICliente : MonoBehaviour
         request.uploadHandler = new UploadHandlerRaw(bodyRaw);
         request.downloadHandler = new DownloadHandlerBuffer();
         request.SetRequestHeader("Content-Type", "application/json");
+        //request.timeout = 30; // Timeout em segundos, deixe 0 para ser infinito
+        request.SendWebRequest();
+        float tempoPassado = 0f;
 
-        yield return request.SendWebRequest();
+        while (!request.isDone)
+        {
+            if (tempoPassado >= 999999)
+            {
+                request.Abort();
+                campoResposta.GetComponent<TMP_Text>().text =
+                    "Erro: Timeout atingido (" + 999999 + "s)";
+                yield break;
+            }
+
+            tempoPassado += Time.deltaTime;
+            yield return null;
+        }
 
         if (request.result != UnityWebRequest.Result.Success)
         {
-            campoResposta.text = "Erro: " + request.error;
+            campoResposta.GetComponent<TMP_Text>().text = "Erro: " + request.error;
         }
         else
         {
-            RespostaAPI resposta = JsonUtility.FromJson<RespostaAPI>(request.downloadHandler.text);
-            campoResposta.text = resposta.resposta;
+            campoResposta.GetComponent<TMP_Text>().text = request.downloadHandler.text;
         }
     }
-}
-
-[System.Serializable]
-public class RespostaAPI
-{
-    public string resposta;
 }

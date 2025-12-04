@@ -25,7 +25,7 @@ public class DictationManager : MonoBehaviour
         textoPadraoInicial = targetText.text;
 
         // 2. Configura os eventos do Wit.ai
-        dictationExperience.DictationEvents.OnPartialTranscription.AddListener(OnHypothesis);
+        //dictationExperience.DictationEvents.OnPartialTranscription.AddListener(OnHypothesis);
         dictationExperience.DictationEvents.OnFullTranscription.AddListener(OnResult);
     }
 

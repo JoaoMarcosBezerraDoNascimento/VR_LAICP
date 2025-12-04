@@ -209,7 +209,7 @@ Transform:
   m_GameObject: {fileID: 120083600}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalPosition: {x: 0, y: 0, z: -481.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -259,6 +259,12 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
+--- !u!1 &675856565 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7455686803501655735, guid: 2b678442df6f8364a9c437b0b1b0fce4,
+    type: 3}
+  m_PrefabInstance: {fileID: 2241406739094218879}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1193740983
 GameObject:
   m_ObjectHideFlags: 0
@@ -390,15 +396,35 @@ PrefabInstance:
       propertyPath: m_Name
       value: Menu_Dictation
       objectReference: {fileID: 0}
+    - target: {fileID: 660772420857185389, guid: 2b678442df6f8364a9c437b0b1b0fce4,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 660772420857185389, guid: 2b678442df6f8364a9c437b0b1b0fce4,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 660772420857185389, guid: 2b678442df6f8364a9c437b0b1b0fce4,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 675856565}
+    - target: {fileID: 660772420857185389, guid: 2b678442df6f8364a9c437b0b1b0fce4,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3304947410844483260, guid: 2b678442df6f8364a9c437b0b1b0fce4,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 503.875
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3304947410844483260, guid: 2b678442df6f8364a9c437b0b1b0fce4,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 263.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3304947410844483260, guid: 2b678442df6f8364a9c437b0b1b0fce4,
         type: 3}

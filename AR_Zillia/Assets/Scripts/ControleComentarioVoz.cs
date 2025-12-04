@@ -91,9 +91,15 @@ public class ControleComentarioVoz : MonoBehaviour
         if(painelTranscricao != null) painelTranscricao.SetActive(true);
 
         if (dictationExperience.MicActive)
+        {
             dictationExperience.Deactivate();
+            Debug.LogError("Dictation Parado !!!");
+        }
         else
+        {
             dictationExperience.Activate();
+            Debug.LogError("Dictation Iniciado !!!");
+        }
     }
 
     public void Click_RESET()
