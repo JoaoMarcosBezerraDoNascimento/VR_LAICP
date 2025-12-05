@@ -8,7 +8,7 @@ public class PinchScrollVR : MonoBehaviour
     public string nomeDoIndicador = "XRHand_IndexTip";
     public string nomeDoDedao = "XRHand_ThumbTip";
 
-    public float distanciaLimite = 0.025f;
+    public float distanciaLimite = 0.015f;
     public float sensibilidade = 0.5f;
 
     private Transform indicador;

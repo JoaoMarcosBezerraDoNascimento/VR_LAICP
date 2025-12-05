@@ -79,6 +79,7 @@ public class Controle_Menus : MonoBehaviour
             GameObject cellObj = Instantiate(rmaCellPrefab, rmaContentParent);
 
             Cell_Pedidos cell = cellObj.GetComponent<Cell_Pedidos>();
+
             if (cell == null)
             {
                 Debug.LogError("Prefab instanciado NÃO possui Cell_Pedidos!");
@@ -105,8 +106,6 @@ public class Controle_Menus : MonoBehaviour
 
     void MostrarPecas(List<PecaItem> pecas)
     {
-        Debug.Log(">>> MOSTRAR PECAS FOI CHAMADO <<<");
-
         foreach (Transform child in pecaContentParent)
             Destroy(child.gameObject);
 
@@ -114,20 +113,26 @@ public class Controle_Menus : MonoBehaviour
         {
             GameObject pecaObj = Instantiate(pecaCellPrefab, pecaContentParent);
 
-            TMP_Text tipoTMP = pecaObj.transform.Find("tipo")?.GetComponent<TMP_Text>();
-            TMP_Text serialTMP = pecaObj.transform.Find("serial")?.GetComponent<TMP_Text>();
-            TMP_Text garantiaTMP = pecaObj.transform.Find("garantia")?.GetComponent<TMP_Text>();
-            TMP_Text divergenciaTMP = pecaObj.transform.Find("divergencia")?.GetComponent<TMP_Text>();
-            TMP_Text comentarioTMP = pecaObj.transform.Find("comentario")?.GetComponent<TMP_Text>();
+            Cell_Pecas cell = pecaObj.GetComponent<Cell_Pecas>();
 
-            if (tipoTMP != null) tipoTMP.text = p.tipo.ToString();
-            if (serialTMP != null) serialTMP.text = p.serial;
-            if (garantiaTMP != null) garantiaTMP.text = p.garantia ? "Sim" : "Não";
-            if (divergenciaTMP != null) divergenciaTMP.text = p.divergencia ? "Sim" : "Não";
-            if (comentarioTMP != null) comentarioTMP.text = p.comentario;
+            if (cell != null)
+            {
+                cell.DefinirPecas(pecas);
+
+                cell.Configurar(
+                    p.tipo.ToString(),                   // numero (índice da imagem)
+                    p.serial,                            // cliente
+                    p.divergencia ? "Divergente" : "Normal",      // divergencia
+                    p.garantia ? "Com Garantia" : "Sem Garantia",          // chegada
+                    p.comentario
+                );
+            }
+            else
+            {
+                Debug.LogError("Prefab pecaCellPrefab NÃO tem Cell_Pecas!");
+            }
         }
 
-        // 🔥 Aqui ele sobe pro topo de forma garantida
         StartCoroutine(VoltarScrollParaTopo());
     }
 

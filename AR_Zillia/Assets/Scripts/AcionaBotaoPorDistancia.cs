@@ -4,7 +4,7 @@ using UnityEngine.UI;
 public class AcionaBotaoPorDistancia : MonoBehaviour
 {
     public string nomeDoIndicador = "XRHand_IndexTip";
-    public float distanciaLimite = 0.04f;
+    public float distanciaLimite = 0.03f;
     public float distanciaAtual;
     public Button botao;
 
