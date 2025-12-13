@@ -2,8 +2,9 @@ using UnityEngine;
 
 public class LookAtCameraOptimized : MonoBehaviour
 {
-    public float smoothSpeed =5f;     // Velocidade da rotação
-    public float checkInterval = 1f;   // Intervalo em segundos
+    public float smoothSpeed = 5f;
+    public float checkInterval = 1f;
+    public Vector3 rotationOffset; // <--- ADICIONE ISTO
 
     private Transform camTransform;
     private Quaternion targetRotation;
@@ -12,12 +13,10 @@ public class LookAtCameraOptimized : MonoBehaviour
     void Start()
     {
         camTransform = Camera.main.transform;
-        UpdateTargetRotation(); // inicializa a rotação
+        UpdateTargetRotation();
     }
-
     void Update()
     {
-        // Atualiza a rotação alvo a cada checkInterval
         timer += Time.deltaTime;
         if (timer >= checkInterval)
         {
@@ -25,13 +24,16 @@ public class LookAtCameraOptimized : MonoBehaviour
             timer = 0f;
         }
 
-        // Rotação suave contínua
         transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * smoothSpeed);
     }
-
     void UpdateTargetRotation()
     {
         Vector3 direction = camTransform.position - transform.position;
-        targetRotation = Quaternion.LookRotation(direction);
+
+        // Zera o eixo Y da direção da câmera para evitar inclinação
+        direction.y = 0;
+
+        Quaternion lookRot = Quaternion.LookRotation(direction);
+        targetRotation = lookRot;
     }
 }

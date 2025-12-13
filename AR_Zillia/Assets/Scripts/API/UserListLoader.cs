@@ -24,6 +24,7 @@ public class UserListLoader : MonoBehaviour
     // Chamado ao clicar no botão
     public void CarregarUsuarios()
     {
+        Debug.Log("Buscando usuários na API...");
         StartCoroutine(GetUsuarios());
     }
 
