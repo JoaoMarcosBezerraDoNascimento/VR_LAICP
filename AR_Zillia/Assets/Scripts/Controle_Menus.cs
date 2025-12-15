@@ -87,7 +87,7 @@ public class Controle_Menus : MonoBehaviour
             }
 
             string chegada = item.data_chegada.Length >= 5 ? item.data_chegada.Substring(0, 5) : item.data_chegada;
-            string saida = item.data_saida.Length >= 5 ? item.data_saida.Substring(0, 5) : item.data_saida;
+            string saida = "A Finalizar";
 
             // Passa a lista de peças para a célula
             cell.DefinirPecas(item.pecas);
