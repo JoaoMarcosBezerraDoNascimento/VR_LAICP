@@ -1,0 +1,52 @@
+AR_Zillia/UserSettings/Layouts/default-6000.dwlt
+AR_Zillia/UserSettings/EditorUserSettings.asset
+AR_Zillia/Logs/AssetImportWorker1.log
+AR_Zillia/Logs/AssetImportWorker0.log
+AR_Zillia/Assembly-CSharp.csproj
+
+# =========================
+# UNITY - TEMP / CACHE
+# =========================
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]serSettings/
+MemoryCaptures/
+
+# =========================
+# LOGS
+# =========================
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+*.csproj
+
+# =========================
+# IDEs
+# =========================
+.vscode/
+.idea/
+*.csproj
+*.sln
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.apk
+
+# =========================
+# OS
+# =========================
+.DS_Store
+Thumbs.db
+desktop.ini
+Library
+UserSettings
+ProjectSettings/EditorUserSettings.asset
+
+*.dwlt
