@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "AR_Zillia.sln"
+    "dotnet.defaultSolution": "AR_Zillia.slnx"
 }
