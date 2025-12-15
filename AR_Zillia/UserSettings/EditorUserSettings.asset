@@ -20,8 +20,13 @@ EditorUserSettings:
     RecentlyUsedSceneGuid-3:
       value: 51500c5755510c0909085b20122209441716492c7c70226528714e67b3e53568
       flags: 0
+<<<<<<< HEAD
     RecentlyUsedSceneGuid-4:
       value: 07060402060d51595a585e2442200b4410154b737e7d70347f2b4930b6e3323c
+=======
+    RecentlyUsedSceneGuid-7:
+      value: 0507565251565b02580c0e7643200b44464f4e7f7c7927662c2a4963b3e2373d
+>>>>>>> parent of 83e12fc (feat:Menu_bonito)
       flags: 0
     RecentlyUsedSceneGuid-5:
       value: 545456515656585e5d0d0a274874094417164d7a797920347c2f1e67b4b3656b
@@ -36,7 +41,11 @@ EditorUserSettings:
       value: 010655035d540d0d5e5f54701476064446164b2b797d20317c7e1c37e0b5623e
       flags: 0
     RecentlyUsedSceneGuid-9:
+<<<<<<< HEAD
       value: 5a08575f5207595a0f5d59741173094444164f7d7d2a23317c7a4465bbe1646d
+=======
+      value: 07060402060d51595a585e2442200b4410154b737e7d70347f2b4930b6e3323c
+>>>>>>> parent of 83e12fc (feat:Menu_bonito)
       flags: 0
     vcSharedLogLevel:
       value: 0d5e400f0650

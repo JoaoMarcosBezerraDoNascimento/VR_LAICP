@@ -1,4 +1,7 @@
 Base path: 'C:/Program Files/Unity/Hub/Editor/6000.2.14f1/Editor/Data', plugins path 'C:/Program Files/Unity/Hub/Editor/6000.2.14f1/Editor/Data/PlaybackEngines'
 Cmd: initializeCompiler
 
+<<<<<<< HEAD
 Cmd: shutdown
+=======
+>>>>>>> parent of 83e12fc (feat:Menu_bonito)
