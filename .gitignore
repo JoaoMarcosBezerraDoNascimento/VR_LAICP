@@ -25,7 +25,8 @@ MemoryCaptures/
 *.swp
 *.swo
 *.csproj
-
+*.dwlt
+.temp
 # =========================
 # IDEs
 # =========================
@@ -48,5 +49,3 @@ desktop.ini
 Library
 UserSettings
 ProjectSettings/EditorUserSettings.asset
-
-*.dwlt
