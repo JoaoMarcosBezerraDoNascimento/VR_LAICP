@@ -2,3 +2,6 @@ Library
 .apk
 UserSettings
 ProjectSettings/EditorUserSettings.asset
+temp
+Temp
+.log
