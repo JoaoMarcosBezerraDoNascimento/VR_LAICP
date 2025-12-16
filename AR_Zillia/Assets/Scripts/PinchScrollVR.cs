@@ -1,63 +1,71 @@
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
-public class PinchScrollVR : MonoBehaviour
+public class PinchScrollPorRigidBody : MonoBehaviour
 {
-    private ScrollRect scroll;
+    [Header("Referências")]
+    public ScrollRect scroll;
 
-    public string nomeDoIndicador = "XRHand_IndexTip";
-    public string nomeDoDedao = "XRHand_ThumbTip";
+    [Tooltip("GameObject do dedo indicador")]
+    public GameObject indicador;
 
-    public float distanciaLimite = 0.015f;
-    public float sensibilidade = 0.5f;
+    [Tooltip("GameObject do dedo polegar")]
+    public GameObject polegar;
 
-    private Transform indicador;
-    private Transform dedao;
+    [Header("Configuração do Pinch")]
+    public float distanciaLimite = 0.04f;
+    public float sensibilidade = 0.6f;
 
-    private float ultimoY;
-    private bool pinchAtivo = false;
+    Rigidbody rbIndicador;
+    Rigidbody rbPolegar;
 
-    void Start()
+    bool pinchAtivo;
+    float ultimoY;
+
+    void Awake()
     {
-        scroll = GetComponent<ScrollRect>();
+        // Busca automaticamente os rigidbodys
+        if (indicador != null)
+            rbIndicador = indicador.GetComponent<Rigidbody>();
 
-        indicador = GameObject.Find(nomeDoIndicador)?.transform;
-        dedao = GameObject.Find(nomeDoDedao)?.transform;
+        if (polegar != null)
+            rbPolegar = polegar.GetComponent<Rigidbody>();
+
+        if (rbIndicador == null || rbPolegar == null)
+        {
+            Debug.LogError("❌ Um dos GameObjects não possui Rigidbody.");
+            enabled = false;
+        }
     }
 
     void Update()
     {
         if (scroll == null) return;
-        if (indicador == null || dedao == null) return;
 
-        float dist = Vector3.Distance(indicador.position, dedao.position);
+        float distancia = Vector3.Distance(
+            rbIndicador.position,
+            rbPolegar.position
+        );
 
-        // ------------------------------
-        // ATIVA A PIN�A QUANDO APROXIMA
-        // ------------------------------
-        if (dist < distanciaLimite)
+        if (distancia < distanciaLimite)
         {
             if (!pinchAtivo)
             {
                 pinchAtivo = true;
-                ultimoY = indicador.position.y; // inicia o tracking
+                ultimoY = rbIndicador.position.y;
             }
+
+            float deltaY = rbIndicador.position.y - ultimoY;
+
+            scroll.verticalNormalizedPosition -= deltaY * sensibilidade;
+            scroll.verticalNormalizedPosition =
+                Mathf.Clamp01(scroll.verticalNormalizedPosition);
+
+            ultimoY = rbIndicador.position.y;
         }
         else
         {
             pinchAtivo = false;
-            return;
         }
-
-        // ------------------------------
-        // PASSO 2: SCROLL PELO MOVIMENTO REAL DO DEDO
-        // ------------------------------
-
-        float movimentoY = indicador.position.y - ultimoY;
-
-        // inverte sentido para ficar natural (m�o pra cima = scroll pra cima)
-        scroll.verticalNormalizedPosition += movimentoY * sensibilidade * -1;
-
-        ultimoY = indicador.position.y;
     }
 }

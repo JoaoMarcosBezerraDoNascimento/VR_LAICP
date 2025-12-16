@@ -8,6 +8,7 @@ public class DictationManager : MonoBehaviour
     [Header("Componentes")]
     public AppDictationExperience dictationExperience;
     public TextMeshProUGUI targetText;
+    public TextMeshProUGUI IA_text;
     public Image imagemBotaoGravar; // A imagem do botão de gravar para mudar de cor
 
     [Header("Configurações Visuais")]
@@ -15,8 +16,9 @@ public class DictationManager : MonoBehaviour
     public Color corParado = Color.white;
 
     // Variáveis Internas
-    private string textoAcumulado = ""; 
+    private string textoAcumulado = "";
     private string textoHipotese = "";
+    private string textoIA = "";
     private string textoPadraoInicial = ""; // Vai guardar sua frase "Aperte o botão..."
 
     void Start()
@@ -76,10 +78,14 @@ public class DictationManager : MonoBehaviour
         textoAcumulado = "";
         textoHipotese = "";
 
-        // 3. Restaura o texto original
+        // 3. Restaura os textos visuais
         targetText.text = textoPadraoInicial;
-    }
 
+        if (IA_text != null)
+        {
+            IA_text.text = ""; // 👈 LIMPA O TEXTO DA IA
+        }
+    }
     // --- EVENTOS DO DICTATION ---
 
     void OnHypothesis(string text)

@@ -9,8 +9,9 @@ public class AcionaBotaoPorDistancia : MonoBehaviour
     public float distanciaLimite = 0.04f;
     public float distanciaAtual;
 
-    [Header("UI")]
+    [Header("UI (use apenas um)")]
     public Button botao;
+    public Toggle toggle;
 
     [Header("Delay inicial")]
     public float delayInicial = 1.0f;
@@ -36,8 +37,6 @@ public class AcionaBotaoPorDistancia : MonoBehaviour
         indicadores = FindObjectsOfType<Transform>()
             .Where(t => t.name == nomeDoIndicador)
             .ToArray();
-
-        Debug.Log($"[AcionaBotao] {indicadores.Length} indicadores encontrados.");
     }
 
     void Update()
@@ -73,8 +72,17 @@ public class AcionaBotaoPorDistancia : MonoBehaviour
         if (dentroDaZona && cooldownOk)
         {
             ultimoCliqueTime = Time.time;
-            Debug.Log($"[AcionaBotao] Clique por: {maisProximo.name}");
-            botao.onClick.Invoke();
+
+            if (botao != null)
+            {
+                Debug.Log("[AcionaBotao] Clique em Button");
+                botao.onClick.Invoke();
+            }
+            else if (toggle != null)
+            {
+                Debug.Log("[AcionaBotao] Toggle alternado");
+                toggle.isOn = !toggle.isOn;
+            }
         }
     }
 }

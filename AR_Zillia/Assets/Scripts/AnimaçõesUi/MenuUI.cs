@@ -2,7 +2,7 @@ using UnityEngine;
 using System.Collections;
 
 [RequireComponent(typeof(CanvasGroup))]
-public class EfeitoMenu : MonoBehaviour
+public class EfeitoMenuUI : MonoBehaviour
 {
     public float atrasoInicial = 1f;
     public float duracao = 0.8f;
@@ -16,6 +16,7 @@ public class EfeitoMenu : MonoBehaviour
     {
         canvasGroup = GetComponent<CanvasGroup>();
         canvasGroup.alpha = 0;
+
         posicaoFinal = transform.localPosition;
         posicaoInicial = posicaoFinal + new Vector3(0, deslocamentoVertical, 0);
         transform.localPosition = posicaoInicial;
@@ -37,21 +38,28 @@ public class EfeitoMenu : MonoBehaviour
         {
             tempo += Time.deltaTime;
             float t = tempo / duracao;
-            
-            // Suavização manual (Ease Out)
-            t = t * (2 - t); 
+
+            // Ease Out
+            t = t * (2 - t);
 
             transform.localPosition = Vector3.Lerp(posicaoInicial, posicaoFinal, t);
             canvasGroup.alpha = Mathf.Lerp(0, 1, t);
             yield return null;
         }
 
-        // 3. Espera meio segundo e chama os botões
+        // Garante valores finais
+        transform.localPosition = posicaoFinal;
+        canvasGroup.alpha = 1f;
+
+        // 3. Chama animação dos botões
         yield return new WaitForSeconds(0.5f);
         BotoesMenu[] itens = GetComponentsInChildren<BotoesMenu>();
         foreach (var item in itens)
         {
             item.IniciarAnimacao();
         }
+
+        // 4. DESATIVA O SCRIPT
+        this.enabled = false;
     }
 }

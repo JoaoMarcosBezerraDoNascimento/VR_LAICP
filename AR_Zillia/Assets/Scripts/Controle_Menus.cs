@@ -117,13 +117,11 @@ public class Controle_Menus : MonoBehaviour
 
             if (cell != null)
             {
-                cell.DefinirPecas(pecas);
-
                 cell.Configurar(
-                    p.tipo.ToString(),                   // numero (índice da imagem)
+                    p.tipo,                   // numero (índice da imagem)
                     p.serial,                            // cliente
-                    p.divergencia ? "Divergente" : "Normal",      // divergencia
-                    p.garantia ? "Com Garantia" : "Sem Garantia",          // chegada
+                    p.divergencia,
+                    p.garantia,
                     p.comentario
                 );
             }

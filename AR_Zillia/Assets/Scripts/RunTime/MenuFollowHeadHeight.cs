@@ -3,19 +3,28 @@
 public class MenuFollowHeadHeight : MonoBehaviour
 {
     public Transform cameraTransform;
-    public float distanciaFrontal = 1.5f;
 
-    public float minDistancia = 1.0f;   // muito perto → reposiciona
-    public float maxDistancia = 2.0f;   // muito longe → reposiciona
+    [Header("Distância frontal")]
+    public float distanciaFrontal = 0.4f;
+    public float minDistancia = 0.01f;
+    public float maxDistancia = 1.0f;
+
+    [Header("Altura")]
+    public float toleranciaAltura = 0.3f;
+    public float offsetAltura = -0.3f; // valor padrão (ex: menu um pouco abaixo do olhar)
+
+    [Header("Referência de Spawn")]
+    public Transform objetoReferencia;      // Objeto que define a altura (Y)
+    public float distanciaExataCamera = 0.4f; // 30 cm à frente da câmera
 
     void Update()
     {
         if (cameraTransform == null) return;
 
         float dist = Vector3.Distance(transform.position, cameraTransform.position);
+        float diferencaAltura = Mathf.Abs(transform.position.y - AlturaReferencia());
 
-        // Só atualiza a posição se estiver muito perto ou muito longe
-        if (dist < minDistancia || dist > maxDistancia)
+        if (dist < minDistancia || dist > maxDistancia || diferencaAltura > toleranciaAltura)
         {
             AtualizarPosicao();
         }
@@ -23,18 +32,33 @@ public class MenuFollowHeadHeight : MonoBehaviour
 
     void AtualizarPosicao()
     {
-        Vector3 pos = cameraTransform.position;
+        Vector3 posCamera = cameraTransform.position;
 
-        // Posição na frente da câmera
-        Vector3 novaPos = pos + cameraTransform.forward * distanciaFrontal;
+        // Sempre exatamente à frente da câmera (30cm por exemplo)
+        Vector3 novaPos = posCamera + cameraTransform.forward * distanciaExataCamera;
 
-        // Ajusta altura do menu para a altura dos olhos
-        novaPos.y = pos.y;
+        // Mantém o Y do objeto de referência
+        novaPos.y = AlturaReferencia();
 
         transform.position = novaPos;
 
-        // Faz o menu olhar para o usuário, mas mantendo alinhamento apenas no eixo Y
+        // Olha para o usuário apenas no eixo Y
         transform.LookAt(cameraTransform);
         transform.rotation = Quaternion.Euler(0, transform.rotation.eulerAngles.y, 0);
     }
+
+    float AlturaReferencia()
+    {
+        float alturaBase;
+
+        // Se existir objeto de referência, usa o Y dele
+        if (objetoReferencia != null)
+            alturaBase = objetoReferencia.position.y;
+        else
+            alturaBase = cameraTransform.position.y;
+
+        // Aplica offset padrão
+        return alturaBase + offsetAltura;
+    }
+
 }
