@@ -1,5 +1,5 @@
 # VR_LAICP
-# 📦 Projeto_VR – Guia Oficial para o Time
+# 📦 Projeto_VR
 
 Este documento explica **onde cada arquivo fica** e **Como o projeto está organizado**.
 
@@ -25,7 +25,7 @@ No nosso projeto, tudo fica **dentro do app VR**, seguindo este padrão:
 App_VR/
 └─ Assets/
    │  
-   ├─ Textures/ # Pasta que recebe todas as imagens do projeto, desde icons até imagens de fundo
+   ├─ Textures/ # Pasta que recebe todas as imagens, gifs, animações, etc
    │
    ├─ Prefabs/ # Pastas com as telas e modelos padrões preparados para o VR
    │  ├─ Canvas_Login.prefab # Tela de Login feita em Unity
