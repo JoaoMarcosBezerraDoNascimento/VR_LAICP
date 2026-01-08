@@ -227,6 +227,8 @@ MonoBehaviour:
   distanciaAtual: 0
   botao: {fileID: 4128067605013287947}
   delayInicial: 1
+  cooldownClique: 0.5
+  indicadorMaisProximo: {fileID: 0}
 --- !u!1 &3670250863453638567
 GameObject:
   m_ObjectHideFlags: 0

@@ -361,8 +361,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4415600009944680785}
-        m_TargetAssemblyTypeName: UserListLoader, Assembly-CSharp
+      - m_Target: {fileID: 5631634913984200783}
+        m_TargetAssemblyTypeName: UserListLoader_Mocado, Assembly-CSharp
         m_MethodName: CarregarUsuarios
         m_Mode: 1
         m_Arguments:
@@ -404,6 +404,7 @@ GameObject:
   - component: {fileID: 3076804260359354457}
   - component: {fileID: 4437627048773518948}
   - component: {fileID: 4415600009944680785}
+  - component: {fileID: 5631634913984200783}
   m_Layer: 5
   m_Name: Menu_Login
   m_TagString: Untagged
@@ -480,7 +481,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 834646008912724960}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 09ee250ca41081d48804f1c72d9e6fdf, type: 3}
   m_Name: 
@@ -489,6 +490,23 @@ MonoBehaviour:
   content: {fileID: 1024345030204769024}
   userButtonPrefab: {fileID: 7261783284930243800, guid: 63cded8f50946d745a48e0c5220eb3bc,
     type: 3}
+--- !u!114 &5631634913984200783
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 834646008912724960}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9af3711e4c5de15449a5d98f5442b2ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UserListLoader_Mocado
+  content: {fileID: 1024345030204769024}
+  userButtonPrefab: {fileID: 7261783284930243800, guid: 63cded8f50946d745a48e0c5220eb3bc,
+    type: 3}
+  menuLogin: {fileID: 0}
+  menuPedidos: {fileID: 0}
 --- !u!1 &1527664642030741291
 GameObject:
   m_ObjectHideFlags: 0
@@ -552,6 +570,8 @@ GameObject:
   - component: {fileID: 5080030609343886211}
   - component: {fileID: 7176602983836470060}
   - component: {fileID: 4680656691216722496}
+  - component: {fileID: 5898321197454612914}
+  - component: {fileID: 4560379394479027056}
   m_Layer: 5
   m_Name: CopyRight
   m_TagString: Untagged
@@ -678,6 +698,32 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!225 &5898321197454612914
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2898268744617431959}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
+--- !u!114 &4560379394479027056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2898268744617431959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b541e130578ff4942a60ee77a90e6350, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BotoesMenuUI
+  duracao: 0.5
+  deslocamentoHorizontal: -0.2
 --- !u!1 &3105459910135158985
 GameObject:
   m_ObjectHideFlags: 0
@@ -2288,7 +2334,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.017736513}
+  m_AnchoredPosition: {x: 0, y: -0.0016274193}
   m_SizeDelta: {x: -350, y: 0}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &3728262363693569110

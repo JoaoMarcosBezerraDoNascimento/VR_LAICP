@@ -75,10 +75,13 @@
     <Compile Include="Assets\Scripts\MenuSummoner.cs" />
     <Compile Include="Assets\AnimaçõesUi\MenuUI.cs" />
     <Compile Include="Assets\Scripts\Controle_Menus.cs" />
+    <Compile Include="Assets\Scripts\UI\MockIA_RMA.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexJitter.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_UiFrameRateCounter.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
+    <Compile Include="Assets\Scripts\UI\MenuSummonerUI.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs" />
+    <Compile Include="Assets\Scripts\AnimaçõesUi\BotoesMenuUI.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SkewTextExample.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
@@ -97,6 +100,7 @@
     <Compile Include="Assets\Scripts\Menu_Pecas.cs" />
     <Compile Include="Assets\Scripts\AcionaBotaoPorDistancia.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />
+    <Compile Include="Assets\Scripts\AnimaçõesUi\MenuUI.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
     <Compile Include="Assets\Scripts\Cell_Pecas.cs" />
     <Compile Include="Assets\Scripts\ImageSwitcher.cs" />
@@ -114,6 +118,7 @@
     <Compile Include="Assets\Scripts\MouseTest.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshProFloatingText.cs" />
     <Compile Include="Assets\Scripts\DictationManager.cs" />
+    <Compile Include="Assets\Scripts\CustomTogglePastel.cs" />
     <Compile Include="Assets\Scripts\PassthroughControl.cs" />
   </ItemGroup>
   <ItemGroup>

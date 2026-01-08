@@ -21,11 +21,14 @@ public class UserListLoader_Mocado : MonoBehaviour
     // Chamado pelo botão "Entrar" ou Start()
     public void CarregarUsuarios()
     {
+        Debug.Log("Clicado");
         CriarBotoes(usuariosMockados);
     }
 
     void CriarBotoes(string[] usuarios)
     {
+
+        Debug.Log("Criando Botões");
         // Limpa botões antigos
         foreach (Transform child in content)
             Destroy(child.gameObject);
