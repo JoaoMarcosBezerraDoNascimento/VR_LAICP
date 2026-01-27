@@ -42,7 +42,7 @@ public class Cell_Pedidos : MonoBehaviour
             callbackMostrar?.Invoke(pecas);
 
             // Depois troca a tela
-            UIManager.instance.MostrarTelaPecas();
+            UIManager.instance.MostrarTela("Pedidos_Lista");
             //Debug.Log(">>> BOTAO CLICADO <<<");
 
         });
