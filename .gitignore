@@ -50,3 +50,14 @@ Library
 UserSettings
 ProjectSettings/EditorUserSettings.asset
 *.apk
+# Ignorar ambiente virtual (onde estão as bibliotecas instaladas)
+venv/
+__pycache__/
+
+# Ignorar banco de dados local e logs (não queremos dados reais no GitHub)
+database.json
+sistema_rma.log
+
+# Arquivos de sistema operacional (lixo eletrônico do Windows)
+.DS_Store
+Thumbs.db
