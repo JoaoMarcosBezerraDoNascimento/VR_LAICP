@@ -3,7 +3,13 @@ guid: 1e2a8f1399e03e24282b614cf642751a
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - telaPedidos: {fileID: 1052268251255500293, guid: 72db942628f5ab24f87c03464a80d5fd,
+      type: 3}
+  - telaPecas: {fileID: 1052268251255500293, guid: 45bf2f264bc4ce245ae333351682bd79,
+      type: 3}
+  - telaAssistente: {fileID: 560921377723218333, guid: 2b678442df6f8364a9c437b0b1b0fce4,
+      type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
