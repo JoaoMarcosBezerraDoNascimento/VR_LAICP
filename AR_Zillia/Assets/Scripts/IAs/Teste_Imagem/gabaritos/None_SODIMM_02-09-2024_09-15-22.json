@@ -1,0 +1,21 @@
+{
+  "status": "OK",
+  "image": "None_SODIMM_02-09-2024_09-15-22.JPG",
+  "txt_file": "None_SODIMM_02-09-2024_09-15-22.txt",
+  "model": "qwen2.5vl:7b",
+  "duration_ms": 1334,
+  "pred": {
+    "Resto_Solda_GoldFinger": null,
+    "Arranhoes_Placa_Trilhas": null,
+    "Residuos_Cola_Sujeira_Manchas": null,
+    "Falta_Componentes": null,
+    "Etiqueta_Zilia_Smart_Falha_Leitura": null
+  },
+  "gt": {
+    "Resto_Solda_GoldFinger": "NAO",
+    "Arranhoes_Placa_Trilhas": "SIM",
+    "Residuos_Cola_Sujeira_Manchas": "SIM",
+    "Falta_Componentes": "NAO",
+    "Etiqueta_Zilia_Smart_Falha_Leitura": "NAO"
+  }
+}

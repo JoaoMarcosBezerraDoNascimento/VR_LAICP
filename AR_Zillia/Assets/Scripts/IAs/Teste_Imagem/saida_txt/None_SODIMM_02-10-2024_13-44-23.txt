@@ -1,0 +1,16 @@
+# arquivo: None_SODIMM_02-10-2024_13-44-23.JPG
+# data: 2026-01-29T16:05:07.174Z
+# modelo: qwen2.5vl:7b
+# duracao_ms: 1339
+
+{
+  "Solder_Residue_GoldFinger": "NO",
+  "Scratches_Board_Traces": "NO",
+  "Glue_Dirt_Residue_Stains": "NO",
+  "Missing_Components": "NO",
+  "Zilia_Smart_Label_Read_Failure": "SIM",
+  "Barcode": {
+    "Type": "NONE",
+    "Value": null
+  }
+}

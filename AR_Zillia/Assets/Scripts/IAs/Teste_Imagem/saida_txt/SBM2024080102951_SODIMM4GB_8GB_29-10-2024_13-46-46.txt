@@ -1,0 +1,16 @@
+# arquivo: SBM2024080102951_SODIMM4GB_8GB_29-10-2024_13-46-46.JPG
+# data: 2026-01-29T16:15:27.581Z
+# modelo: qwen2.5vl:7b
+# duracao_ms: 1294
+
+{
+  "Solder_Residue_GoldFinger": "NO",
+  "Scratches_Board_Traces": "NO",
+  "Glue_Dirt_Residue_Stains": "NO",
+  "Missing_Components": "NO",
+  "Zilia_Smart_Label_Read_Failure": "SIM",
+  "Barcode": {
+    "Type": "NONE",
+    "Value": null
+  }
+}
