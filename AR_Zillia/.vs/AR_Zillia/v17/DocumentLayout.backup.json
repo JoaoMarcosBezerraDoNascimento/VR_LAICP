@@ -1,5 +1,6 @@
 {
   "Version": 1,
+<<<<<<< Updated upstream
   "WorkspaceRootPath": "C:\\Users\\joahi\\Documents\\Projetos\\VR_LAICP\\AR_Zillia\\",
   "Documents": [
     {
@@ -23,10 +24,15 @@
       "RelativeMoniker": "D:0:0:{11717F12-C21A-483A-014D-4E865095DFB1}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\canvasfollow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
+=======
+  "WorkspaceRootPath": "C:\\Users\\pimen\\OneDrive\\Desktop\\IRMA\\VR_LAICP\\AR_Zillia\\",
+  "Documents": [],
+>>>>>>> Stashed changes
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
+<<<<<<< Updated upstream
       "DocumentGroups": [
         {
           "DockedWidth": 170,
@@ -100,6 +106,9 @@
           ]
         }
       ]
+=======
+      "DocumentGroups": []
+>>>>>>> Stashed changes
     }
   ]
 }
