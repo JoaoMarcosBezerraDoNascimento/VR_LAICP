@@ -1,9 +1,16 @@
 [Licensing::Module] Trying to connect to existing licensing client channel...
 Built from '6000.2/staging' branch; Version is '6000.2.14f1 (589824c1fc31) revision 5806116'; Using compiler version '194234433'; Build Type 'Release'
+<<<<<<< HEAD
 [Licensing::IpcConnector] Successfully connected to: "LicenseClient-pimen" at "2026-01-27T00:45:03.1654816Z"
 OS: 'Windows 11  (10.0.26100) 64bit CoreSingleLanguage' Language: 'pt' Physical Memory: 16167 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
 Date: 2026-01-27T00:45:03Z
+=======
+OS: 'Windows 11  (10.0.26100) 64bit CoreSingleLanguage' Language: 'pt' Physical Memory: 16221 MB
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-joahi" at "2025-12-15T15:46:48.1538887Z"
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
+Date: 2025-12-15T15:46:48Z
+>>>>>>> main-Levi
 
 COMMAND LINE ARGUMENTS:
 C:\Program Files\Unity\Hub\Editor\6000.2.14f1\Editor\Unity.exe
@@ -17,7 +24,11 @@ C:/Users/pimen/OneDrive/Desktop/IRMA/VR_LAICP/AR_Zillia
 -logFile
 Logs/AssetImportWorker2.log
 -srvPort
+<<<<<<< HEAD
 60083
+=======
+64059
+>>>>>>> main-Levi
 -licensingIpc
 LicenseClient-pimen
 -job-worker-count
@@ -65,6 +76,7 @@ C:/Users/pimen/OneDrive/Desktop/IRMA/VR_LAICP/AR_Zillia
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
+<<<<<<< HEAD
 Player connection [13660]  Target information:
 
 Player connection [13660]  * "[IP] 192.168.0.206 [Port] 0 [Flags] 2 [Guid] 1566251867 [EditorId] 1566251867 [Version] 1048832 [Id] WindowsEditor(7,henriq) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
@@ -72,6 +84,15 @@ Player connection [13660]  * "[IP] 192.168.0.206 [Port] 0 [Flags] 2 [Guid] 15662
 Player connection [13660] Host joined multi-casting on [225.0.0.222:54997]...
 Player connection [13660] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 3
+=======
+Player connection [28688]  Target information:
+
+Player connection [28688]  * "[IP] 192.168.1.14 [Port] 0 [Flags] 2 [Guid] 1188272687 [EditorId] 1188272687 [Version] 1048832 [Id] WindowsEditor(7,João_Marcos) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [28688] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [28688] Host joined alternative multi-casting on [225.0.0.222:34997]...
+JobSystem: Creating JobQueue using job-worker-count value 5
+>>>>>>> main-Levi
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
 [Physics::Module] Id: 0xdecafbad
@@ -82,9 +103,32 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
+<<<<<<< HEAD
 Refreshing native plugins compatible for Editor in 87.29 ms, found 12 plugins.
 Unity memory allocator detected: MetaXRAudio native memory allocations will be tracked.
 Preloading 3 native plugins for Editor in 28.59 ms.
+=======
+[Licensing::Module] Licensing is not yet initialized.
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.17.4+4293ba1
+  Session Id:              87192244106441cd84aa1643df1bf4ae
+  Correlation Id:          50a17dbc70eef3e52212a5869012cfa6
+  External correlation Id: 1577192758496272731
+  Machine Id:              HQNx0Lk5Nxu9aURm1fucyn1jYfo=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-joahi" (connect: 0.00s, validation: 0.00s, handshake: 1.52s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-joahi-notifications" at "2025-12-15T15:46:49.6749787Z"
+[Licensing::Module] Licensing Background thread has ended after 1.52s
+[Licensing::Module] Licensing is initialized (took 1.23s).
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: 4674069489284-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+Refreshing native plugins compatible for Editor in 23.94 ms, found 12 plugins.
+Unity memory allocator detected: MetaXRAudio native memory allocations will be tracked.
+Preloading 3 native plugins for Editor in 2.90 ms.
+>>>>>>> main-Levi
 Initialize engine version: 6000.2.14f1 (589824c1fc31)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.2.14f1/Editor/Data/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path C:/Users/pimen/OneDrive/Desktop/IRMA/VR_LAICP/AR_Zillia/Assets
@@ -101,10 +145,15 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.2.14f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.2.14f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.2.14f1/Editor/Data/MonoBleedingEdge/etc'
+<<<<<<< HEAD
 Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56708
+=======
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56552
+>>>>>>> main-Levi
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.2.14f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+<<<<<<< HEAD
 Registered in 0.002161 seconds.
 - Loaded All Assemblies, in  0.694 seconds
 [Licensing::Client] Handshaking with LicensingClient:
@@ -116,16 +165,35 @@ Registered in 0.002161 seconds.
 [Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-pimen" (connect: 0.00s, validation: 0.00s, handshake: 2.24s)
 [Licensing::IpcConnector] Successfully connected to: "LicenseClient-pimen-notifications" at "2026-01-27T00:45:05.405331Z"
 [Licensing::Module] Licensing Background thread has ended after 2.24s
+=======
+[Licensing::Client] Successfully resolved entitlement details
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.2.14f1/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.UWP.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.2.14f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.2.14f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
+Registered in 0.010703 seconds.
+- Loaded All Assemblies, in  0.629 seconds
+Native extension for LinuxStandalone target not found
+Native extension for Android target not found
+Android Extension - Scanning For ADB Devices 214 ms
+Native extension for UWP target not found
+>>>>>>> main-Levi
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
+<<<<<<< HEAD
 - Finished resetting the current domain, in  0.585 seconds
 Domain Reload Profiling: 1277ms
 	BeginReloadAssembly (228ms)
+=======
+- Finished resetting the current domain, in  0.759 seconds
+Domain Reload Profiling: 1384ms
+	BeginReloadAssembly (226ms)
+>>>>>>> main-Levi
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
+<<<<<<< HEAD
 	RebuildCommonClasses (50ms)
 	RebuildNativeTypeToScriptingClass (18ms)
 	initialDomainReloadingComplete (58ms)
@@ -147,6 +215,29 @@ Domain Reload Profiling: 1277ms
 			BeforeProcessingInitializeOnLoad (95ms)
 			ProcessInitializeOnLoadAttributes (246ms)
 			ProcessInitializeOnLoadMethodAttributes (77ms)
+=======
+	RebuildCommonClasses (53ms)
+	RebuildNativeTypeToScriptingClass (18ms)
+	initialDomainReloadingComplete (84ms)
+	LoadAllAssembliesAndSetupDomain (244ms)
+		LoadAssemblies (223ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (237ms)
+			TypeCache.Refresh (235ms)
+				TypeCache.ScanAssembly (218ms)
+			BuildScriptInfoCaches (0ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (759ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (685ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (394ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (82ms)
+			ProcessInitializeOnLoadAttributes (135ms)
+			ProcessInitializeOnLoadMethodAttributes (68ms)
+>>>>>>> main-Levi
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -162,12 +253,17 @@ Begin MonoManager ReloadAssembly
   Type: Assigned
   Expiration: Unlimited
 Symbol file LoadedFromMemory is not a mono symbol file
+<<<<<<< HEAD
 - Loaded All Assemblies, in  1.369 seconds
+=======
+- Loaded All Assemblies, in  1.724 seconds
+>>>>>>> main-Levi
 Script 'CharacterController' has the same name as built-in Unity component.
 AddComponent and GetComponent will not work with this script.
 'Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlocksWindow.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
 'Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlocksWindowDetailsExtension.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
 'Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlocksWindowCollectionsPageExtension.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+<<<<<<< HEAD
 Refreshing native plugins compatible for Editor in 9.30 ms, found 12 plugins.
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 12.01 ms, found 12 plugins.
@@ -200,6 +296,17 @@ UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
 
 [./Library/PackageCache/com.meta.xr.sdk.core@d6da9ab40659/Editor/OVRConfig.cs line 104]
 
+=======
+Refreshing native plugins compatible for Editor in 15.05 ms, found 12 plugins.
+Native extension for LinuxStandalone target not found
+Native extension for Android target not found
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Failed to load: C:/Program Files/Unity/Hub/Editor/6000.2.14f1/Editor/Data/PlaybackEngines/VisionOSPlayer\x64\UnityEditor.VisionOS.Native.dll
+Native extension for VisionOS target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 14.57 ms, found 12 plugins.
+>>>>>>> main-Levi
 Package Manager log level set to [2]
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
@@ -245,6 +352,7 @@ Mono: successfully reloaded assembly
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
+<<<<<<< HEAD
 - Finished resetting the current domain, in  1.678 seconds
 Domain Reload Profiling: 3039ms
 	BeginReloadAssembly (272ms)
@@ -5423,3 +5531,52 @@ Received Import Request.
 Start importing Assets/Scenes/Cena_PC.unity using Guid(9770f026d0d980c4285430f1be0d4831) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '50b729848a89e7f3fa9dc760b2545753') in 0.3552213 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
 
+=======
+- Finished resetting the current domain, in  2.076 seconds
+Domain Reload Profiling: 3791ms
+	BeginReloadAssembly (291ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (12ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (59ms)
+	RebuildCommonClasses (53ms)
+	RebuildNativeTypeToScriptingClass (21ms)
+	initialDomainReloadingComplete (59ms)
+	LoadAllAssembliesAndSetupDomain (1291ms)
+		LoadAssemblies (766ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (672ms)
+			TypeCache.Refresh (461ms)
+				TypeCache.ScanAssembly (425ms)
+			BuildScriptInfoCaches (168ms)
+			ResolveRequiredComponents (35ms)
+	FinalizeReload (2077ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1715ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (43ms)
+			SetLoadedEditorAssemblies (14ms)
+			BeforeProcessingInitializeOnLoad (466ms)
+			ProcessInitializeOnLoadAttributes (952ms)
+			ProcessInitializeOnLoadMethodAttributes (233ms)
+			AfterProcessingInitializeOnLoad (6ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (8ms)
+Shader 'Meta/MRUK/Scene/HighlightsAndShadows': fallback shader 'Off' not found
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
+Refreshing native plugins compatible for Editor in 20.65 ms, found 12 plugins.
+Preloading 3 native plugins for Editor in 0.47 ms.
+Unloading 16 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 9018 unused Assets / (5.9 MB). Loaded Objects now: 9805.
+Memory consumption went from 173.9 MB to 168.0 MB.
+Total: 38.043000 ms (FindLiveObjects: 1.823500 ms CreateObjectMapping: 2.946700 ms MarkObjects: 23.668000 ms  DeleteObjects: 9.602000 ms)
+
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
+>>>>>>> main-Levi
