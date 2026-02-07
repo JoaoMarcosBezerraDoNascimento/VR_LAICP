@@ -167,11 +167,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-<<<<<<< HEAD
   controlID: 38
-=======
-  controlID: 39
->>>>>>> Henriq-Feat-Animaçõestela
   draggingID: 0
 --- !u!114 &6
 MonoBehaviour:
@@ -194,6 +190,9 @@ MonoBehaviour:
     y: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of c05bf48 (Merge branch 'main' of https://github.com/JoaoMarcosBezerraDoNascimento/VR_LAICP)
     width: 1137.6
 =======
     width: 1230.4
@@ -203,14 +202,6 @@ MonoBehaviour:
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
   controlID: 39
-=======
-    width: 1434
-    height: 933
-  m_MinSize: {x: 200, y: 100}
-  m_MaxSize: {x: 16192, y: 16192}
-  vertical: 1
-  controlID: 40
->>>>>>> Henriq-Feat-Animaçõestela
   draggingID: 0
 >>>>>>> main
 --- !u!114 &7
@@ -259,6 +250,7 @@ MonoBehaviour:
     x: 0
     y: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 1379
     height: 933
   m_MinSize: {x: 200, y: 100}
@@ -294,6 +286,8 @@ MonoBehaviour:
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> parent of c05bf48 (Merge branch 'main' of https://github.com/JoaoMarcosBezerraDoNascimento/VR_LAICP)
     width: 1137.6
     height: 428
 =======
@@ -304,6 +298,7 @@ MonoBehaviour:
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
   controlID: 40
+<<<<<<< HEAD
 =======
     width: 1434
     height: 557
@@ -313,6 +308,8 @@ MonoBehaviour:
   controlID: 41
 >>>>>>> Henriq-Feat-Animaçõestela
 >>>>>>> main
+=======
+>>>>>>> parent of c05bf48 (Merge branch 'main' of https://github.com/JoaoMarcosBezerraDoNascimento/VR_LAICP)
   draggingID: 0
 --- !u!114 &10
 MonoBehaviour:
@@ -331,6 +328,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
     width: 393
     height: 764
@@ -352,12 +350,20 @@ MonoBehaviour:
     width: 306.4
     height: 470.4
 >>>>>>> main-Levi
+=======
+    width: 322.4
+    height: 428
+>>>>>>> parent of c05bf48 (Merge branch 'main' of https://github.com/JoaoMarcosBezerraDoNascimento/VR_LAICP)
   m_MinSize: {x: 201, y: 226}
   m_MaxSize: {x: 4001, y: 4026}
-  m_ActualView: {fileID: 12}
+  m_ActualView: {fileID: 13}
   m_Panes:
+<<<<<<< HEAD
   - {fileID: 12}
 >>>>>>> main
+=======
+  - {fileID: 13}
+>>>>>>> parent of c05bf48 (Merge branch 'main' of https://github.com/JoaoMarcosBezerraDoNascimento/VR_LAICP)
   m_Selected: 0
   m_LastSelected: 0
 --- !u!114 &11
@@ -376,6 +382,7 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 393
     y: 0
     width: 986
@@ -388,6 +395,8 @@ MonoBehaviour:
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> parent of c05bf48 (Merge branch 'main' of https://github.com/JoaoMarcosBezerraDoNascimento/VR_LAICP)
     x: 322.4
     y: 0
     width: 815.19995
@@ -401,25 +410,15 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 226}
   m_MaxSize: {x: 4002, y: 4026}
   m_ActualView: {fileID: 14}
-=======
-    x: 406
-    y: 0
-    width: 1028
-    height: 557
-  m_MinSize: {x: 202, y: 226}
-  m_MaxSize: {x: 4002, y: 4026}
-  m_ActualView: {fileID: 13}
->>>>>>> Henriq-Feat-Animaçõestela
   m_Panes:
-  - {fileID: 13}
   - {fileID: 14}
-<<<<<<< HEAD
   - {fileID: 12}
 >>>>>>> main
   - {fileID: 15}
   - {fileID: 18}
   m_Selected: 0
   m_LastSelected: 1
+<<<<<<< HEAD
 <<<<<<< HEAD
 --- !u!114 &12
 =======
@@ -428,6 +427,8 @@ MonoBehaviour:
   m_Selected: 0
   m_LastSelected: 2
 >>>>>>> Henriq-Feat-Animaçõestela
+=======
+>>>>>>> parent of c05bf48 (Merge branch 'main' of https://github.com/JoaoMarcosBezerraDoNascimento/VR_LAICP)
 --- !u!114 &10
 >>>>>>> main
 MonoBehaviour:
@@ -445,6 +446,7 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
     y: 764
     width: 1379
@@ -471,13 +473,21 @@ MonoBehaviour:
     width: 1230.4
     height: 246.4
 >>>>>>> main-Levi
+=======
+    y: 428
+    width: 1137.6
+    height: 288.8
+>>>>>>> parent of c05bf48 (Merge branch 'main' of https://github.com/JoaoMarcosBezerraDoNascimento/VR_LAICP)
   m_MinSize: {x: 231, y: 276}
   m_MaxSize: {x: 10001, y: 10026}
-  m_ActualView: {fileID: 15}
+  m_ActualView: {fileID: 16}
   m_Panes:
-  - {fileID: 15}
   - {fileID: 16}
+<<<<<<< HEAD
 >>>>>>> main
+=======
+  - {fileID: 17}
+>>>>>>> parent of c05bf48 (Merge branch 'main' of https://github.com/JoaoMarcosBezerraDoNascimento/VR_LAICP)
   m_Selected: 0
   m_LastSelected: 1
 --- !u!114 &13
@@ -496,6 +506,7 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 1379
     y: 0
     width: 541
@@ -508,6 +519,8 @@ MonoBehaviour:
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> parent of c05bf48 (Merge branch 'main' of https://github.com/JoaoMarcosBezerraDoNascimento/VR_LAICP)
     x: 1137.6
     y: 0
     width: 398.40002
@@ -520,18 +533,13 @@ MonoBehaviour:
   m_MinSize: {x: 276, y: 76}
   m_MaxSize: {x: 4001, y: 4026}
   m_ActualView: {fileID: 18}
-=======
-    x: 1434
-    y: 0
-    width: 486
-    height: 933
-  m_MinSize: {x: 276, y: 76}
-  m_MaxSize: {x: 4001, y: 4026}
-  m_ActualView: {fileID: 17}
->>>>>>> Henriq-Feat-Animaçõestela
   m_Panes:
+<<<<<<< HEAD
   - {fileID: 17}
 >>>>>>> main
+=======
+  - {fileID: 18}
+>>>>>>> parent of c05bf48 (Merge branch 'main' of https://github.com/JoaoMarcosBezerraDoNascimento/VR_LAICP)
   m_Selected: 0
   m_LastSelected: 0
 --- !u!114 &14
@@ -579,7 +587,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 1
-<<<<<<< HEAD
   m_Script: {fileID: 12015, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -755,8 +762,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 1
-=======
->>>>>>> Henriq-Feat-Animaçõestela
   m_Script: {fileID: 12061, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -771,6 +776,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
     y: 79
     width: 392
@@ -792,6 +798,11 @@ MonoBehaviour:
     height: 444.4
 >>>>>>> main-Levi
 >>>>>>> main
+=======
+    y: 79.200005
+    width: 321.4
+    height: 402
+>>>>>>> parent of c05bf48 (Merge branch 'main' of https://github.com/JoaoMarcosBezerraDoNascimento/VR_LAICP)
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -807,6 +818,7 @@ MonoBehaviour:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
       m_SelectedIDs: 0cf4ffff
       m_LastClickedID: 0
       m_ExpandedIDs: 0afbffff
@@ -820,6 +832,11 @@ MonoBehaviour:
       m_ExpandedIDs: 1c77f4ff82cdf7ff5ecef7ff48d1f7ff86dbf7ffd2dcf7ffdedcf7ff7400f8ff4803f8ffe426f8fff6b3faffc435feffd257feff6e7bfeffb89ffeff76a0feff2ec4feff9ccafeff72cbfeff3acefeffc80cffff1a36ffffac3affff765effff2e82ffffda84ffff86a9ffffeacdffffbaceffff7cd3ffff10fbffffd2910100f49201008e4f0300fa4f030000500300
 >>>>>>> Henriq-Feat-Animaçõestela
 >>>>>>> main
+=======
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: a8c2fbffc0c2fbff76f1fbff0c0efcff240efcffb03cfcff1657fcff2e57fcfff085fcff7eccfdff96ccfdff5afbfdff7897ffff9097ffff4ec6ffff0afbffff8c590100065b01006a5b010008620100da6401006e690100e06c0100ae6d01006a7001000ad60200d8d7020048e1020050e902000cea0200c8ec0200f0f6020002de0300d0df030040e9030048f1030004f20300c0f40300e8fe0300a02b04006e2d0400de360400e63e0400a23f04005e420400864c0400
+>>>>>>> parent of c05bf48 (Merge branch 'main' of https://github.com/JoaoMarcosBezerraDoNascimento/VR_LAICP)
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -856,10 +873,14 @@ MonoBehaviour:
     m_CurrentSortingName: TransformSorting
   m_WindowGUID: 4c969a2b90040154d917609493e03593
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!114 &17
 =======
 --- !u!114 &13
 >>>>>>> main
+=======
+--- !u!114 &14
+>>>>>>> parent of c05bf48 (Merge branch 'main' of https://github.com/JoaoMarcosBezerraDoNascimento/VR_LAICP)
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -882,6 +903,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 393
     y: 79
     width: 984
@@ -889,10 +911,13 @@ MonoBehaviour:
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> parent of c05bf48 (Merge branch 'main' of https://github.com/JoaoMarcosBezerraDoNascimento/VR_LAICP)
     x: 322.4
     y: 79.200005
     width: 813.19995
     height: 402
+<<<<<<< HEAD
 =======
     x: 406
     y: 79
@@ -906,6 +931,8 @@ MonoBehaviour:
     height: 444.4
 >>>>>>> main-Levi
 >>>>>>> main
+=======
+>>>>>>> parent of c05bf48 (Merge branch 'main' of https://github.com/JoaoMarcosBezerraDoNascimento/VR_LAICP)
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -948,10 +975,10 @@ MonoBehaviour:
       displayed: 1
       id: unity-scene-view-toolbar
       index: 0
-      contents: '{"m_Layout":1,"m_Collapsed":false,"m_Folded":false,"m_Floating":false,"m_FloatingSnapOffset":{"x":0.0,"y":25.0},"m_SnapOffsetDelta":{"x":0.0,"y":0.0},"m_FloatingSnapCorner":0,"m_Size":{"x":0.0,"y":0.0},"m_SizeOverridden":false}'
+      contents: '{"m_Layout":1,"m_Collapsed":false,"m_Folded":false,"m_Floating":false,"m_FloatingSnapOffset":{"x":0.0,"y":24.799999237060548},"m_SnapOffsetDelta":{"x":0.0,"y":0.0},"m_FloatingSnapCorner":0,"m_Size":{"x":0.0,"y":0.0},"m_SizeOverridden":false}'
       floating: 0
       collapsed: 0
-      snapOffset: {x: 0, y: 25}
+      snapOffset: {x: 0, y: 24.8}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       layout: 1
@@ -1284,10 +1311,10 @@ MonoBehaviour:
       displayed: 1
       id: unity-scene-view-camera-mode-toolbar
       index: 2
-      contents: '{"m_Layout":4,"m_Collapsed":false,"m_Folded":false,"m_Floating":false,"m_FloatingSnapOffset":{"x":0.0,"y":25.0},"m_SnapOffsetDelta":{"x":0.0,"y":0.0},"m_FloatingSnapCorner":0,"m_Size":{"x":0.0,"y":0.0},"m_SizeOverridden":false}'
+      contents: '{"m_Layout":4,"m_Collapsed":false,"m_Folded":false,"m_Floating":false,"m_FloatingSnapOffset":{"x":0.0,"y":24.799999237060548},"m_SnapOffsetDelta":{"x":0.0,"y":0.0},"m_FloatingSnapCorner":0,"m_Size":{"x":0.0,"y":0.0},"m_SizeOverridden":false}'
       floating: 0
       collapsed: 0
-      snapOffset: {x: 0, y: 25}
+      snapOffset: {x: 0, y: 24.8}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       layout: 4
@@ -1340,10 +1367,10 @@ MonoBehaviour:
       displayed: 1
       id: Overlays/OverlayMenu
       index: 1
-      contents: '{"m_Layout":1,"m_Collapsed":false,"m_Folded":false,"m_Floating":false,"m_FloatingSnapOffset":{"x":0.0,"y":25.0},"m_SnapOffsetDelta":{"x":0.0,"y":0.0},"m_FloatingSnapCorner":0,"m_Size":{"x":0.0,"y":0.0},"m_SizeOverridden":false}'
+      contents: '{"m_Layout":1,"m_Collapsed":false,"m_Folded":false,"m_Floating":false,"m_FloatingSnapOffset":{"x":0.0,"y":24.799999237060548},"m_SnapOffsetDelta":{"x":0.0,"y":0.0},"m_FloatingSnapCorner":0,"m_Size":{"x":0.0,"y":0.0},"m_SizeOverridden":false}'
       floating: 0
       collapsed: 0
-      snapOffset: {x: 0, y: 25}
+      snapOffset: {x: 0, y: 24.8}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       layout: 1
@@ -1405,6 +1432,7 @@ MonoBehaviour:
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Target: {x: 0, y: 0, z: 0}
     speed: 2
     m_Value: {x: 0, y: 0, z: 0}
@@ -1425,6 +1453,11 @@ MonoBehaviour:
     m_Value: {x: 603.64276, y: 315.4418, z: 0}
 >>>>>>> main-Levi
 >>>>>>> main
+=======
+    m_Target: {x: 0.006350398, y: -0.073533535, z: 0.6092912}
+    speed: 2
+    m_Value: {x: 0.006350398, y: -0.073533535, z: 0.6092912}
+>>>>>>> parent of c05bf48 (Merge branch 'main' of https://github.com/JoaoMarcosBezerraDoNascimento/VR_LAICP)
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1471,11 +1504,14 @@ MonoBehaviour:
     m_gridOpacity: 0.5
   m_Rotation:
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Target: {x: 0, y: 0, z: 0, w: 1}
     speed: 2
     m_Value: {x: -0, y: 0, z: -0, w: -1}
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> parent of c05bf48 (Merge branch 'main' of https://github.com/JoaoMarcosBezerraDoNascimento/VR_LAICP)
     m_Target: {x: 0.44552392, y: -0.3753834, z: 0.21323787, w: 0.78429943}
     speed: 2
 <<<<<<< HEAD
@@ -1488,6 +1524,7 @@ MonoBehaviour:
     m_Value: 0.2767077
 =======
     m_Value: 1.06291
+<<<<<<< HEAD
 =======
     m_Target: {x: -0.014097313, y: 0.007491705, z: -0.000108300665, w: -0.9998812}
     speed: 2
@@ -1505,13 +1542,15 @@ MonoBehaviour:
     m_Value: 350.65802
 >>>>>>> main-Levi
 >>>>>>> main
+=======
+>>>>>>> parent of c05bf48 (Merge branch 'main' of https://github.com/JoaoMarcosBezerraDoNascimento/VR_LAICP)
   m_Ortho:
     m_Target: 0
     speed: 2
     m_Value: 0
   m_CameraSettings:
-    m_Speed: 2
-    m_SpeedNormalized: 1
+    m_Speed: 1
+    m_SpeedNormalized: 0.5
     m_SpeedMin: 0.001
     m_SpeedMax: 2
     m_EasingEnabled: 1
@@ -1526,10 +1565,14 @@ MonoBehaviour:
   m_LastSceneViewOrtho: 0
   m_Viewpoint:
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_SceneView: {fileID: 17}
 =======
     m_SceneView: {fileID: 13}
 >>>>>>> main
+=======
+    m_SceneView: {fileID: 14}
+>>>>>>> parent of c05bf48 (Merge branch 'main' of https://github.com/JoaoMarcosBezerraDoNascimento/VR_LAICP)
     m_CameraOverscanSettings:
       m_Opacity: 50
       m_Scale: 1
@@ -1543,10 +1586,14 @@ MonoBehaviour:
     section: Lighting
   m_ViewIsLockedToObject: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!114 &18
 =======
 --- !u!114 &14
 >>>>>>> main
+=======
+--- !u!114 &15
+>>>>>>> parent of c05bf48 (Merge branch 'main' of https://github.com/JoaoMarcosBezerraDoNascimento/VR_LAICP)
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1569,6 +1616,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 322.4
     y: 79.200005
     width: 813.19995
@@ -1576,10 +1624,13 @@ MonoBehaviour:
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> parent of c05bf48 (Merge branch 'main' of https://github.com/JoaoMarcosBezerraDoNascimento/VR_LAICP)
     x: 333.6
     y: 79.200005
     width: 791.6
     height: 434
+<<<<<<< HEAD
 =======
     x: 403
     y: 79
@@ -1593,6 +1644,8 @@ MonoBehaviour:
     height: 478
 >>>>>>> main-Levi
 >>>>>>> main
+=======
+>>>>>>> parent of c05bf48 (Merge branch 'main' of https://github.com/JoaoMarcosBezerraDoNascimento/VR_LAICP)
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1605,10 +1658,14 @@ MonoBehaviour:
     m_ContainerData: []
     m_OverlaysVisible: 1
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!114 &19
 =======
 --- !u!114 &15
 >>>>>>> main
+=======
+--- !u!114 &16
+>>>>>>> parent of c05bf48 (Merge branch 'main' of https://github.com/JoaoMarcosBezerraDoNascimento/VR_LAICP)
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1632,6 +1689,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     y: 843
     width: 1378
     height: 143
@@ -1652,6 +1710,11 @@ MonoBehaviour:
     height: 220.4
 >>>>>>> main-Levi
 >>>>>>> main
+=======
+    y: 507.2
+    width: 1136.6
+    height: 262.8
+>>>>>>> parent of c05bf48 (Merge branch 'main' of https://github.com/JoaoMarcosBezerraDoNascimento/VR_LAICP)
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1676,6 +1739,7 @@ MonoBehaviour:
     m_Folders:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     - Assets/Prefabs
 =======
     - Assets/Scenes
@@ -1683,6 +1747,9 @@ MonoBehaviour:
 =======
     - Assets/Pythons
 >>>>>>> main-Levi
+=======
+    - Assets/Prefabs
+>>>>>>> parent of c05bf48 (Merge branch 'main' of https://github.com/JoaoMarcosBezerraDoNascimento/VR_LAICP)
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -1694,6 +1761,9 @@ MonoBehaviour:
   m_LastFolders:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of c05bf48 (Merge branch 'main' of https://github.com/JoaoMarcosBezerraDoNascimento/VR_LAICP)
   - Assets/Prefabs
 =======
   - Assets/Pythons
@@ -1714,6 +1784,7 @@ MonoBehaviour:
     m_SelectedIDs: 30270100
     m_LastClickedID: 75568
     m_ExpandedIDs: 00000000a4260100a6260100a8260100aa260100ac260100ae260100b0260100b2260100b426010038270100
+<<<<<<< HEAD
 =======
   - Assets/Scenes
   m_LastFoldersGridSize: -1
@@ -1733,6 +1804,8 @@ MonoBehaviour:
     m_ExpandedIDs: 000000001ee5000020e5000022e5000024e5000026e5000028e500002ae500002ce500002ee5000030e50000
 >>>>>>> main-Levi
 >>>>>>> main
+=======
+>>>>>>> parent of c05bf48 (Merge branch 'main' of https://github.com/JoaoMarcosBezerraDoNascimento/VR_LAICP)
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1762,6 +1835,7 @@ MonoBehaviour:
     m_SelectedIDs: 
     m_LastClickedID: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_ExpandedIDs: 00000000b4ee0000b6ee0000b8ee0000baee0000bcee0000beee0000c0ee0000c2ee0000c4ee0000
 =======
 <<<<<<< HEAD
@@ -1774,6 +1848,9 @@ MonoBehaviour:
     m_ExpandedIDs: 000000001ee5000020e5000022e5000024e5000026e5000028e500002ae500002ce500002ee5000030e50000
 >>>>>>> main-Levi
 >>>>>>> main
+=======
+    m_ExpandedIDs: 00000000a4260100a6260100a8260100aa260100ac260100ae260100b0260100b2260100b4260100
+>>>>>>> parent of c05bf48 (Merge branch 'main' of https://github.com/JoaoMarcosBezerraDoNascimento/VR_LAICP)
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1824,10 +1901,14 @@ MonoBehaviour:
       m_IsRenamingFilename: 1
       m_TrimLeadingAndTrailingWhitespace: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
       m_ClientGUIView: {fileID: 12}
 =======
       m_ClientGUIView: {fileID: 9}
 >>>>>>> main
+=======
+      m_ClientGUIView: {fileID: 10}
+>>>>>>> parent of c05bf48 (Merge branch 'main' of https://github.com/JoaoMarcosBezerraDoNascimento/VR_LAICP)
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -1843,12 +1924,14 @@ MonoBehaviour:
 --- !u!114 &20
 =======
   m_DirectoriesAreaWidth: 159
-<<<<<<< HEAD
 --- !u!114 &17
+<<<<<<< HEAD
 =======
 --- !u!114 &16
 >>>>>>> Henriq-Feat-Animaçõestela
 >>>>>>> main
+=======
+>>>>>>> parent of c05bf48 (Merge branch 'main' of https://github.com/JoaoMarcosBezerraDoNascimento/VR_LAICP)
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1886,10 +1969,14 @@ MonoBehaviour:
     m_ContainerData: []
     m_OverlaysVisible: 1
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!114 &21
 =======
 --- !u!114 &17
 >>>>>>> main
+=======
+--- !u!114 &18
+>>>>>>> parent of c05bf48 (Merge branch 'main' of https://github.com/JoaoMarcosBezerraDoNascimento/VR_LAICP)
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1912,6 +1999,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 1379
     y: 79
     width: 540
@@ -1919,10 +2007,13 @@ MonoBehaviour:
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> parent of c05bf48 (Merge branch 'main' of https://github.com/JoaoMarcosBezerraDoNascimento/VR_LAICP)
     x: 1137.6
     y: 79.200005
     width: 397.40002
     height: 690.8
+<<<<<<< HEAD
 =======
     x: 1434
     y: 79
@@ -1936,6 +2027,8 @@ MonoBehaviour:
     height: 690.8
 >>>>>>> main-Levi
 >>>>>>> main
+=======
+>>>>>>> parent of c05bf48 (Merge branch 'main' of https://github.com/JoaoMarcosBezerraDoNascimento/VR_LAICP)
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1960,107 +2053,3 @@ MonoBehaviour:
   m_LockTracker:
     m_IsLocked: 0
   m_PreviewWindow: {fileID: 0}
---- !u!114 &18
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12015, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_TitleContent:
-    m_Text: Game
-    m_Image: {fileID: -6423792434712278376, guid: 0000000000000000d000000000000000,
-      type: 0}
-    m_Tooltip: 
-    m_TextWithWhitespace: "Game\u200B"
-  m_Pos:
-    serializedVersion: 2
-    x: 406
-    y: 79
-    width: 1026
-    height: 531
-  m_SerializedDataModeController:
-    m_DataMode: 0
-    m_PreferredDataMode: 0
-    m_SupportedDataModes: 
-    isAutomatic: 1
-  m_ViewDataDictionary: {fileID: 0}
-  m_OverlayCanvas:
-    m_LastAppliedPresetName: Default
-    m_SaveData: []
-    m_ContainerData: []
-    m_OverlaysVisible: 1
-  m_SerializedViewNames:
-  - UnityEditor.DeviceSimulation.SimulatorWindow
-  m_SerializedViewValues:
-  - C:\Users\pimen\OneDrive\Desktop\IRMA\VR_LAICP\AR_Zillia\Library\PlayModeViewStates\c800ec239acc4ad429612ed141b5490a
-  m_PlayModeViewName: GameView
-  m_ShowGizmos: 0
-  m_TargetDisplay: 0
-  m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 1026, y: 510}
-  m_TextureFilterMode: 0
-  m_TextureHideFlags: 61
-  m_RenderIMGUI: 1
-  m_EnterPlayModeBehavior: 0
-  m_UseMipMap: 0
-  m_VSyncEnabled: 0
-  m_Gizmos: 0
-  m_Stats: 0
-  m_SelectedSizes: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
-  m_ZoomArea:
-    m_HRangeLocked: 0
-    m_VRangeLocked: 0
-    hZoomLockedByDefault: 0
-    vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -513
-    m_HBaseRangeMax: 513
-    m_VBaseRangeMin: -255
-    m_VBaseRangeMax: 255
-    m_HAllowExceedBaseRangeMin: 1
-    m_HAllowExceedBaseRangeMax: 1
-    m_VAllowExceedBaseRangeMin: 1
-    m_VAllowExceedBaseRangeMax: 1
-    m_ScaleWithWindow: 0
-    m_HSlider: 0
-    m_VSlider: 0
-    m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 0
-    m_EnableSliderZoomHorizontal: 0
-    m_EnableSliderZoomVertical: 0
-    m_UniformScale: 1
-    m_UpDirection: 1
-    m_DrawArea:
-      serializedVersion: 2
-      x: 0
-      y: 21
-      width: 1026
-      height: 510
-    m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 513, y: 255}
-    m_MarginLeft: 0
-    m_MarginRight: 0
-    m_MarginTop: 0
-    m_MarginBottom: 0
-    m_LastShownAreaInsideMargins:
-      serializedVersion: 2
-      x: -513
-      y: -255
-      width: 1026
-      height: 510
-    m_MinimalGUI: 1
-  m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 1026, y: 531}
-  m_ClearInEditMode: 1
-  m_NoCameraWarning: 1
-  m_LowResolutionForAspectRatios: 01000000000000000000
-  m_XRRenderMode: -1
-  m_RenderTexture: {fileID: 0}
-  m_showToolbar: 1

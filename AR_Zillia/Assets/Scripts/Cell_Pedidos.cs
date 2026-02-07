@@ -28,9 +28,8 @@ public class Cell_Pedidos : MonoBehaviour
         System.Action<List<Controle_Menus.PecaItem>> callback
     )
     {
-        // Atribuição direta sem prefixos ou interpolação extra
-        txtNumero.text = numero; 
-        txtCliente.text = cliente;
+        txtNumero.text = $"RMA: {numero}";
+        txtCliente.text = $"Cliente: {cliente}";
         txtChegada.text = chegada;
         txtSaida.text = saida;
 
@@ -44,6 +43,7 @@ public class Cell_Pedidos : MonoBehaviour
 
             // Depois troca a tela
 <<<<<<< HEAD
+<<<<<<< HEAD
             UIManager.instance.MostrarTela("Pedidos_Lista");
             //Debug.Log(">>> BOTAO CLICADO <<<");
 
@@ -53,6 +53,11 @@ public class Cell_Pedidos : MonoBehaviour
                 UIManager.instance.MostrarTelaPecas();
             }
 >>>>>>> main
+=======
+            UIManager.instance.MostrarTelaPecas();
+            //Debug.Log(">>> BOTAO CLICADO <<<");
+
+>>>>>>> parent of c05bf48 (Merge branch 'main' of https://github.com/JoaoMarcosBezerraDoNascimento/VR_LAICP)
         });
     }
 }

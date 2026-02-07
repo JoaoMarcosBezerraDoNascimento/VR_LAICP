@@ -2,8 +2,11 @@ Base path: 'C:/Program Files/Unity/Hub/Editor/6000.2.14f1/Editor/Data', plugins 
 Cmd: initializeCompiler
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 Cmd: initializeCompiler
 
 >>>>>>> main
 Cmd: shutdown
+=======
+>>>>>>> parent of c05bf48 (Merge branch 'main' of https://github.com/JoaoMarcosBezerraDoNascimento/VR_LAICP)

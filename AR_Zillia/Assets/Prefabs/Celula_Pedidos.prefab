@@ -226,7 +226,6 @@ MonoBehaviour:
   distanciaLimite: 0.04
   distanciaAtual: 0
   botao: {fileID: 4128067605013287947}
-  toggle: {fileID: 0}
   delayInicial: 1
   cooldownClique: 0.5
   indicadorMaisProximo: {fileID: 0}
@@ -264,7 +263,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 329.9, y: 35}
+  m_AnchoredPosition: {x: 345, y: 35}
   m_SizeDelta: {x: 100, y: 18}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7127607056915904407
@@ -401,7 +400,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 330.9, y: 15}
+  m_AnchoredPosition: {x: 345, y: 15}
   m_SizeDelta: {x: 100, y: 18}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7951556550760023030
@@ -610,7 +609,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 155, y: 20.8}
+  m_AnchoredPosition: {x: 155, y: 15}
   m_SizeDelta: {x: 300, y: 18}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3194156998673359602
@@ -747,7 +746,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 308.6, y: 22.5}
+  m_AnchoredPosition: {x: 155, y: 35}
   m_SizeDelta: {x: 300, y: 18}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1545862539081350940
