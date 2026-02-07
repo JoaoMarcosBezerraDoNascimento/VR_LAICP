@@ -9,7 +9,11 @@ onBoardingDoNotAskAgain = true
 showPackageIndexes = false
 showStatusBar = false
 scopes = {
+<<<<<<< HEAD
 	"picker_window_position_offset.00000000" = "-203,2;91,99999;504,8;644"
+=======
+	"picker_window_position_offset.00000000" = "-200;91,99999;504,8;644"
+>>>>>>> main-Levi
 	"picker_visibility_flags.00000000" = "0"
 	"picker_item_size.00000000" = "1"
 	"picker_inspector.00000000" = "0"
