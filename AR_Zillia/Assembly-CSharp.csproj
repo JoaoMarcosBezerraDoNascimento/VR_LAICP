@@ -104,10 +104,12 @@
     <Compile Include="Assets\Scripts\AnimaçõesUi\MenuUI.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
     <Compile Include="Assets\Scripts\Cell_Pecas.cs" />
+    <Compile Include="Assets\Scripts\ChatBubble.cs" />
     <Compile Include="Assets\Scripts\ImageSwitcher.cs" />
     <Compile Include="Assets\Scripts\ControleComentarioVoz.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\DropdownSample.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexColorCycler.cs" />
+    <Compile Include="Assets\Scripts\Controle_Menu_IA.cs" />
     <Compile Include="Assets\Scripts\API\UserListLoader.cs" />
     <Compile Include="Assets\Scripts\RunTime\MenuFollowHeadHeight.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ObjectSpin.cs" />
@@ -122,6 +124,7 @@
     <Compile Include="Assets\Scripts\UI\UIManager.cs" />
     <Compile Include="Assets\Scripts\CustomTogglePastel.cs" />
     <Compile Include="Assets\Scripts\PassthroughControl.cs" />
+    <Compile Include="Assets\Scripts\Balao_chat.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
