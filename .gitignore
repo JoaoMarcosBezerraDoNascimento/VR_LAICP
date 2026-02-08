@@ -61,3 +61,5 @@ sistema_rma.log
 # Arquivos de sistema operacional (lixo eletrônico do Windows)
 .DS_Store
 Thumbs.db
+*.log
+*.log
