@@ -8,30 +8,6 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 12004, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: UnityEditor.dll::UnityEditor.ContainerWindow
-  m_PixelRect:
-    serializedVersion: 2
-    x: 1392
-    y: 892
-    width: 512
-    height: 140
-  m_ShowMode: 6
-  m_Title: Meta.XR.Editor.Notifications.NotificationWindow
-  m_RootView: {fileID: 3}
-  m_MinSize: {x: 512, y: 139.56787}
-  m_MaxSize: {x: 512, y: 139.56787}
-  m_Maximized: 0
---- !u!114 &2
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12004, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
@@ -43,34 +19,12 @@ MonoBehaviour:
     width: 1920
     height: 989
   m_ShowMode: 4
-  m_Title: Scene
-  m_RootView: {fileID: 4}
+  m_Title: Hierarchy
+  m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 321}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
---- !u!114 &3
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 12047, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: NotificationWindow
-  m_EditorClassIdentifier: UnityEditor.dll::UnityEditor.HostView
-  m_Children: []
-  m_Position:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 512
-    height: 140
-  m_MinSize: {x: 512, y: 139.56787}
-  m_MaxSize: {x: 512, y: 139.56787}
-  m_ActualView: {fileID: 14}
---- !u!114 &4
+--- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -83,9 +37,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
+  - {fileID: 3}
   - {fileID: 5}
-  - {fileID: 7}
-  - {fileID: 6}
+  - {fileID: 4}
   m_Position:
     serializedVersion: 2
     x: 0
@@ -98,7 +52,7 @@ MonoBehaviour:
   m_TopViewHeight: 36
   m_UseBottomView: 1
   m_BottomViewHeight: 20
---- !u!114 &5
+--- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -120,7 +74,7 @@ MonoBehaviour:
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
   m_LastLoadedLayoutName: 
---- !u!114 &6
+--- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -141,8 +95,6 @@ MonoBehaviour:
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
-<<<<<<< HEAD
-=======
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -162,12 +114,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 36
-    width: 1536
-    height: 716.8
+    width: 1920
+    height: 933
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 38
+  controlID: 1035
   draggingID: 0
 --- !u!114 &6
 MonoBehaviour:
@@ -188,22 +140,13 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> parent of c05bf48 (Merge branch 'main' of https://github.com/JoaoMarcosBezerraDoNascimento/VR_LAICP)
-    width: 1137.6
-=======
-    width: 1230.4
->>>>>>> main-Levi
-    height: 716.8
+    width: 1419
+    height: 933
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 39
+  controlID: 1036
   draggingID: 0
->>>>>>> main
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -218,100 +161,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Children:
   - {fileID: 8}
-  - {fileID: 13}
+  - {fileID: 9}
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 36
-    width: 1920
-    height: 933
-  m_MinSize: {x: 300, y: 100}
-  m_MaxSize: {x: 24288, y: 16192}
+    y: 0
+    width: 1419
+    height: 570
+  m_MinSize: {x: 200, y: 50}
+  m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 37
+  controlID: 1037
   draggingID: 0
 --- !u!114 &8
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Children:
-  - {fileID: 9}
-  - {fileID: 12}
-  m_Position:
-    serializedVersion: 2
-    x: 0
-    y: 0
-<<<<<<< HEAD
-<<<<<<< HEAD
-    width: 1379
-    height: 933
-  m_MinSize: {x: 200, y: 100}
-  m_MaxSize: {x: 16192, y: 16192}
-  vertical: 1
-  controlID: 38
-  draggingID: 0
---- !u!114 &9
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Children:
-  - {fileID: 10}
-  - {fileID: 11}
-  m_Position:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1379
-    height: 764
-  m_MinSize: {x: 200, y: 50}
-  m_MaxSize: {x: 16192, y: 8096}
-  vertical: 0
-  controlID: 39
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> parent of c05bf48 (Merge branch 'main' of https://github.com/JoaoMarcosBezerraDoNascimento/VR_LAICP)
-    width: 1137.6
-    height: 428
-=======
-    width: 1230.4
-    height: 470.4
->>>>>>> main-Levi
-  m_MinSize: {x: 200, y: 50}
-  m_MaxSize: {x: 16192, y: 8096}
-  vertical: 0
-  controlID: 40
-<<<<<<< HEAD
-=======
-    width: 1434
-    height: 557
-  m_MinSize: {x: 200, y: 50}
-  m_MaxSize: {x: 16192, y: 8096}
-  vertical: 0
-  controlID: 41
->>>>>>> Henriq-Feat-Animaçõestela
->>>>>>> main
-=======
->>>>>>> parent of c05bf48 (Merge branch 'main' of https://github.com/JoaoMarcosBezerraDoNascimento/VR_LAICP)
-  draggingID: 0
---- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -328,45 +190,16 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-<<<<<<< HEAD
-<<<<<<< HEAD
-    width: 393
-    height: 764
-  m_MinSize: {x: 201, y: 226}
-  m_MaxSize: {x: 4001, y: 4026}
-  m_ActualView: {fileID: 16}
-  m_Panes:
-  - {fileID: 16}
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-    width: 322.4
-    height: 428
-=======
-    width: 406
-    height: 557
->>>>>>> Henriq-Feat-Animaçõestela
-=======
-    width: 306.4
-    height: 470.4
->>>>>>> main-Levi
-=======
-    width: 322.4
-    height: 428
->>>>>>> parent of c05bf48 (Merge branch 'main' of https://github.com/JoaoMarcosBezerraDoNascimento/VR_LAICP)
-  m_MinSize: {x: 201, y: 226}
-  m_MaxSize: {x: 4001, y: 4026}
+    width: 373
+    height: 570
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 13}
   m_Panes:
-<<<<<<< HEAD
-  - {fileID: 12}
->>>>>>> main
-=======
   - {fileID: 13}
->>>>>>> parent of c05bf48 (Merge branch 'main' of https://github.com/JoaoMarcosBezerraDoNascimento/VR_LAICP)
   m_Selected: 0
   m_LastSelected: 0
---- !u!114 &11
+--- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -381,56 +214,20 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-<<<<<<< HEAD
-<<<<<<< HEAD
-    x: 393
+    x: 373
     y: 0
-    width: 986
-    height: 764
-  m_MinSize: {x: 202, y: 226}
-  m_MaxSize: {x: 4002, y: 4026}
-  m_ActualView: {fileID: 17}
-  m_Panes:
-  - {fileID: 17}
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> parent of c05bf48 (Merge branch 'main' of https://github.com/JoaoMarcosBezerraDoNascimento/VR_LAICP)
-    x: 322.4
-    y: 0
-    width: 815.19995
-    height: 428
-=======
-    x: 306.4
-    y: 0
-    width: 924
-    height: 470.4
->>>>>>> main-Levi
+    width: 1046
+    height: 570
   m_MinSize: {x: 202, y: 226}
   m_MaxSize: {x: 4002, y: 4026}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
-  - {fileID: 12}
->>>>>>> main
   - {fileID: 15}
-  - {fileID: 18}
+  - {fileID: 16}
   m_Selected: 0
   m_LastSelected: 1
-<<<<<<< HEAD
-<<<<<<< HEAD
---- !u!114 &12
-=======
-=======
-  - {fileID: 18}
-  m_Selected: 0
-  m_LastSelected: 2
->>>>>>> Henriq-Feat-Animaçõestela
-=======
->>>>>>> parent of c05bf48 (Merge branch 'main' of https://github.com/JoaoMarcosBezerraDoNascimento/VR_LAICP)
 --- !u!114 &10
->>>>>>> main
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -446,51 +243,18 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-<<<<<<< HEAD
-<<<<<<< HEAD
-    y: 764
-    width: 1379
-    height: 169
+    y: 570
+    width: 1419
+    height: 363
   m_MinSize: {x: 231, y: 276}
   m_MaxSize: {x: 10001, y: 10026}
-  m_ActualView: {fileID: 19}
+  m_ActualView: {fileID: 17}
   m_Panes:
-  - {fileID: 19}
-  - {fileID: 20}
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-    y: 428
-    width: 1137.6
-    height: 288.8
-=======
-    y: 557
-    width: 1434
-    height: 376
->>>>>>> Henriq-Feat-Animaçõestela
-=======
-    y: 470.4
-    width: 1230.4
-    height: 246.4
->>>>>>> main-Levi
-=======
-    y: 428
-    width: 1137.6
-    height: 288.8
->>>>>>> parent of c05bf48 (Merge branch 'main' of https://github.com/JoaoMarcosBezerraDoNascimento/VR_LAICP)
-  m_MinSize: {x: 231, y: 276}
-  m_MaxSize: {x: 10001, y: 10026}
-  m_ActualView: {fileID: 16}
-  m_Panes:
-  - {fileID: 16}
-<<<<<<< HEAD
->>>>>>> main
-=======
   - {fileID: 17}
->>>>>>> parent of c05bf48 (Merge branch 'main' of https://github.com/JoaoMarcosBezerraDoNascimento/VR_LAICP)
+  - {fileID: 12}
   m_Selected: 0
   m_LastSelected: 1
---- !u!114 &13
+--- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -505,80 +269,18 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-<<<<<<< HEAD
-<<<<<<< HEAD
-    x: 1379
+    x: 1419
     y: 0
-    width: 541
+    width: 501
     height: 933
-  m_MinSize: {x: 276, y: 76}
-  m_MaxSize: {x: 4001, y: 4026}
-  m_ActualView: {fileID: 21}
-  m_Panes:
-  - {fileID: 21}
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> parent of c05bf48 (Merge branch 'main' of https://github.com/JoaoMarcosBezerraDoNascimento/VR_LAICP)
-    x: 1137.6
-    y: 0
-    width: 398.40002
-=======
-    x: 1230.4
-    y: 0
-    width: 305.59998
->>>>>>> main-Levi
-    height: 716.8
-  m_MinSize: {x: 276, y: 76}
-  m_MaxSize: {x: 4001, y: 4026}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 18}
   m_Panes:
-<<<<<<< HEAD
-  - {fileID: 17}
->>>>>>> main
-=======
   - {fileID: 18}
->>>>>>> parent of c05bf48 (Merge branch 'main' of https://github.com/JoaoMarcosBezerraDoNascimento/VR_LAICP)
   m_Selected: 0
   m_LastSelected: 0
---- !u!114 &14
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e4b4062cd73988141853fd5cff932529, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Meta.XR.Editor.Notifications::Meta.XR.Editor.Notifications.NotificationWindow
-  m_MinSize: {x: 512, y: 139.56787}
-  m_MaxSize: {x: 512, y: 139.56787}
-  m_TitleContent:
-    m_Text: Meta.XR.Editor.Notifications.NotificationWindow
-    m_Image: {fileID: 0}
-    m_Tooltip: 
-    m_TextWithWhitespace: "Meta.XR.Editor.Notifications.NotificationWindow\u200B"
-  m_Pos:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 512
-    height: 140
-  m_SerializedDataModeController:
-    m_DataMode: 0
-    m_PreferredDataMode: 0
-    m_SupportedDataModes: 
-    isAutomatic: 1
-  m_ViewDataDictionary: {fileID: 0}
-  m_OverlayCanvas:
-    m_LastAppliedPresetName: Default
-    m_SaveData: []
-    m_ContainerData: []
-    m_OverlaysVisible: 1
---- !u!114 &15
+--- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -587,37 +289,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 1
-  m_Script: {fileID: 12015, guid: 0000000000000000e000000000000000, type: 0}
+  m_Script: {fileID: 12003, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_MinSize: {x: 200, y: 200}
+  m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
-    m_Text: Game
-    m_Image: {fileID: -6423792434712278376, guid: 0000000000000000d000000000000000,
+    m_Text: Console
+    m_Image: {fileID: -4327648978806127646, guid: 0000000000000000d000000000000000,
       type: 0}
     m_Tooltip: 
-    m_TextWithWhitespace: "Game\u200B"
+    m_TextWithWhitespace: "Console\u200B"
   m_Pos:
     serializedVersion: 2
-<<<<<<< HEAD
-    x: 314.4
-    y: 79.200005
-    width: 786.7999
-    height: 560.4
-=======
-<<<<<<< HEAD
-    x: 354.4
-    y: 79.200005
-    width: 893.19995
-    height: 402
-=======
-    x: 306.4
-    y: 79.200005
-    width: 922
-    height: 479.6
->>>>>>> main-Levi
->>>>>>> main
+    x: 0
+    y: 649
+    width: 1418
+    height: 337
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -629,131 +317,7 @@ MonoBehaviour:
     m_SaveData: []
     m_ContainerData: []
     m_OverlaysVisible: 1
-  m_SerializedViewNames:
-  - UnityEditor.DeviceSimulation.SimulatorWindow
-  m_SerializedViewValues:
-  - "C:\\Users\\levic\\OneDrive\\Documents\\C\xF3digos - Programa\xE7\xE3o\\Unity\\ZIllia
-    - PID\\VR_LAICP\\AR_Zillia\\Library\\PlayModeViewStates\\fbc87c037bf5d1741a97799b55331816"
-  m_PlayModeViewName: GameView
-  m_ShowGizmos: 0
-  m_TargetDisplay: 0
-  m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-<<<<<<< HEAD
-  m_TargetSize: {x: 786.7999, y: 539.4}
-=======
-<<<<<<< HEAD
-  m_TargetSize: {x: 1116.5, y: 476.25}
-=======
-  m_TargetSize: {x: 1152.5, y: 573.25}
->>>>>>> main-Levi
->>>>>>> main
-  m_TextureFilterMode: 0
-  m_TextureHideFlags: 61
-  m_RenderIMGUI: 1
-  m_EnterPlayModeBehavior: 0
-  m_UseMipMap: 0
-  m_VSyncEnabled: 0
-  m_Gizmos: 0
-  m_Stats: 0
-  m_SelectedSizes: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
-  m_ZoomArea:
-    m_HRangeLocked: 0
-    m_VRangeLocked: 0
-    hZoomLockedByDefault: 0
-    vZoomLockedByDefault: 0
-<<<<<<< HEAD
-    m_HBaseRangeMin: -393.39996
-    m_HBaseRangeMax: 393.39996
-    m_VBaseRangeMin: -269.7
-    m_VBaseRangeMax: 269.7
-=======
-<<<<<<< HEAD
-    m_HBaseRangeMin: -446.6
-    m_HBaseRangeMax: 446.6
-    m_VBaseRangeMin: -190.5
-    m_VBaseRangeMax: 190.5
-=======
-    m_HBaseRangeMin: -461
-    m_HBaseRangeMax: 461
-    m_VBaseRangeMin: -229.3
-    m_VBaseRangeMax: 229.3
->>>>>>> main-Levi
->>>>>>> main
-    m_HAllowExceedBaseRangeMin: 1
-    m_HAllowExceedBaseRangeMax: 1
-    m_VAllowExceedBaseRangeMin: 1
-    m_VAllowExceedBaseRangeMax: 1
-    m_ScaleWithWindow: 0
-    m_HSlider: 0
-    m_VSlider: 0
-    m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 0
-    m_EnableSliderZoomHorizontal: 0
-    m_EnableSliderZoomVertical: 0
-    m_UniformScale: 1
-    m_UpDirection: 1
-    m_DrawArea:
-      serializedVersion: 2
-      x: 0
-      y: 21
-<<<<<<< HEAD
-      width: 786.7999
-      height: 539.4
-    m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 393.39996, y: 269.7}
-=======
-<<<<<<< HEAD
-      width: 893.19995
-      height: 381
-    m_Scale: {x: 1.25, y: 1.25}
-    m_Translation: {x: 446.59998, y: 190.5}
-=======
-      width: 922
-      height: 458.6
-    m_Scale: {x: 1.25, y: 1.25}
-    m_Translation: {x: 461, y: 229.30006}
->>>>>>> main-Levi
->>>>>>> main
-    m_MarginLeft: 0
-    m_MarginRight: 0
-    m_MarginTop: 0
-    m_MarginBottom: 0
-    m_LastShownAreaInsideMargins:
-      serializedVersion: 2
-<<<<<<< HEAD
-      x: -393.39996
-      y: -269.7
-      width: 786.7999
-      height: 539.4
-    m_MinimalGUI: 1
-  m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 786.7999, y: 560.4}
-=======
-<<<<<<< HEAD
-      x: -357.27997
-      y: -152.4
-      width: 714.55994
-      height: 304.8
-    m_MinimalGUI: 1
-  m_defaultScale: 0.99999994
-  m_LastWindowPixelSize: {x: 1116.5, y: 502.5}
-=======
-      x: -368.8
-      y: -183.44005
-      width: 737.6
-      height: 366.88
-    m_MinimalGUI: 1
-  m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 1152.5, y: 599.5}
->>>>>>> main-Levi
->>>>>>> main
-  m_ClearInEditMode: 1
-  m_NoCameraWarning: 1
-  m_LowResolutionForAspectRatios: 01000000000000000000
-  m_XRRenderMode: -1
-  m_RenderTexture: {fileID: 0}
-  m_showToolbar: 1
---- !u!114 &16
+--- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -776,33 +340,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-<<<<<<< HEAD
-<<<<<<< HEAD
     y: 79
-    width: 392
-    height: 738
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-    y: 79.200005
-    width: 321.4
-    height: 402
-=======
-    y: 79
-    width: 405
-    height: 531
->>>>>>> Henriq-Feat-Animaçõestela
-=======
-    y: 79.200005
-    width: 305.4
-    height: 444.4
->>>>>>> main-Levi
->>>>>>> main
-=======
-    y: 79.200005
-    width: 321.4
-    height: 402
->>>>>>> parent of c05bf48 (Merge branch 'main' of https://github.com/JoaoMarcosBezerraDoNascimento/VR_LAICP)
+    width: 372
+    height: 544
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -817,54 +357,26 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-<<<<<<< HEAD
-<<<<<<< HEAD
-      m_SelectedIDs: 0cf4ffff
-      m_LastClickedID: 0
-      m_ExpandedIDs: 0afbffff
-=======
-      m_SelectedIDs: a83d0100
-      m_LastClickedID: 0
-<<<<<<< HEAD
-<<<<<<< HEAD
-      m_ExpandedIDs: a8c2fbffc0c2fbff76f1fbff0c0efcff240efcffb03cfcff1657fcff2e57fcfff085fcff7eccfdff96ccfdff5afbfdff7897ffff9097ffff4ec6ffff0afbffff8c590100065b01006a5b010008620100da6401006e690100e06c0100ae6d01006a7001000ad60200d8d7020048e1020050e902000cea0200c8ec0200f0f6020002de0300d0df030040e9030048f1030004f20300c0f40300e8fe0300a02b04006e2d0400de360400e63e0400a23f04005e420400864c0400
-=======
-      m_ExpandedIDs: 1c77f4ff82cdf7ff5ecef7ff48d1f7ff86dbf7ffd2dcf7ffdedcf7ff7400f8ff4803f8ffe426f8fff6b3faffc435feffd257feff6e7bfeffb89ffeff76a0feff2ec4feff9ccafeff72cbfeff3acefeffc80cffff1a36ffffac3affff765effff2e82ffffda84ffff86a9ffffeacdffffbaceffff7cd3ffff10fbffffd2910100f49201008e4f0300fa4f030000500300
->>>>>>> Henriq-Feat-Animaçõestela
->>>>>>> main
-=======
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: a8c2fbffc0c2fbff76f1fbff0c0efcff240efcffb03cfcff1657fcff2e57fcfff085fcff7eccfdff96ccfdff5afbfdff7897ffff9097ffff4ec6ffff0afbffff8c590100065b01006a5b010008620100da6401006e690100e06c0100ae6d01006a7001000ad60200d8d7020048e1020050e902000cea0200c8ec0200f0f6020002de0300d0df030040e9030048f1030004f20300c0f40300e8fe0300a02b04006e2d0400de360400e63e0400a23f04005e420400864c0400
->>>>>>> parent of c05bf48 (Merge branch 'main' of https://github.com/JoaoMarcosBezerraDoNascimento/VR_LAICP)
+      m_ExpandedIDs: 30c3fcff3091fdffa891fdffb691fdffd8c3feffe6c3feff4af9ffff52f9ffff64f9ffff6cf9fffffafafffff4ffffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
         m_OriginalName: 
-=======
-      m_ExpandedIDs: 243ffeff2e3ffeff6c3ffeff2441feff1443feff8010ffff4aedffffd0edffffdaedffff0afbffff7a000100b4000100be000100ec0001000201010034010100
-      m_RenameOverlay:
-        m_UserAcceptedRename: 0
-        m_Name: Fundo
-        m_OriginalName: Fundo
->>>>>>> main-Levi
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-<<<<<<< HEAD
         m_UserData: 0
-=======
-        m_UserData: -114908
->>>>>>> main-Levi
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
         m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_TrimLeadingAndTrailingWhitespace: 0
-        m_ClientGUIView: {fileID: 10}
+        m_ClientGUIView: {fileID: 8}
       m_SearchString: 
     m_ExpandedScenes: []
     m_CurrenRootInstanceID: 0
@@ -872,15 +384,7 @@ MonoBehaviour:
       m_IsLocked: 0
     m_CurrentSortingName: TransformSorting
   m_WindowGUID: 4c969a2b90040154d917609493e03593
-<<<<<<< HEAD
-<<<<<<< HEAD
---- !u!114 &17
-=======
---- !u!114 &13
->>>>>>> main
-=======
 --- !u!114 &14
->>>>>>> parent of c05bf48 (Merge branch 'main' of https://github.com/JoaoMarcosBezerraDoNascimento/VR_LAICP)
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -902,37 +406,10 @@ MonoBehaviour:
     m_TextWithWhitespace: "Scene\u200B"
   m_Pos:
     serializedVersion: 2
-<<<<<<< HEAD
-<<<<<<< HEAD
-    x: 393
+    x: 373
     y: 79
-    width: 984
-    height: 738
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> parent of c05bf48 (Merge branch 'main' of https://github.com/JoaoMarcosBezerraDoNascimento/VR_LAICP)
-    x: 322.4
-    y: 79.200005
-    width: 813.19995
-    height: 402
-<<<<<<< HEAD
-=======
-    x: 406
-    y: 79
-    width: 1026
-    height: 531
->>>>>>> Henriq-Feat-Animaçõestela
-=======
-    x: 306.4
-    y: 79.200005
-    width: 922
-    height: 444.4
->>>>>>> main-Levi
->>>>>>> main
-=======
->>>>>>> parent of c05bf48 (Merge branch 'main' of https://github.com/JoaoMarcosBezerraDoNascimento/VR_LAICP)
+    width: 1044
+    height: 544
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -961,10 +438,10 @@ MonoBehaviour:
       displayed: 1
       id: unity-grid-and-snap-toolbar
       index: 2
-      contents: '{"m_Layout":1,"m_Collapsed":false,"m_Folded":false,"m_Floating":false,"m_FloatingSnapOffset":{"x":-141.0,"y":116.19998168945313},"m_SnapOffsetDelta":{"x":0.0,"y":0.0},"m_FloatingSnapCorner":1,"m_Size":{"x":0.0,"y":0.0},"m_SizeOverridden":false}'
+      contents: '{"m_Layout":1,"m_Collapsed":false,"m_Folded":false,"m_Floating":false,"m_FloatingSnapOffset":{"x":-141.0,"y":149.0},"m_SnapOffsetDelta":{"x":0.0,"y":0.0},"m_FloatingSnapCorner":1,"m_Size":{"x":0.0,"y":0.0},"m_SizeOverridden":false}'
       floating: 0
       collapsed: 0
-      snapOffset: {x: -141, y: 116.19998}
+      snapOffset: {x: -141, y: 149}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 1
       layout: 1
@@ -975,10 +452,10 @@ MonoBehaviour:
       displayed: 1
       id: unity-scene-view-toolbar
       index: 0
-      contents: '{"m_Layout":1,"m_Collapsed":false,"m_Folded":false,"m_Floating":false,"m_FloatingSnapOffset":{"x":0.0,"y":24.799999237060548},"m_SnapOffsetDelta":{"x":0.0,"y":0.0},"m_FloatingSnapCorner":0,"m_Size":{"x":0.0,"y":0.0},"m_SizeOverridden":false}'
+      contents: '{"m_Layout":1,"m_Collapsed":false,"m_Folded":false,"m_Floating":false,"m_FloatingSnapOffset":{"x":0.0,"y":25.0},"m_SnapOffsetDelta":{"x":0.0,"y":0.0},"m_FloatingSnapCorner":0,"m_Size":{"x":0.0,"y":0.0},"m_SizeOverridden":false}'
       floating: 0
       collapsed: 0
-      snapOffset: {x: 0, y: 24.8}
+      snapOffset: {x: 0, y: 25}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       layout: 1
@@ -1031,12 +508,12 @@ MonoBehaviour:
       displayed: 1
       id: Orientation
       index: 0
-      contents: '{"m_Layout":4,"m_Collapsed":false,"m_Folded":false,"m_Floating":false,"m_FloatingSnapOffset":{"x":-254.9000244140625,"y":-137.20001220703126},"m_SnapOffsetDelta":{"x":0.0,"y":0.0},"m_FloatingSnapCorner":3,"m_Size":{"x":0.0,"y":0.0},"m_SizeOverridden":false}'
+      contents: '{"m_Layout":4,"m_Collapsed":false,"m_Folded":false,"m_Floating":false,"m_FloatingSnapOffset":{"x":67.5,"y":86.0},"m_SnapOffsetDelta":{"x":0.0,"y":0.0},"m_FloatingSnapCorner":0,"m_Size":{"x":0.0,"y":0.0},"m_SizeOverridden":false}'
       floating: 0
       collapsed: 0
-      snapOffset: {x: -254.90002, y: -137.20001}
+      snapOffset: {x: 67.5, y: 86}
       snapOffsetDelta: {x: 0, y: 0}
-      snapCorner: 3
+      snapCorner: 0
       layout: 4
       size: {x: 0, y: 0}
       sizeOverridden: 0
@@ -1227,12 +704,12 @@ MonoBehaviour:
       displayed: 1
       id: AINavigationOverlay
       index: 8
-      contents: '{"m_Layout":4,"m_Collapsed":false,"m_Folded":true,"m_Floating":false,"m_FloatingSnapOffset":{"x":-164.79998779296876,"y":-104.0},"m_SnapOffsetDelta":{"x":0.0,"y":0.0},"m_FloatingSnapCorner":3,"m_Size":{"x":0.0,"y":0.0},"m_SizeOverridden":false}'
+      contents: '{"m_Layout":4,"m_Collapsed":false,"m_Folded":false,"m_Floating":false,"m_FloatingSnapOffset":{"x":-217.60003662109376,"y":65.5999755859375},"m_SnapOffsetDelta":{"x":0.0,"y":0.0},"m_FloatingSnapCorner":1,"m_Size":{"x":0.0,"y":0.0},"m_SizeOverridden":false}'
       floating: 0
       collapsed: 0
-      snapOffset: {x: -164.79999, y: -104}
+      snapOffset: {x: -217.60004, y: 65.599976}
       snapOffsetDelta: {x: 0, y: 0}
-      snapCorner: 3
+      snapCorner: 1
       layout: 4
       size: {x: 0, y: 0}
       sizeOverridden: 0
@@ -1311,10 +788,10 @@ MonoBehaviour:
       displayed: 1
       id: unity-scene-view-camera-mode-toolbar
       index: 2
-      contents: '{"m_Layout":4,"m_Collapsed":false,"m_Folded":false,"m_Floating":false,"m_FloatingSnapOffset":{"x":0.0,"y":24.799999237060548},"m_SnapOffsetDelta":{"x":0.0,"y":0.0},"m_FloatingSnapCorner":0,"m_Size":{"x":0.0,"y":0.0},"m_SizeOverridden":false}'
+      contents: '{"m_Layout":4,"m_Collapsed":false,"m_Folded":false,"m_Floating":false,"m_FloatingSnapOffset":{"x":0.0,"y":25.0},"m_SnapOffsetDelta":{"x":0.0,"y":0.0},"m_FloatingSnapCorner":0,"m_Size":{"x":0.0,"y":0.0},"m_SizeOverridden":false}'
       floating: 0
       collapsed: 0
-      snapOffset: {x: 0, y: 24.8}
+      snapOffset: {x: 0, y: 25}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       layout: 4
@@ -1367,10 +844,10 @@ MonoBehaviour:
       displayed: 1
       id: Overlays/OverlayMenu
       index: 1
-      contents: '{"m_Layout":1,"m_Collapsed":false,"m_Folded":false,"m_Floating":false,"m_FloatingSnapOffset":{"x":0.0,"y":24.799999237060548},"m_SnapOffsetDelta":{"x":0.0,"y":0.0},"m_FloatingSnapCorner":0,"m_Size":{"x":0.0,"y":0.0},"m_SizeOverridden":false}'
+      contents: '{"m_Layout":1,"m_Collapsed":false,"m_Folded":false,"m_Floating":false,"m_FloatingSnapOffset":{"x":0.0,"y":25.0},"m_SnapOffsetDelta":{"x":0.0,"y":0.0},"m_FloatingSnapCorner":0,"m_Size":{"x":0.0,"y":0.0},"m_SizeOverridden":false}'
       floating: 0
       collapsed: 0
-      snapOffset: {x: 0, y: 24.8}
+      snapOffset: {x: 0, y: 25}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       layout: 1
@@ -1431,33 +908,9 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-<<<<<<< HEAD
-<<<<<<< HEAD
-    m_Target: {x: 0, y: 0, z: 0}
+    m_Target: {x: -0.5871822, y: 0.4940315, z: -7.9469743}
     speed: 2
-    m_Value: {x: 0, y: 0, z: 0}
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-    m_Target: {x: 0.006350398, y: -0.073533535, z: 0.6092912}
-    speed: 2
-    m_Value: {x: 0.006350398, y: -0.073533535, z: 0.6092912}
-=======
-    m_Target: {x: -0.26101914, y: 0.46601978, z: 19.377695}
-    speed: 2
-    m_Value: {x: 489.78445, y: 313.34216, z: -316.78278}
->>>>>>> Henriq-Feat-Animaçõestela
-=======
-    m_Target: {x: 603.64276, y: 315.4418, z: 0}
-    speed: 2
-    m_Value: {x: 603.64276, y: 315.4418, z: 0}
->>>>>>> main-Levi
->>>>>>> main
-=======
-    m_Target: {x: 0.006350398, y: -0.073533535, z: 0.6092912}
-    speed: 2
-    m_Value: {x: 0.006350398, y: -0.073533535, z: 0.6092912}
->>>>>>> parent of c05bf48 (Merge branch 'main' of https://github.com/JoaoMarcosBezerraDoNascimento/VR_LAICP)
+    m_Value: {x: -0.5871822, y: 0.4940315, z: -7.9469743}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1495,7 +948,7 @@ MonoBehaviour:
       m_Fade:
         m_Target: 0
         speed: 2
-        m_Value: 1
+        m_Value: 0
       m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
       m_Pivot: {x: 0, y: 0, z: 0}
       m_Size: {x: 1, y: 1}
@@ -1503,47 +956,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-<<<<<<< HEAD
-<<<<<<< HEAD
     m_Target: {x: 0, y: 0, z: 0, w: 1}
     speed: 2
-    m_Value: {x: -0, y: 0, z: -0, w: -1}
-=======
-<<<<<<< HEAD
-=======
->>>>>>> parent of c05bf48 (Merge branch 'main' of https://github.com/JoaoMarcosBezerraDoNascimento/VR_LAICP)
-    m_Target: {x: 0.44552392, y: -0.3753834, z: 0.21323787, w: 0.78429943}
-    speed: 2
-<<<<<<< HEAD
-    m_Value: {x: 0.44552386, y: -0.37538335, z: 0.21323784, w: 0.7842993}
->>>>>>> main
-  m_Size:
-    m_Target: 0.2767077
-    speed: 2
-<<<<<<< HEAD
-    m_Value: 0.2767077
-=======
-    m_Value: 1.06291
-<<<<<<< HEAD
-=======
-    m_Target: {x: -0.014097313, y: 0.007491705, z: -0.000108300665, w: -0.9998812}
-    speed: 2
-    m_Value: {x: 0.036884587, y: 0.022476712, z: 0.00082223554, w: -0.99906635}
-  m_Size:
-    m_Target: 10
-    speed: 2
-    m_Value: 6.0261106
->>>>>>> Henriq-Feat-Animaçõestela
-=======
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 350.65802
+    m_Target: 1.5245804
     speed: 2
-    m_Value: 350.65802
->>>>>>> main-Levi
->>>>>>> main
-=======
->>>>>>> parent of c05bf48 (Merge branch 'main' of https://github.com/JoaoMarcosBezerraDoNascimento/VR_LAICP)
+    m_Value: 1.5245804
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -1564,15 +983,7 @@ MonoBehaviour:
   m_LastSceneViewRotation: {x: 0, y: 0, z: 0, w: 0}
   m_LastSceneViewOrtho: 0
   m_Viewpoint:
-<<<<<<< HEAD
-<<<<<<< HEAD
-    m_SceneView: {fileID: 17}
-=======
-    m_SceneView: {fileID: 13}
->>>>>>> main
-=======
     m_SceneView: {fileID: 14}
->>>>>>> parent of c05bf48 (Merge branch 'main' of https://github.com/JoaoMarcosBezerraDoNascimento/VR_LAICP)
     m_CameraOverscanSettings:
       m_Opacity: 50
       m_Scale: 1
@@ -1585,15 +996,112 @@ MonoBehaviour:
     name: Contributors / Receivers
     section: Lighting
   m_ViewIsLockedToObject: 0
-<<<<<<< HEAD
-<<<<<<< HEAD
---- !u!114 &18
-=======
---- !u!114 &14
->>>>>>> main
-=======
 --- !u!114 &15
->>>>>>> parent of c05bf48 (Merge branch 'main' of https://github.com/JoaoMarcosBezerraDoNascimento/VR_LAICP)
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12015, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Game
+    m_Image: {fileID: -6423792434712278376, guid: 0000000000000000d000000000000000,
+      type: 0}
+    m_Tooltip: 
+    m_TextWithWhitespace: "Game\u200B"
+  m_Pos:
+    serializedVersion: 2
+    x: 373
+    y: 79
+    width: 1044
+    height: 544
+  m_SerializedDataModeController:
+    m_DataMode: 0
+    m_PreferredDataMode: 0
+    m_SupportedDataModes: 
+    isAutomatic: 1
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
+    m_ContainerData: []
+    m_OverlaysVisible: 1
+  m_SerializedViewNames:
+  - UnityEditor.DeviceSimulation.SimulatorWindow
+  m_SerializedViewValues:
+  - "C:\\Users\\levic\\OneDrive\\Documents\\C\xF3digos - Programa\xE7\xE3o\\Unity\\ZIllia
+    - PID\\VR_LAICP\\AR_Zillia\\Library\\PlayModeViewStates\\fbc87c037bf5d1741a97799b55331816"
+  m_PlayModeViewName: GameView
+  m_ShowGizmos: 0
+  m_TargetDisplay: 0
+  m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
+  m_TargetSize: {x: 1044, y: 523}
+  m_TextureFilterMode: 0
+  m_TextureHideFlags: 61
+  m_RenderIMGUI: 1
+  m_EnterPlayModeBehavior: 0
+  m_UseMipMap: 0
+  m_VSyncEnabled: 0
+  m_Gizmos: 0
+  m_Stats: 0
+  m_SelectedSizes: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
+  m_ZoomArea:
+    m_HRangeLocked: 0
+    m_VRangeLocked: 0
+    hZoomLockedByDefault: 0
+    vZoomLockedByDefault: 0
+    m_HBaseRangeMin: -522
+    m_HBaseRangeMax: 522
+    m_VBaseRangeMin: -261.5
+    m_VBaseRangeMax: 261.5
+    m_HAllowExceedBaseRangeMin: 1
+    m_HAllowExceedBaseRangeMax: 1
+    m_VAllowExceedBaseRangeMin: 1
+    m_VAllowExceedBaseRangeMax: 1
+    m_ScaleWithWindow: 0
+    m_HSlider: 0
+    m_VSlider: 0
+    m_IgnoreScrollWheelUntilClicked: 0
+    m_EnableMouseInput: 0
+    m_EnableSliderZoomHorizontal: 0
+    m_EnableSliderZoomVertical: 0
+    m_UniformScale: 1
+    m_UpDirection: 1
+    m_DrawArea:
+      serializedVersion: 2
+      x: 0
+      y: 21
+      width: 1044
+      height: 523
+    m_Scale: {x: 1, y: 1}
+    m_Translation: {x: 522, y: 261.5}
+    m_MarginLeft: 0
+    m_MarginRight: 0
+    m_MarginTop: 0
+    m_MarginBottom: 0
+    m_LastShownAreaInsideMargins:
+      serializedVersion: 2
+      x: -522
+      y: -261.5
+      width: 1044
+      height: 523
+    m_MinimalGUI: 1
+  m_defaultScale: 1
+  m_LastWindowPixelSize: {x: 1044, y: 544}
+  m_ClearInEditMode: 1
+  m_NoCameraWarning: 1
+  m_LowResolutionForAspectRatios: 01000000000000000000
+  m_XRRenderMode: -1
+  m_RenderTexture: {fileID: 0}
+  m_showToolbar: 1
+--- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1615,37 +1123,10 @@ MonoBehaviour:
     m_TextWithWhitespace: "Asset Store\u200B"
   m_Pos:
     serializedVersion: 2
-<<<<<<< HEAD
-<<<<<<< HEAD
-    x: 322.4
-    y: 79.200005
-    width: 813.19995
-    height: 402
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> parent of c05bf48 (Merge branch 'main' of https://github.com/JoaoMarcosBezerraDoNascimento/VR_LAICP)
-    x: 333.6
-    y: 79.200005
-    width: 791.6
-    height: 434
-<<<<<<< HEAD
-=======
-    x: 403
-    y: 79
-    width: 1017
-    height: 531
->>>>>>> Henriq-Feat-Animaçõestela
-=======
-    x: 270.4
-    y: 86.4
-    width: 788.39996
-    height: 478
->>>>>>> main-Levi
->>>>>>> main
-=======
->>>>>>> parent of c05bf48 (Merge branch 'main' of https://github.com/JoaoMarcosBezerraDoNascimento/VR_LAICP)
+    x: 248.8
+    y: 73.6
+    width: 558.8
+    height: 367
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1657,15 +1138,7 @@ MonoBehaviour:
     m_SaveData: []
     m_ContainerData: []
     m_OverlaysVisible: 1
-<<<<<<< HEAD
-<<<<<<< HEAD
---- !u!114 &19
-=======
---- !u!114 &15
->>>>>>> main
-=======
---- !u!114 &16
->>>>>>> parent of c05bf48 (Merge branch 'main' of https://github.com/JoaoMarcosBezerraDoNascimento/VR_LAICP)
+--- !u!114 &17
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1688,33 +1161,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-<<<<<<< HEAD
-<<<<<<< HEAD
-    y: 843
-    width: 1378
-    height: 143
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-    y: 507.2
-    width: 1136.6
-    height: 262.8
-=======
-    y: 636
-    width: 1433
-    height: 350
->>>>>>> Henriq-Feat-Animaçõestela
-=======
-    y: 549.60004
-    width: 1229.4
-    height: 220.4
->>>>>>> main-Levi
->>>>>>> main
-=======
-    y: 507.2
-    width: 1136.6
-    height: 262.8
->>>>>>> parent of c05bf48 (Merge branch 'main' of https://github.com/JoaoMarcosBezerraDoNascimento/VR_LAICP)
+    y: 649
+    width: 1418
+    height: 337
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1737,19 +1186,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
     - Assets/Prefabs
-=======
-    - Assets/Scenes
->>>>>>> Henriq-Feat-Animaçõestela
-=======
-    - Assets/Pythons
->>>>>>> main-Levi
-=======
-    - Assets/Prefabs
->>>>>>> parent of c05bf48 (Merge branch 'main' of https://github.com/JoaoMarcosBezerraDoNascimento/VR_LAICP)
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -1759,70 +1196,33 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> parent of c05bf48 (Merge branch 'main' of https://github.com/JoaoMarcosBezerraDoNascimento/VR_LAICP)
   - Assets/Prefabs
-=======
-  - Assets/Pythons
->>>>>>> main-Levi
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\joahi\Documents\Projetos\VR_LAICP\AR_Zillia
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-<<<<<<< HEAD
-    scrollPos: {x: 0, y: 82.80002}
-    m_SelectedIDs: 38ef0000
-    m_LastClickedID: 61240
-    m_ExpandedIDs: 00000000b4ee0000b6ee0000b8ee0000baee0000bcee0000beee0000c0ee0000c2ee0000c4ee0000
-=======
-<<<<<<< HEAD
-    scrollPos: {x: 0, y: 78}
-    m_SelectedIDs: 30270100
-    m_LastClickedID: 75568
-    m_ExpandedIDs: 00000000a4260100a6260100a8260100aa260100ac260100ae260100b0260100b2260100b426010038270100
-<<<<<<< HEAD
-=======
-  - Assets/Scenes
-  m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\pimen\OneDrive\Desktop\IRMA\VR_LAICP\AR_Zillia
-  m_LockTracker:
-    m_IsLocked: 0
-  m_FolderTreeState:
-    scrollPos: {x: 0, y: 60}
-    m_SelectedIDs: 70260100
-    m_LastClickedID: 75376
-    m_ExpandedIDs: 00000000da2501007026010078260100eeee010000ca9a3bffffff7f
->>>>>>> Henriq-Feat-Animaçõestela
-=======
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: a6e50000
-    m_LastClickedID: 58790
-    m_ExpandedIDs: 000000001ee5000020e5000022e5000024e5000026e5000028e500002ae500002ce500002ee5000030e50000
->>>>>>> main-Levi
->>>>>>> main
-=======
->>>>>>> parent of c05bf48 (Merge branch 'main' of https://github.com/JoaoMarcosBezerraDoNascimento/VR_LAICP)
+    scrollPos: {x: 0, y: 103}
+    m_SelectedIDs: 620b0100
+    m_LastClickedID: 68450
+    m_ExpandedIDs: 0000000064f000006a0b0100
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: Scenes
+      m_OriginalName: Scenes
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 68456
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 1
       m_TrimLeadingAndTrailingWhitespace: 0
-      m_ClientGUIView: {fileID: 12}
+      m_ClientGUIView: {fileID: 10}
     m_SearchString: 
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
@@ -1834,23 +1234,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-<<<<<<< HEAD
-<<<<<<< HEAD
-    m_ExpandedIDs: 00000000b4ee0000b6ee0000b8ee0000baee0000bcee0000beee0000c0ee0000c2ee0000c4ee0000
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-    m_ExpandedIDs: 00000000a4260100a6260100a8260100aa260100ac260100ae260100b0260100b2260100b4260100
-=======
-    m_ExpandedIDs: 00000000da250100
->>>>>>> Henriq-Feat-Animaçõestela
-=======
-    m_ExpandedIDs: 000000001ee5000020e5000022e5000024e5000026e5000028e500002ae500002ce500002ee5000030e50000
->>>>>>> main-Levi
->>>>>>> main
-=======
-    m_ExpandedIDs: 00000000a4260100a6260100a8260100aa260100ac260100ae260100b0260100b2260100b4260100
->>>>>>> parent of c05bf48 (Merge branch 'main' of https://github.com/JoaoMarcosBezerraDoNascimento/VR_LAICP)
+    m_ExpandedIDs: 0000000064f00000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1878,12 +1262,8 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
-<<<<<<< HEAD
-    m_ExpandedInstanceIDs: c623000000000000d4480100e6480100cce00000f25701002ce40000
-=======
-    m_ExpandedInstanceIDs: c623000000000000d4480100e648010030fe000014e200000ae20000
->>>>>>> main
+    m_HadKeyboardFocusLastEvent: 1
+    m_ExpandedInstanceIDs: c623000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1900,15 +1280,7 @@ MonoBehaviour:
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_TrimLeadingAndTrailingWhitespace: 0
-<<<<<<< HEAD
-<<<<<<< HEAD
-      m_ClientGUIView: {fileID: 12}
-=======
-      m_ClientGUIView: {fileID: 9}
->>>>>>> main
-=======
       m_ClientGUIView: {fileID: 10}
->>>>>>> parent of c05bf48 (Merge branch 'main' of https://github.com/JoaoMarcosBezerraDoNascimento/VR_LAICP)
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -1919,64 +1291,8 @@ MonoBehaviour:
     m_ScrollPosition: {x: 0, y: 0}
     m_GridSize: 64
   m_SkipHiddenPackages: 0
-<<<<<<< HEAD
-  m_DirectoriesAreaWidth: 193.4
---- !u!114 &20
-=======
-  m_DirectoriesAreaWidth: 159
---- !u!114 &17
-<<<<<<< HEAD
-=======
---- !u!114 &16
->>>>>>> Henriq-Feat-Animaçõestela
->>>>>>> main
-=======
->>>>>>> parent of c05bf48 (Merge branch 'main' of https://github.com/JoaoMarcosBezerraDoNascimento/VR_LAICP)
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12003, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_TitleContent:
-    m_Text: Console
-    m_Image: {fileID: -4327648978806127646, guid: 0000000000000000d000000000000000,
-      type: 0}
-    m_Tooltip: 
-    m_TextWithWhitespace: "Console\u200B"
-  m_Pos:
-    serializedVersion: 2
-    x: 0
-    y: 436.80002
-    width: 1103
-    height: 333.19998
-  m_SerializedDataModeController:
-    m_DataMode: 0
-    m_PreferredDataMode: 0
-    m_SupportedDataModes: 
-    isAutomatic: 1
-  m_ViewDataDictionary: {fileID: 0}
-  m_OverlayCanvas:
-    m_LastAppliedPresetName: Default
-    m_SaveData: []
-    m_ContainerData: []
-    m_OverlaysVisible: 1
-<<<<<<< HEAD
-<<<<<<< HEAD
---- !u!114 &21
-=======
---- !u!114 &17
->>>>>>> main
-=======
+  m_DirectoriesAreaWidth: 207
 --- !u!114 &18
->>>>>>> parent of c05bf48 (Merge branch 'main' of https://github.com/JoaoMarcosBezerraDoNascimento/VR_LAICP)
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1998,37 +1314,10 @@ MonoBehaviour:
     m_TextWithWhitespace: "Inspector\u200B"
   m_Pos:
     serializedVersion: 2
-<<<<<<< HEAD
-<<<<<<< HEAD
-    x: 1379
+    x: 1419
     y: 79
-    width: 540
+    width: 500
     height: 907
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> parent of c05bf48 (Merge branch 'main' of https://github.com/JoaoMarcosBezerraDoNascimento/VR_LAICP)
-    x: 1137.6
-    y: 79.200005
-    width: 397.40002
-    height: 690.8
-<<<<<<< HEAD
-=======
-    x: 1434
-    y: 79
-    width: 485
-    height: 907
->>>>>>> Henriq-Feat-Animaçõestela
-=======
-    x: 1230.4
-    y: 79.200005
-    width: 304.59998
-    height: 690.8
->>>>>>> main-Levi
->>>>>>> main
-=======
->>>>>>> parent of c05bf48 (Merge branch 'main' of https://github.com/JoaoMarcosBezerraDoNascimento/VR_LAICP)
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0

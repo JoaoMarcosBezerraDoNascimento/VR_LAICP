@@ -101,7 +101,7 @@ public class Controle_Menus : MonoBehaviour
                 MostrarPecas
             );
         }
-        StartCoroutine(VoltarScrollParaTopo());
+        SubirScrollTopo();
     }
 
     void MostrarPecas(List<PecaItem> pecas)
@@ -131,15 +131,34 @@ public class Controle_Menus : MonoBehaviour
             }
         }
 
-        StartCoroutine(VoltarScrollParaTopo());
+        SubirScrollTopo();
     }
 
+    Coroutine _coTopo;
+    void SubirScrollTopo()
+    {
+        if (_coTopo != null) StopCoroutine(_coTopo);
+        _coTopo = StartCoroutine(VoltarScrollParaTopo());
+    }
     IEnumerator VoltarScrollParaTopo()
     {
-        yield return null; // espera 1 frame
-        scrollPecas.verticalNormalizedPosition = 1f;
-        scrollPedidos.verticalNormalizedPosition = 1f;
-    }
+        yield return null;
 
+        if (this == null) yield break;
+
+        Canvas.ForceUpdateCanvases();
+
+        if (scrollPecas != null && scrollPecas.isActiveAndEnabled && scrollPecas.content != null)
+        {
+            LayoutRebuilder.ForceRebuildLayoutImmediate(scrollPecas.content);
+            scrollPecas.verticalNormalizedPosition = 1f;
+        }
+
+        if (scrollPedidos != null && scrollPedidos.isActiveAndEnabled && scrollPedidos.content != null)
+        {
+            LayoutRebuilder.ForceRebuildLayoutImmediate(scrollPedidos.content);
+            scrollPedidos.verticalNormalizedPosition = 1f;
+        }
+    }
 
 }

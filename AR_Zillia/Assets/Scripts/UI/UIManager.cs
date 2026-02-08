@@ -30,6 +30,7 @@ public class UIManager : MonoBehaviour
 
     public void OcultarTodas()
     {
+        Debug.Log("Ocultando Telas...");
         for (int i = 0; i < telas.Count; i++)
         {
             if (telas[i] != null)
@@ -39,6 +40,7 @@ public class UIManager : MonoBehaviour
 
     public void MostrarTela(GameObject telaParaMostrar)
     {
+        Debug.Log("Trocando de Tela...");
         if (telaParaMostrar == null) return;
 
         // Garante que ela está registrada
