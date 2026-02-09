@@ -1,0 +1,16 @@
+data/ <- Dados que serão usado para gerar o RAG
+    normalizado/ <- Pasta que guarda os metadados das informações
+        normalizado.txt <- arquivo que contém os metadados dados da pasta dados, arquivo base para o RAG 
+    estrutura_pasta_data.txt <- como a pasta de data está organizada 
+    db_backup/ <- Espelhos do banco de dados 
+        pedidos.txt <- espelho de como os pedidos chegam 
+    estruturas/ <- Árvores de processos, pastas, telas, comandos, etc 
+        estrutura_pasta_Zillia.txt
+    infos/ <- Como a IA deve ser comportar, conversas anteriores com os operadores 
+        bate_papo.txt
+        Zillia_IA.txt
+    outros/ <- Arquivos PDF, imagens, markdowns, planilhas XLSX, arquivos CSV, etc, arquivos que não são TXT mas devem ser usados para gerar o RAG 
+    system/ <- Comandos e variáveis do sistema (ainda vai ser me dado depois)
+    tecnico/ <-  Arquivos técnicos ??? ( me pediram pra botar separado do sistema )
+    utils/ <- Arquivos não cruciais, mas que as vezes contém informações úteis para o RAG 
+        temp1.txt

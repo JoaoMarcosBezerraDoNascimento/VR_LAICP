@@ -1,0 +1,9 @@
+{
+    "tipos_peca": {
+        "1": "memoria_ram_soddim",
+        "2": "memoria_ram_dim",
+        "3": "ssd_nvme",
+        "4": "ssd_sata",
+        "5": "placa_mae"
+    }
+}
