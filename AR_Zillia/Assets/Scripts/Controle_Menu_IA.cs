@@ -33,23 +33,23 @@ public class Controle_Menu_IA : MonoBehaviour
         Dictation_Experience = obj_dictation.GetComponent<AppDictationExperience>();
         Dictation_Experience.DictationEvents.OnFullTranscription.AddListener(Texto_final_recebido);
         //input field
-        GameObject obj_tmp_input = transform.Find("Background/Header_txt_btn/TMP_Input_User").gameObject;
+        GameObject obj_tmp_input = transform.Find("Background/Header/Header_txt_btn/TMP_Input_User").gameObject;
         TMP_Input_User = obj_tmp_input.GetComponent<TMP_InputField>();
         TMP_Input_User.onValueChanged.AddListener(Verificar_Digitacao);
         //botao rec
-        GameObject obj_btn_rec = transform.Find("Background/Header_txt_btn/BTN_Rec").gameObject;
+        GameObject obj_btn_rec = transform.Find("Background/Header/Header_txt_btn/BTN_Rec").gameObject;
         BTN_Rec = obj_btn_rec.GetComponent<Button>();
         BTN_Rec.onClick.AddListener(Gravando);
         //imagem botao rec
         BTN_Rec_Image= obj_btn_rec.GetComponent<Image>();
-        BTN_Rec_Image.color = Cor_Hex("#ffffff");
+        BTN_Rec_Image.color = Cor_Hex("#ffffff00");
         //botao send
-        GameObject obj_btn_send = transform.Find("Background/Header_txt_btn/BTN_Send").gameObject;
+        GameObject obj_btn_send = transform.Find("Background/Header/Header_txt_btn/BTN_Send").gameObject;
         BTN_Send = obj_btn_send.GetComponent<Button>();
         BTN_Send.onClick.AddListener(Enviar);
         //imagem botao send
         BTN_Send_Image= obj_btn_send.GetComponent<Image>();
-        BTN_Send_Image.color = Cor_Hex("#ffffff");
+        BTN_Send_Image.color = Cor_Hex("#ffffff00");
         //content do scroll view e scrollrect
         Transform obj_scroll = transform.Find("Background/SCRLVW_Chat_History");
         SCRLVW_Chat_History_Content = obj_scroll.Find("Viewport/Content");
@@ -74,9 +74,9 @@ public class Controle_Menu_IA : MonoBehaviour
         if (Dictation_Experience.MicActive)
         {   
             Dictation_Experience.Deactivate();
-            BTN_Rec_Image.color = Cor_Hex("#ffffff");
+            BTN_Rec_Image.color = Cor_Hex("#ffffff00");
             BTN_Send.interactable = true;
-            BTN_Send_Image.color = Cor_Hex("#ffffff");
+            BTN_Send_Image.color = Cor_Hex("#ffffff00");
         }
         else
         {
@@ -91,9 +91,9 @@ public class Controle_Menu_IA : MonoBehaviour
     {
         if(TMP_Input_User.text == "Enter text...") TMP_Input_User.text = texto_falado;
         else TMP_Input_User.text += texto_falado;
-        BTN_Rec_Image.color = Cor_Hex("#ffffff");  
+        BTN_Rec_Image.color = Cor_Hex("#ffffff00");  
         BTN_Send.interactable = true;
-        BTN_Send_Image.color = Cor_Hex("#ffffff");     
+        BTN_Send_Image.color = Cor_Hex("#ffffff00");     
     }
 
     private void Enviar()
@@ -114,9 +114,9 @@ public class Controle_Menu_IA : MonoBehaviour
         TMP_Input_User.text = ""; 
         
         yield return new WaitForSeconds(0.5f);
-        BTN_Send_Image.color = Cor_Hex("#ffffff");
+        BTN_Send_Image.color = Cor_Hex("#ffffff00");
         BTN_Rec.interactable = true;
-        BTN_Rec_Image.color = Cor_Hex("#ffffff");
+        BTN_Rec_Image.color = Cor_Hex("#ffffff00");
         TMP_Input_User.interactable = true;
         TMP_Input_User.text = "Enter text...";
         TMP_Input_User.onValueChanged.AddListener(Verificar_Digitacao);
@@ -135,11 +135,11 @@ public class Controle_Menu_IA : MonoBehaviour
     {
         yield return new WaitForSeconds(0.5f);
         BTN_Send.interactable = true;
-        BTN_Send_Image.color = Cor_Hex("#ffffff");
+        BTN_Send_Image.color = Cor_Hex("#ffffff00");
         if(TMP_Input_User.text != "" && TMP_Input_User.text != "Enter text...")
         {
             BTN_Send.interactable = true;
-            BTN_Send_Image.color = Cor_Hex("#ffffff");
+            BTN_Send_Image.color = Cor_Hex("#ffffff00");
         }
         coroutine_digitacao_atual = null;
     }

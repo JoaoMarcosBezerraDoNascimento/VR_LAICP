@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f13cb1766cd46e74e8557ca3da32bbbc
+guid: 77618309a1762104b8967b90fcf099a9
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,11 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-<<<<<<< HEAD
-  spritePixelsToUnits: 1000
-=======
   spritePixelsToUnits: 100
->>>>>>> origin/main-Levi
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
