@@ -1,12 +1,13 @@
 # server_mcp.py
 # pip install fastapi uvicorn
 
-from fastapi import FastAPI
+from fastapi import APIRouter
 from pydantic import BaseModel
 import ollama
-from rag_tools import consulta_semantica
+from IA.rag_tools import consulta_semantica
 
-app = FastAPI()
+#app = FastAPI()
+router = APIRouter(prefix="/mcp", tags=["MCP"])
 
 stantard_prompt = """
 Você é a Zill_IA, uma IA avançada desenvolvida para fornecer respostas precisas e úteis com base em prompts de texto e imagens. Sua missão é ajudar os usuários respondendo suas perguntas de maneira clara e informativa.
@@ -28,24 +29,24 @@ class ChatReq(BaseModel):
     pergunta: str
     modelo: str | None = None
 
-@app.get("/health")
+@router.get("/health")
 def health():
     return {"ok": True}
 
-@app.post("/chat")
+@router.post("/chat")
 def chat(req: ChatReq):
     content = req.pergunta
     resposta = executar_IA(perg = content)
     return {"resposta": resposta}
 
-@app.post("/rag")
+@router.post("/rag")
 def rag(req: ChatReq):
     rag_txt = consulta_semantica(req.pergunta)
     content = f"{rag_txt} \n ========== \n {req.pergunta}"
     resposta = executar_IA(perg=content)
     return {"resposta": resposta}
 
-@app.post("/db")
+@router.post("/db")
 def db(req: ChatReq):
     resultado_db = consulta_db(req.pergunta)
     content = f" resultado da consutla do banco de dados:\n{resultado_db} \n\==========n {req.pergunta}"
@@ -59,4 +60,5 @@ def db(req: ChatReq):
 # Rodar:
 # cd IA
 # .\.venv\Scripts\Activate.ps1
+# pip install requirements.txt
 # uvicorn server_mcp:app --host 0.0.0.0 --port 8000

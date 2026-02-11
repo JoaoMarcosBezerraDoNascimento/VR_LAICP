@@ -10,7 +10,6 @@ Library: C:\Users\joahi\Documents\Projetos\VR_LAICP\AR_Zillia\Temp\BurstOutput\t
 --target-framework=NetFramework
 --generate-link-xml=Temp\burst.link.xml
 --temp-folder=C:\Users\joahi\Documents\Projetos\VR_LAICP\AR_Zillia\Temp\Burst
---debug=Full
 --key-folder=C:/Program Files/Unity/Hub/Editor/6000.2.14f1/Editor/Data/PlaybackEngines/AndroidPlayer
 --decode-folder=C:\Users\joahi\Documents\Projetos\VR_LAICP\AR_Zillia\Library\Burst
 --output=C:\Users\joahi\Documents\Projetos\VR_LAICP\AR_Zillia\Temp\BurstOutput\tempburstlibs\arm64-v8a\lib_burst_generated
@@ -84,7 +83,6 @@ Library: C:\Users\joahi\Documents\Projetos\VR_LAICP\AR_Zillia\Temp\BurstOutput\t
 --float-mode=Fast
 --generate-link-xml=Temp\burst.link.xml
 --temp-folder=C:\Users\joahi\Documents\Projetos\VR_LAICP\AR_Zillia\Temp\Burst
---debug=Full
 --key-folder=C:/Program Files/Unity/Hub/Editor/6000.2.14f1/Editor/Data/PlaybackEngines/AndroidPlayer
 --decode-folder=C:\Users\joahi\Documents\Projetos\VR_LAICP\AR_Zillia\Library\Burst
 --output=C:\Users\joahi\Documents\Projetos\VR_LAICP\AR_Zillia\Temp\BurstOutput\tempburstlibs\arm64-v8a\lib_burst_generated
@@ -103,7 +101,6 @@ Library: C:\Users\joahi\Documents\Projetos\VR_LAICP\AR_Zillia\Temp\BurstOutput\t
 --target-framework=NetFramework
 --generate-link-xml=Temp\burst.link.xml
 --temp-folder=C:\Users\joahi\Documents\Projetos\VR_LAICP\AR_Zillia\Temp\Burst
---debug=Full
 --key-folder=C:/Program Files/Unity/Hub/Editor/6000.2.14f1/Editor/Data/PlaybackEngines/AndroidPlayer
 --decode-folder=C:\Users\joahi\Documents\Projetos\VR_LAICP\AR_Zillia\Library\Burst
 --output=C:\Users\joahi\Documents\Projetos\VR_LAICP\AR_Zillia\Temp\BurstOutput\tempburstlibs\arm64-v8a\lib_burst_generated

@@ -1,3 +1,4 @@
+#rag_tools.py
 from pathlib import Path
 from typing import List, Dict, Union
 import os
@@ -33,7 +34,7 @@ from typing import List, Dict, Union, Any
 import json
 import math
 import numpy as np
-from env import *
+from .env import *
 
 #nltk.download('stopwords', quiet=True)
 #nltk.download("punkt", quiet=True)

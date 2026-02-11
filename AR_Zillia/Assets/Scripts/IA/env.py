@@ -1,3 +1,4 @@
+#env.py (usado ao longo do projeto)
 import os
 from pathlib import Path
 import datetime

@@ -3,6 +3,8 @@ using TMPro;
 using UnityEngine.UI;
 using Oculus.Voice.Dictation;
 using System.Collections;
+using UnityEngine.Networking;
+using System.Text;
 
 public class Controle_Menu_IA : MonoBehaviour
 {
@@ -20,6 +22,9 @@ public class Controle_Menu_IA : MonoBehaviour
     private string ia = "ia";
     private int iterador = 0;
     private string resposta;
+
+    [SerializeField] private string apiBaseUrl = "http://172.26.1.39:8555";
+    [SerializeField] private string apiToken = "VR_2026";
     
     void Start()
     {
@@ -100,8 +105,9 @@ public class Controle_Menu_IA : MonoBehaviour
     {
         BTN_Rec.interactable = false;
         BTN_Rec_Image.color = Cor_Hex("#ffffff50");
-        Gerar_Balão(TMP_Input_User.text, user);
-        Resposta_da_IA();
+        string pergunta = TMP_Input_User.text;
+        Gerar_Balão(pergunta, user);
+        yield return StartCoroutine(Resposta_da_IA_API(pergunta));
         TMP_Input_User.interactable = false;
         BTN_Send_Image.color = Cor_Hex("#28a745");
         TMP_Input_User.onValueChanged.RemoveListener(Verificar_Digitacao);
@@ -152,22 +158,97 @@ public class Controle_Menu_IA : MonoBehaviour
         }
         StartCoroutine(RolarParaOFinal());
     }
-    private void Resposta_da_IA()
+    private IEnumerator Resposta_da_IA_API(string pergunta)
     {
-        
-        switch (iterador)
+        // Endpoint do seu MCP (ajuste se seu prefixo for diferente)
+        string url = apiBaseUrl.TrimEnd('/') + "/mcp/chat";
+        Debug.Log(url);
+
+        // Corpo JSON compatível com seu ChatReq: { pergunta: "...", modelo: null }
+        string jsonBody = "{\"pergunta\":\"" + EscapeJson(pergunta) + "\",\"modelo\":null}";
+
+        using (UnityWebRequest req = new UnityWebRequest(url, "POST"))
         {
-            case 0: resposta = "Ola, bom dia pra voce tambem";
-            break;
-            case 1: resposta = "A sua peça é a peça 1924u88299102u4ji9829421, ela apresenta defeito na memoria alocada 5.9 onde apresenta um erro de solda que causou curto circuito na memoria RAM, mande novamente para a assistencia da fabrica para que possam efetuar a troca da peça";
-            break;
-            case 2: resposta = "Por nada, tenha um bom trabalho, qualquer coisa e so chamar novamente que te ajudo com o que precisar.";
-            break;
+            byte[] bodyRaw = Encoding.UTF8.GetBytes(jsonBody);
+            req.uploadHandler = new UploadHandlerRaw(bodyRaw);
+            req.downloadHandler = new DownloadHandlerBuffer();
+            req.SetRequestHeader("Content-Type", "application/json");
+
+            // Se sua API exige token global, mande. (Se não exigir no /mcp/chat, pode remover)
+            req.SetRequestHeader("x-token", apiToken);
+
+            yield return req.SendWebRequest();
+
+            if (req.result != UnityWebRequest.Result.Success)
+            {
+                Gerar_Balão("Erro ao chamar API: " + req.error, ia);
+                Debug.Log("Erro ao chamar API: " + req.error);
+                yield break;
+            }
+
+            // Resposta esperada: {"resposta":"..."}
+            string body = req.downloadHandler.text;
+            string resp = ExtrairCampoResposta(body);
+
+            if (string.IsNullOrEmpty(resp))
+                resp = "Resposta vazia/inesperada: " + body;
+
+            Gerar_Balão(resp, ia);
         }
-        if (iterador == 2) iterador = 0;
-        else iterador += 1;
-        Gerar_Balão(resposta, ia);
-    }   
+    }
+
+    // Escapa aspas e quebras para JSON simples
+    private string EscapeJson(string s)
+    {
+        if (s == null) return "";
+        return s.Replace("\\", "\\\\").Replace("\"", "\\\"").Replace("\n", "\\n").Replace("\r", "\\r");
+    }
+
+    // Extrai o campo "resposta" sem depender de libs externas
+    private string ExtrairCampoResposta(string json)
+    {
+        if (string.IsNullOrEmpty(json)) return null;
+
+        // procura: "resposta":"...."
+        int key = json.IndexOf("\"resposta\"");
+        if (key < 0) return null;
+
+        int colon = json.IndexOf(":", key);
+        if (colon < 0) return null;
+
+        int firstQuote = json.IndexOf("\"", colon + 1);
+        if (firstQuote < 0) return null;
+
+        int i = firstQuote + 1;
+        bool escape = false;
+        System.Text.StringBuilder sb = new System.Text.StringBuilder();
+
+        while (i < json.Length)
+        {
+            char c = json[i];
+
+            if (escape)
+            {
+                // interpreta escapes básicos
+                if (c == 'n') sb.Append('\n');
+                else if (c == 'r') sb.Append('\r');
+                else if (c == 't') sb.Append('\t');
+                else sb.Append(c);
+                escape = false;
+            }
+            else
+            {
+                if (c == '\\') escape = true;
+                else if (c == '"') break;
+                else sb.Append(c);
+            }
+
+            i++;
+        }
+
+        return sb.ToString();
+    }
+
     private IEnumerator RolarParaOFinal()
     {
         yield return new WaitForEndOfFrame(); 

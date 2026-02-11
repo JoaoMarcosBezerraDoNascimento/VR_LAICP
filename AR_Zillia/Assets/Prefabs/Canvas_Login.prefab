@@ -389,6 +389,7 @@ MonoBehaviour:
   distanciaLimite: 0.03
   distanciaAtual: 0
   botao: {fileID: 2597937477026040035}
+  toggle: {fileID: 0}
   delayInicial: 1
   cooldownClique: 0.5
   indicadorMaisProximo: {fileID: 0}
@@ -505,7 +506,7 @@ MonoBehaviour:
   content: {fileID: 1024345030204769024}
   userButtonPrefab: {fileID: 7261783284930243800, guid: 63cded8f50946d745a48e0c5220eb3bc,
     type: 3}
-  menuLogin: {fileID: 0}
+  menuLogin: {fileID: 834646008912724960}
   menuPedidos: {fileID: 0}
 --- !u!1 &1527664642030741291
 GameObject:
@@ -2334,7 +2335,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.0016274193}
+  m_AnchoredPosition: {x: 0, y: 0.017973004}
   m_SizeDelta: {x: -350, y: 0}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &3728262363693569110
