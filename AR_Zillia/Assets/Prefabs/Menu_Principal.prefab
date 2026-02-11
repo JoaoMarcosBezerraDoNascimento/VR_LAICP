@@ -580,7 +580,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!114 &1524132644673690607
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3033,14 +3033,14 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 5196822223827268855}
+  - {fileID: 1964805560164457653}
   m_Father: {fileID: 5092471088086382880}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -80}
-  m_SizeDelta: {x: -20, y: -160}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 0, y: -148}
+  m_SizeDelta: {x: 400, y: 352}
+  m_Pivot: {x: 0.0000000018626451, y: 0.99999994}
 --- !u!222 &9059294624973147009
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3397,7 +3397,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!1001 &3643409364700762785
+--- !u!1001 &7049624333464304355
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -3517,28 +3517,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8831892863886714454, guid: 23a93e827575229438eb14b5b2847af3,
         type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8831892863886714454, guid: 23a93e827575229438eb14b5b2847af3,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8831892863886714454, guid: 23a93e827575229438eb14b5b2847af3,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8831892863886714454, guid: 23a93e827575229438eb14b5b2847af3,
-        type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 8831892863886714454, guid: 23a93e827575229438eb14b5b2847af3,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -176
       objectReference: {fileID: 0}
     - target: {fileID: 8831892863886714454, guid: 23a93e827575229438eb14b5b2847af3,
         type: 3}
@@ -3580,19 +3565,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8831892863886714454, guid: 23a93e827575229438eb14b5b2847af3,
-        type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 23a93e827575229438eb14b5b2847af3, type: 3}
---- !u!4 &5196822223827268855 stripped
+--- !u!4 &1964805560164457653 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8831892863886714454, guid: 23a93e827575229438eb14b5b2847af3,
     type: 3}
-  m_PrefabInstance: {fileID: 3643409364700762785}
+  m_PrefabInstance: {fileID: 7049624333464304355}
   m_PrefabAsset: {fileID: 0}
