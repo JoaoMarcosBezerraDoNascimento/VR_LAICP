@@ -65,3 +65,6 @@ Thumbs.db
 *.log
 *.dwlt
 *.asset
+AR_Zillia/Logs/shadercompiler-UnityShaderCompiler.exe-0.log
+*.meta
+*.log
