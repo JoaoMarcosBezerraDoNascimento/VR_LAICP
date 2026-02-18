@@ -63,3 +63,5 @@ sistema_rma.log
 Thumbs.db
 *.log
 *.log
+*.dwlt
+*.asset
