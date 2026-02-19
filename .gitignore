@@ -68,3 +68,6 @@ Thumbs.db
 AR_Zillia/Logs/shadercompiler-UnityShaderCompiler.exe-0.log
 *.meta
 *.log
+AR_Zillia/Assembly-CSharp.csproj
+AR_Zillia/UserSettings/Layouts/default-6000.dwlt
+/AR_Zillia/UserSettings
