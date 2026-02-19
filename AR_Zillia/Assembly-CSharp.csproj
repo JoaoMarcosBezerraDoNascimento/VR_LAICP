@@ -48,83 +48,254 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.2.9f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\WispGUI\WispGUI\Assets\WispScripts\WispExtensions4Unity\WispVector.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Assets\WispFileSelector\Scripts\WispFileSelectorItem.cs" />
     <Compile Include="Assets\Scripts\APICliente.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventHandler.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Assets\WispScripts\WispExtensions4CSharp\WispInt.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Assets\WispNodeEditor\Script\WispNodeEditor.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Assets\WispTable\Scripts\WispCell.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Assets\WispScripts\InspectorButtonAttribute.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Assets\WispCircularSlider\Script\WispCircularSlider.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Assets\WispCircularSlider\Script\WispCircularSliderHandle.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\EnvMapAnimator.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Assets\WispNodeEditor\WispNode\Script\WispRerouteNode.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Assets\WispTable\Scripts\WispTable.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Assets\WispTable\Scripts\WispTableCell.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_A.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Assets\WispFloatingPanel\Script\WispFloatingPanel.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Assets\WispScripts\WispDataSet.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Assets\WispPanel\Script\WispPanel.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Assets\WispScripts\WispExtensions4Unity\WispLong4Unity.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Assets\WispScripts\WispUiMovement.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Assets\WispCheckBox\Script\WispCheckBox.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Demo\Demo Scene\WispUiFilterDemo.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Demo\Control Panel\WispControlPanelDemo.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Assets\Resources\WispPrefabLibrary.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Assets\WispScripts\WispUnityUiExtensions.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Assets\WispScripts\WispWindow.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Assets\WispScripts\WispHoverMode.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Assets\WispUtilityComponents\WispAutoSize.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Demo\Various Demo Scenes\WispSelectAndFocusDemo.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Assets\WispTable\Scripts\WispRow.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Assets\WispScripts\WispExtensions4Unity\WispCursor.cs" />
     <Compile Include="Assets\Scripts\UIManager.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Assets\Resources\WispStyleLibrary.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Demo\Chess Clock App\WispChessClock.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Assets\WispTable\Scripts\WispColumn.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Assets\WispScripts\WispExtensions4CSharp\WispChar.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_ExampleScript_01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMPro_InstructionOverlay.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Assets\WispScripts\WispEditorCustomControlNameAttribute.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Demo\Demo Scene\WispTabViewDemo.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Assets\WispFileSelector\Scripts\WispFileSelector.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Assets\WispScripts\WispColumnDistanceCalculator.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Assets\WispTextMeshPro\WispTextMeshPro.cs" />
     <Compile Include="Assets\Scripts\Controle_Menus.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Demo\Statistics\Bar Chart\WispBarChartDemo.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Demo\Various Demo Scenes\WispGridDemo.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Assets\WispScripts\WispExtensions4CSharp\WispFloat4CSharp.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexJitter.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Assets\WispMessageBox\Scripts\WispMessageBox.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Assets\WispTabView\Script\WispTabView.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Assets\WispScripts\WispVisualComponent.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_UiFrameRateCounter.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Assets\WispScripts\WispRectMonitor.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Assets\WispEditBox\Scripts\DropDownListDefaultItems.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Assets\WispScripts\WispImageAnimator.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Assets\WispScripts\WispEPS\WispDefaultValue.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Assets\WispButtonPanel\Script\WispButtonPanel.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Assets\WispScripts\WispTextureTools.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Assets\WispEntityEditor\Script\WispEntityEditorElement.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Demo\Demo Scene\WispNodeEditorDemo.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Assets\WispScripts\WispEPS\WispEntityProperty.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Assets\WispAnimation\WispAnimationFade.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SkewTextExample.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Assets\WispScripts\WispTabNavigationHandler.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Assets\WispTimeLine\Scripts\WispTimeLineEvent.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Demo\Demo Scene\WispButtonOpenTabDemo.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Assets\WispEditBox\Dropdown List\WispDropDownListItem.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Assets\WispScrollView\WispScrollRect.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Assets\WispScripts\WispMouseClickHandler.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Assets\WispTooltip\Script\WispTooltip.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Assets\WispResizingHandle\Script\WispResizingHandle.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Assets\WispScripts\WispKeyBoardEventSystem.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Assets\WispScripts\WispCharacterConverter.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Assets\WispSlider\Script\WispSlider.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Assets\WispContextMenu\Script\WispContextMenu.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Assets\3rd Party\Json Parser\JSONParser.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Assets\WispEditBox\Scripts\ConditionalHideAttribute.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Assets\WispScripts\WispVariableManager.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Assets\Resources\WispIconLibrary.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Assets\WispScripts\WispPolarCoordinates.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Assets\Image Processing and Generation\GaussianBlur.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeA.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Assets\WispDialogWindow\Script\WispDialogWindow.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Demo\Desktop\WispDesktopDemo.cs" />
     <Compile Include="Assets\Scripts\CanvasFollow.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Demo\Control Panel\WispControlPanelDemoTempSlider.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Assets\WispButton\Script\WispButton.cs" />
     <Compile Include="Assets\Scripts\PinchScrollVR.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Assets\WispScripts\WispExtensions4Unity\WispMonoBehaviour.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Assets\WispEditBox\WispCalendar\Script\WispCalendar.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Assets\WispScripts\WispEPS\WispEntity.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SimpleScript.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark04.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Assets\WispAnimation\WispAnimationFloat.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ChatController.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Assets\WispScripts\WispEPS\WispEntityInstance.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Assets\WispScripts\WispExtensions4Unity\WispFloat4Unity.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Assets\WispTabView\Script\WispPage.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Assets\WispScripts\ShowOnlyAttribute.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_DigitValidator.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Assets\WispLoadingPanel\Script\WispLoadingPanel.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Assets\WispEditBox\Dropdown List\WispDropDownList.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Assets\WispEditBox\Scripts\WispEditBox.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Assets\WispScripts\WispEditor.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Assets\WispScripts\WispHoverModePermanent.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Assets\WispTooltip\Script\WispTooltipTrigger.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshSpawner.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Demo\Demo Scene\WispTableAdvancedDemo.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Assets\WispTimeLine\Scripts\WispTimeLine.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Assets\WispProgressBar\Script\WispProgressBar.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Assets\WispScripts\WispDebugTools.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Assets\WispScripts\WispExtensions4CSharp\WispLong4CSharp.cs" />
     <Compile Include="Assets\Scripts\Menu_Pecas.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Assets\WispScripts\WispGuiRotate2D.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Assets\WispScripts\WispExtensions4CSharp\WispString.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Assets\WispTimeLine\Scripts\WispTimeLineEventMark.cs" />
     <Compile Include="Assets\Scripts\AcionaBotaoPorDistancia.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Assets\WispNodeEditor\WispNode\Script\WispNode.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Assets\WispGrid\Script\WispGrid.cs" />
     <Compile Include="Assets\Scripts\Cell_Pecas.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Assets\WispImage\Script\WispImage.cs" />
     <Compile Include="Assets\Scripts\ImageSwitcher.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Assets\WispScripts\WispExtensions4Unity\WispRectTransform.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Demo\Floating Panel\WispFloatingPanelDemo.cs" />
     <Compile Include="Assets\Scripts\ControleComentarioVoz.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Assets\WispScripts\WispKeyEventHandler.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Demo\Various Demo Scenes\WispImageDemo.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\DropdownSample.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexColorCycler.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Assets\WispScrollView\Script\WispScrollView.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Assets\WispAnimation\WispAnimationGlow.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Assets\WispScripts\WispGuiRotate.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ObjectSpin.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Assets\WispTitleBar\Script\WispTitleBar.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_PhoneNumberValidator.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Demo\Various Demo Scenes\WispLineDemo.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Demo\Demo Scene\WispEntityEditorDemo.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Assets\3rd Party\Json Parser\JSONWriter.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextConsoleSimulator.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Assets\Image Processing and Generation\SobelAA.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TeleType.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Assets\WispBarChart\Script\WispBarChart.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Assets\WispTabView\Script\WispTabButton.cs" />
     <Compile Include="Assets\Scripts\Cell_Pedidos.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Assets\WispScripts\WispExtensions4CSharp\WispObject.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Assets\WispScripts\WispExtensions4Unity\WispColor.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Assets\WispGuiStyle\Script\WispGuiStyle.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshProFloatingText.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Assets\WispNodeEditor\WispNode\Script\WispNodeConnector.cs" />
     <Compile Include="Assets\Scripts\DictationManager.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Demo\Control Panel\WispDemoOpacitySlider.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Assets\WispEditBox\WispCalendar\Script\WispCalendarButton.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Assets\WispGrid\Script\WispGridCell.cs" />
     <Compile Include="Assets\Scripts\PassthroughControl.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Assets\Image Processing and Generation\DrawLine.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Assets\WispInputBox\Scripts\WispInputBox.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Assets\WispEntityEditor\Script\WispEntityEditor.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Assets\WispLineRenderer\Script\WispLineRenderer.cs" />
+    <Compile Include="Assets\WispGUI\WispGUI\Assets\WispTable\Scripts\WispTableResizer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
+    <None Include="Assets\WispGUI\WispGUI\Documentation\Change Logs\1.5.txt" />
     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Roboto-Bold - License.txt" />
+    <None Include="Assets\WispGUI\WispGUI\Documentation\Change Logs\1.0.3.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile-2-Pass.shader" />
+    <None Include="Assets\WispGUI\WispGUI\Documentation\Change Logs\1.0.1.txt" />
+    <None Include="Assets\WispGUI\WispGUI\Assets\Shaders\Skeuomorphism\Glassmorphism+Fresnel.shader" />
     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Unity - OFL.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
+    <None Include="Assets\WispGUI\WispGUI\Assets\Shaders\UI Filters\UiFilterAlphaMaskedGrayscale.shader" />
+    <None Include="Assets\WispGUI\WispGUI\Documentation\Change Logs\1.3.txt" />
+    <None Include="Assets\WispGUI\WispGUI\Documentation\Change Logs\1.6.7.txt" />
+    <None Include="Assets\WispGUI\WispGUI\Assets\Shaders\SpriteAlpha2Color.shader" />
     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Oswald-Bold - OFL.txt" />
     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Roboto-Bold - AFL.txt" />
+    <None Include="Assets\WispGUI\WispGUI\Documentation\Change Logs\1.1.txt" />
+    <None Include="Assets\WispGUI\WispGUI\Documentation\Change Logs\1.6.6.txt" />
     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Anton OFL.txt" />
+    <None Include="Assets\WispGUI\WispGUI\Documentation\Change Logs\1.4.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
+    <None Include="Assets\WispGUI\WispGUI\Assets\Shaders\UI Filters\UiFilterColoredBoxBlur.shader" />
+    <None Include="Assets\WispGUI\WispGUI\Documentation\Change Logs\1.6.1.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
+    <None Include="Assets\WispGUI\WispGUI\Documentation\Change Logs\1.4.1.txt" />
+    <None Include="Assets\WispGUI\WispGUI\Assets\WispGuiStyle\Fonts\Clarity City\LICENSE.txt" />
+    <None Include="Assets\WispGUI\WispGUI\Assets\Shaders\Skeuomorphism\Glassmorphism (Gaussian).shader" />
+    <None Include="Assets\WispGUI\WispGUI\Assets\Shaders\UI Filters\UiFilterMonochrome.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\SDFFunctions.hlsl" />
+    <None Include="Assets\WispGUI\WispGUI\Documentation\Change Logs\1.6.txt" />
+    <None Include="Assets\WispGUI\WispGUI\Assets\Shaders\Skeuomorphism\Glassmorphism+Shadow+Borders.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
+    <None Include="Assets\WispGUI\WispGUI\Assets\Shaders\UI Filters\UiFilterFXAA.shader" />
+    <None Include="Assets\WispGUI\WispGUI\Assets\Shaders\UI Filters\UiFilterGrayscale.shader" />
     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
+    <None Include="Assets\WispGUI\WispGUI\Documentation\Change Logs\1.6.3.txt" />
+    <None Include="Assets\WispGUI\WispGUI\Assets\Shaders\Procedural\DirectionalGradient.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
+    <None Include="Assets\WispGUI\WispGUI\Assets\Shaders\UI Filters\UiFilterGaussianBlur.shader" />
+    <None Include="Assets\WispGUI\WispGUI\Demo\Demo Scene\HumanTechTree.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
+    <None Include="Assets\WispGUI\WispGUI\Documentation\Change Logs\1.2.txt" />
+    <None Include="Assets\WispGUI\WispGUI\Documentation\Change Logs\1.0.2.txt" />
+    <None Include="Assets\WispGUI\WispGUI\Documentation\Change Logs\1.6.5.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
+    <None Include="Assets\WispGUI\WispGUI\Assets\WispGuiStyle\Fonts\Zen Dots\OFL.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
+    <None Include="Assets\WispGUI\WispGUI\Assets\Shaders\UI Filters\UiFilterGaussianBlurLevels.shader" />
+    <None Include="Assets\WispGUI\WispGUI\Assets\Shaders\UI Filters\UiFilterAlphaMaskedBoxBlur.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+    <None Include="Assets\WispGUI\WispGUI\Assets\Shaders\UI Filters\UiFilterSpriteBlur.shader" />
+    <None Include="Assets\WispGUI\WispGUI\Documentation\Change Logs\1.6.2.txt" />
+    <None Include="Assets\WispGUI\WispGUI\Assets\WispGuiStyle\Fonts\Amethysta\FONTLOG.txt" />
+    <None Include="Assets\WispGUI\WispGUI\Third-Party Notices.txt" />
+    <None Include="Assets\WispGUI\WispGUI\Assets\WispGuiStyle\Fonts\Amethysta\OFL.txt" />
+    <None Include="Assets\WispGUI\WispGUI\Assets\Shaders\UI Filters\UiFilterBoxBlur.shader" />
+    <None Include="Assets\WispGUI\WispGUI\Assets\WispGuiStyle\Fonts\Basically a sans serif\License.txt" />
+    <None Include="Assets\WispGUI\WispGUI\Assets\Shaders\UI Filters\UiFilterInvert.shader" />
+    <None Include="Assets\WispGUI\WispGUI\Assets\Shaders\Skeuomorphism\Glassmorphism (MLGB+LD+DS).shader" />
+    <None Include="Assets\WispGUI\WispGUI\Assets\Shaders\Skeuomorphism\Glassmorphism LumiDriven.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
+    <None Include="Assets\WispGUI\WispGUI\Assets\Shaders\Procedural\RadialGradient.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
+    <None Include="Assets\WispGUI\WispGUI\Documentation\Change Logs\1.6.4.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
+    <None Include="Assets\WispGUI\WispGUI\Assets\Shaders\UI Filters\UiFilterConvolutionKernel.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
+    <None Include="Assets\WispGUI\WispGUI\Assets\WispGuiStyle\Fonts\Balgruf\OFL.txt" />
+    <None Include="Assets\WispGUI\WispGUI\Assets\Shaders\SpriteLumi2Color.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Bangers - OFL.txt" />
   </ItemGroup>
@@ -1133,12 +1304,24 @@
       <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.9f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Xml.Serialization.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Oculus.Interaction.UnityXR">
+      <HintPath>Library\ScriptAssemblies\Oculus.Interaction.UnityXR.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.XR.Hands.Analytics.Hooks.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.XR.Hands.Analytics.Hooks.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Unity.XR.CoreUtils.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.XR.CoreUtils.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
       <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.XR.OpenXR.Features.OculusQuestSupport.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.XR.OpenXR.Features.OculusQuestSupport.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Meta.XR.Editor.UserInterface">
@@ -1257,6 +1440,10 @@
       <HintPath>Library\ScriptAssemblies\Meta.XR.Audio.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Unity.XR.Interaction.Toolkit.Analytics.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.XR.Interaction.Toolkit.Analytics.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Unity.SysrootPackage.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.SysrootPackage.Editor.dll</HintPath>
       <Private>False</Private>
@@ -1277,6 +1464,14 @@
       <HintPath>Library\ScriptAssemblies\Unity.AI.Navigation.Editor.ConversionSystem.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Unity.XR.OpenXR">
+      <HintPath>Library\ScriptAssemblies\Unity.XR.OpenXR.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.XR.Interaction.Toolkit.Analytics.Hooks.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.XR.Interaction.Toolkit.Analytics.Hooks.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Meta.XR.ImmersiveDebugger">
       <HintPath>Library\ScriptAssemblies\Meta.XR.ImmersiveDebugger.dll</HintPath>
       <Private>False</Private>
@@ -1291,6 +1486,10 @@
     </Reference>
     <Reference Include="Unity.VisualScripting.Flow">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.XR.Hands">
+      <HintPath>Library\ScriptAssemblies\Unity.XR.Hands.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.Sysroot.Linux_x86_64">
@@ -1329,12 +1528,12 @@
       <HintPath>Library\ScriptAssemblies\Meta.XR.BuildingBlocks.DepthAPI.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Unity.RenderPipelines.GPUDriven.Runtime">
-      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.GPUDriven.Runtime.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="Unity.InputSystem.ForUI">
       <HintPath>Library\ScriptAssemblies\Unity.InputSystem.ForUI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.GPUDriven.Runtime">
+      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.GPUDriven.Runtime.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Meta.XR.Editor.Settings">
@@ -1361,6 +1560,10 @@
       <HintPath>Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Oculus.Interaction.Editor.UnityXR">
+      <HintPath>Library\ScriptAssemblies\Oculus.Interaction.Editor.UnityXR.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Meta.XR.ImmersiveDebugger.Editor">
       <HintPath>Library\ScriptAssemblies\Meta.XR.ImmersiveDebugger.Editor.dll</HintPath>
       <Private>False</Private>
@@ -1375,6 +1578,10 @@
     </Reference>
     <Reference Include="Meta.XR.Editor.UPST.Notifications">
       <HintPath>Library\ScriptAssemblies\Meta.XR.Editor.UPST.Notifications.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.XR.Interaction.Toolkit.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.XR.Interaction.Toolkit.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Oculus.VR.Editor">
@@ -1395,6 +1602,10 @@
     </Reference>
     <Reference Include="Unity.RenderPipelines.Universal.Runtime">
       <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.XR.OpenXR.Features.ConformanceAutomation">
+      <HintPath>Library\ScriptAssemblies\Unity.XR.OpenXR.Features.ConformanceAutomation.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Oculus.Haptics">
@@ -1471,6 +1682,10 @@
     </Reference>
     <Reference Include="Unity.AI.Navigation">
       <HintPath>Library\ScriptAssemblies\Unity.AI.Navigation.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.XR.Hands.Analytics.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.XR.Hands.Analytics.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="VoiceSDK.Runtime">
@@ -1553,6 +1768,10 @@
       <HintPath>Library\ScriptAssemblies\Meta.VoiceSDK.Mic.Other.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Unity.XR.OpenXR.Features.RuntimeDebugger.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.XR.OpenXR.Features.RuntimeDebugger.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Meta.XR.Guides.Editor">
       <HintPath>Library\ScriptAssemblies\Meta.XR.Guides.Editor.dll</HintPath>
       <Private>False</Private>
@@ -1593,6 +1812,18 @@
       <HintPath>Library\ScriptAssemblies\Unity.Collections.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Unity.XR.Hands.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.XR.Hands.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.XR.OpenXR.Features.OculusQuestSupport">
+      <HintPath>Library\ScriptAssemblies\Unity.XR.OpenXR.Features.OculusQuestSupport.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.XR.OpenXR.Features.MetaQuestSupport">
+      <HintPath>Library\ScriptAssemblies\Unity.XR.OpenXR.Features.MetaQuestSupport.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
       <Private>False</Private>
@@ -1629,6 +1860,10 @@
       <HintPath>Library\ScriptAssemblies\Meta.XR.EnvironmentDepth.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Unity.XR.OpenXR.Features.MetaQuestSupport.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.XR.OpenXR.Features.MetaQuestSupport.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Meta.VoiceSDK.Mic.Common">
       <HintPath>Library\ScriptAssemblies\Meta.VoiceSDK.Mic.Common.dll</HintPath>
       <Private>False</Private>
@@ -1651,6 +1886,10 @@
     </Reference>
     <Reference Include="Unity.XR.Oculus">
       <HintPath>Library\ScriptAssemblies\Unity.XR.Oculus.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.XR.Interaction.Toolkit">
+      <HintPath>Library\ScriptAssemblies\Unity.XR.Interaction.Toolkit.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.XR.Management.Editor">
@@ -1703,6 +1942,10 @@
     </Reference>
     <Reference Include="Meta.XR.BuildingBlocks.DepthAPI.Editor">
       <HintPath>Library\ScriptAssemblies\Meta.XR.BuildingBlocks.DepthAPI.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.XR.OpenXR.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.XR.OpenXR.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEditor.UI">
