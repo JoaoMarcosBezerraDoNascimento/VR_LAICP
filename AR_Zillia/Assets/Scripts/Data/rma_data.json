@@ -3,8 +3,8 @@
         {
             "numero_pedido_rma": "49928413802",
             "cliente": "Empresa_378",
-            "data_chegada": "19/07/2025",
-            "data_saida": "21/07/2025",
+            "data_chegada": "16/12/2025",
+            "finalizado": "False",
             "pecas": [
                 {
                     "tipo": 2,
@@ -95,8 +95,8 @@
         {
             "numero_pedido_rma": "84686695358",
             "cliente": "Empresa_634",
-            "data_chegada": "23/05/2025",
-            "data_saida": "07/11/2025",
+            "data_chegada": "16/12/2025",
+            "finalizado": "False",
             "pecas": [
                 {
                     "tipo": 2,
@@ -215,8 +215,8 @@
         {
             "numero_pedido_rma": "50072622230",
             "cliente": "Empresa_255",
-            "data_chegada": "12/06/2025",
-            "data_saida": "10/10/2025",
+            "data_chegada": "16/12/2025",
+            "finalizado": "False",
             "pecas": [
                 {
                     "tipo": 1,
@@ -349,8 +349,8 @@
         {
             "numero_pedido_rma": "77767544399",
             "cliente": "Empresa_710",
-            "data_chegada": "06/10/2025",
-            "data_saida": "11/08/2025",
+            "data_chegada": "16/12/2025",
+            "finalizado": "False",
             "pecas": [
                 {
                     "tipo": 1,
@@ -491,7 +491,7 @@
             "numero_pedido_rma": "65856992277",
             "cliente": "Empresa_547",
             "data_chegada": "10/06/2025",
-            "data_saida": "12/06/2025",
+            "finalizado": "False",
             "pecas": [
                 {
                     "tipo": 3,
@@ -625,7 +625,7 @@
             "numero_pedido_rma": "62415452997",
             "cliente": "Empresa_355",
             "data_chegada": "25/01/2025",
-            "data_saida": "18/07/2025",
+            "finalizado": "False",
             "pecas": [
                 {
                     "tipo": 1,
@@ -745,7 +745,7 @@
             "numero_pedido_rma": "84216821479",
             "cliente": "Empresa_828",
             "data_chegada": "24/01/2025",
-            "data_saida": "16/09/2025",
+            "finalizado": "False",
             "pecas": [
                 {
                     "tipo": 3,
@@ -844,7 +844,7 @@
             "numero_pedido_rma": "74619105554",
             "cliente": "Empresa_617",
             "data_chegada": "21/10/2025",
-            "data_saida": "12/09/2025",
+            "finalizado": "False",
             "pecas": [
                 {
                     "tipo": 1,
@@ -957,7 +957,7 @@
             "numero_pedido_rma": "56230301527",
             "cliente": "Empresa_635",
             "data_chegada": "27/03/2025",
-            "data_saida": "25/09/2025",
+            "finalizado": "False",
             "pecas": [
                 {
                     "tipo": 4,
@@ -1049,7 +1049,7 @@
             "numero_pedido_rma": "38564869415",
             "cliente": "Empresa_636",
             "data_chegada": "01/04/2025",
-            "data_saida": "23/02/2025",
+            "finalizado": "False",
             "pecas": [
                 {
                     "tipo": 2,
@@ -1141,7 +1141,7 @@
             "numero_pedido_rma": "18977329084",
             "cliente": "Empresa_139",
             "data_chegada": "04/11/2025",
-            "data_saida": "01/11/2025",
+            "finalizado": "False",
             "pecas": [
                 {
                     "tipo": 1,
@@ -1289,7 +1289,7 @@
             "numero_pedido_rma": "90552502233",
             "cliente": "Empresa_770",
             "data_chegada": "07/09/2025",
-            "data_saida": "04/11/2025",
+            "finalizado": "False",
             "pecas": [
                 {
                     "tipo": 3,
@@ -1388,7 +1388,7 @@
             "numero_pedido_rma": "31910393359",
             "cliente": "Empresa_603",
             "data_chegada": "03/07/2025",
-            "data_saida": "07/08/2025",
+            "finalizado": "False",
             "pecas": [
                 {
                     "tipo": 5,
@@ -1501,7 +1501,7 @@
             "numero_pedido_rma": "59455886082",
             "cliente": "Empresa_334",
             "data_chegada": "12/10/2025",
-            "data_saida": "14/02/2025",
+            "finalizado": "False",
             "pecas": [
                 {
                     "tipo": 2,
@@ -1607,7 +1607,7 @@
             "numero_pedido_rma": "80815002450",
             "cliente": "Empresa_100",
             "data_chegada": "03/11/2025",
-            "data_saida": "05/01/2025",
+            "finalizado": "False",
             "pecas": [
                 {
                     "tipo": 1,
@@ -1755,7 +1755,7 @@
             "numero_pedido_rma": "12079006527",
             "cliente": "Empresa_263",
             "data_chegada": "27/06/2025",
-            "data_saida": "18/03/2025",
+            "finalizado": "False",
             "pecas": [
                 {
                     "tipo": 1,
@@ -1847,7 +1847,7 @@
             "numero_pedido_rma": "60286640391",
             "cliente": "Empresa_190",
             "data_chegada": "24/05/2025",
-            "data_saida": "17/04/2025",
+            "finalizado": "False",
             "pecas": [
                 {
                     "tipo": 3,
@@ -1995,7 +1995,7 @@
             "numero_pedido_rma": "61946242714",
             "cliente": "Empresa_646",
             "data_chegada": "13/07/2025",
-            "data_saida": "04/05/2025",
+            "finalizado": "False",
             "pecas": [
                 {
                     "tipo": 3,
@@ -2129,7 +2129,7 @@
             "numero_pedido_rma": "91353198983",
             "cliente": "Empresa_961",
             "data_chegada": "19/07/2025",
-            "data_saida": "25/02/2025",
+            "finalizado": "False",
             "pecas": [
                 {
                     "tipo": 5,
@@ -2249,7 +2249,7 @@
             "numero_pedido_rma": "44124800723",
             "cliente": "Empresa_887",
             "data_chegada": "17/04/2025",
-            "data_saida": "24/03/2025",
+            "finalizado": "False",
             "pecas": [
                 {
                     "tipo": 1,
@@ -2390,7 +2390,7 @@
             "numero_pedido_rma": "34520324041",
             "cliente": "Empresa_502",
             "data_chegada": "02/01/2025",
-            "data_saida": "15/01/2025",
+            "finalizado": "False",
             "pecas": [
                 {
                     "tipo": 2,
@@ -2538,7 +2538,7 @@
             "numero_pedido_rma": "71434168729",
             "cliente": "Empresa_654",
             "data_chegada": "28/01/2025",
-            "data_saida": "02/04/2025",
+            "finalizado": "False",
             "pecas": [
                 {
                     "tipo": 4,
@@ -2644,7 +2644,7 @@
             "numero_pedido_rma": "71941075483",
             "cliente": "Empresa_373",
             "data_chegada": "27/05/2025",
-            "data_saida": "20/12/2025",
+            "finalizado": "False",
             "pecas": [
                 {
                     "tipo": 4,
@@ -2785,7 +2785,7 @@
             "numero_pedido_rma": "41165267544",
             "cliente": "Empresa_259",
             "data_chegada": "04/03/2025",
-            "data_saida": "03/11/2025",
+            "finalizado": "False",
             "pecas": [
                 {
                     "tipo": 4,
@@ -2919,7 +2919,7 @@
             "numero_pedido_rma": "77833831297",
             "cliente": "Empresa_282",
             "data_chegada": "28/07/2025",
-            "data_saida": "28/10/2025",
+            "finalizado": "False",
             "pecas": [
                 {
                     "tipo": 3,
@@ -3004,7 +3004,7 @@
             "numero_pedido_rma": "58145799927",
             "cliente": "Empresa_599",
             "data_chegada": "25/12/2025",
-            "data_saida": "17/03/2025",
+            "finalizado": "False",
             "pecas": [
                 {
                     "tipo": 3,
@@ -3103,7 +3103,7 @@
             "numero_pedido_rma": "51869538559",
             "cliente": "Empresa_648",
             "data_chegada": "10/07/2025",
-            "data_saida": "01/12/2025",
+            "finalizado": "False",
             "pecas": [
                 {
                     "tipo": 1,
@@ -3216,7 +3216,7 @@
             "numero_pedido_rma": "15767788853",
             "cliente": "Empresa_470",
             "data_chegada": "16/08/2025",
-            "data_saida": "16/06/2025",
+            "finalizado": "False",
             "pecas": [
                 {
                     "tipo": 4,
@@ -3329,7 +3329,7 @@
             "numero_pedido_rma": "12935424768",
             "cliente": "Empresa_778",
             "data_chegada": "11/05/2025",
-            "data_saida": "04/05/2025",
+            "finalizado": "False",
             "pecas": [
                 {
                     "tipo": 3,
@@ -3414,7 +3414,7 @@
             "numero_pedido_rma": "71542966674",
             "cliente": "Empresa_828",
             "data_chegada": "03/03/2025",
-            "data_saida": "24/02/2025",
+            "finalizado": "False",
             "pecas": [
                 {
                     "tipo": 5,
@@ -3541,7 +3541,7 @@
             "numero_pedido_rma": "38484430102",
             "cliente": "Empresa_834",
             "data_chegada": "20/09/2025",
-            "data_saida": "10/07/2025",
+            "finalizado": "False",
             "pecas": [
                 {
                     "tipo": 3,
@@ -3689,7 +3689,7 @@
             "numero_pedido_rma": "81289187457",
             "cliente": "Empresa_385",
             "data_chegada": "03/05/2025",
-            "data_saida": "23/08/2025",
+            "finalizado": "False",
             "pecas": [
                 {
                     "tipo": 5,
@@ -3823,7 +3823,7 @@
             "numero_pedido_rma": "71047879510",
             "cliente": "Empresa_198",
             "data_chegada": "02/10/2025",
-            "data_saida": "27/07/2025",
+            "finalizado": "False",
             "pecas": [
                 {
                     "tipo": 2,
@@ -3901,7 +3901,7 @@
             "numero_pedido_rma": "35940866174",
             "cliente": "Empresa_470",
             "data_chegada": "01/11/2025",
-            "data_saida": "09/07/2025",
+            "finalizado": "False",
             "pecas": [
                 {
                     "tipo": 3,
@@ -4042,7 +4042,7 @@
             "numero_pedido_rma": "84306570500",
             "cliente": "Empresa_528",
             "data_chegada": "25/05/2025",
-            "data_saida": "15/12/2025",
+            "finalizado": "False",
             "pecas": [
                 {
                     "tipo": 1,
@@ -4162,7 +4162,7 @@
             "numero_pedido_rma": "86871019112",
             "cliente": "Empresa_252",
             "data_chegada": "05/09/2025",
-            "data_saida": "17/05/2025",
+            "finalizado": "False",
             "pecas": [
                 {
                     "tipo": 1,
@@ -4296,7 +4296,7 @@
             "numero_pedido_rma": "17701250478",
             "cliente": "Empresa_848",
             "data_chegada": "19/09/2025",
-            "data_saida": "04/09/2025",
+            "finalizado": "False",
             "pecas": [
                 {
                     "tipo": 4,
@@ -4395,7 +4395,7 @@
             "numero_pedido_rma": "77967410796",
             "cliente": "Empresa_381",
             "data_chegada": "11/11/2025",
-            "data_saida": "16/06/2025",
+            "finalizado": "False",
             "pecas": [
                 {
                     "tipo": 2,
@@ -4515,7 +4515,7 @@
             "numero_pedido_rma": "63629432239",
             "cliente": "Empresa_534",
             "data_chegada": "22/06/2025",
-            "data_saida": "18/10/2025",
+            "finalizado": "False",
             "pecas": [
                 {
                     "tipo": 2,
@@ -4656,7 +4656,7 @@
             "numero_pedido_rma": "64635295768",
             "cliente": "Empresa_468",
             "data_chegada": "15/04/2025",
-            "data_saida": "23/12/2025",
+            "finalizado": "False",
             "pecas": [
                 {
                     "tipo": 2,
@@ -4783,7 +4783,7 @@
             "numero_pedido_rma": "41677587042",
             "cliente": "Empresa_954",
             "data_chegada": "08/11/2025",
-            "data_saida": "10/02/2025",
+            "finalizado": "False",
             "pecas": [
                 {
                     "tipo": 3,
@@ -4924,7 +4924,7 @@
             "numero_pedido_rma": "68823073613",
             "cliente": "Empresa_619",
             "data_chegada": "06/07/2025",
-            "data_saida": "17/10/2025",
+            "finalizado": "False",
             "pecas": [
                 {
                     "tipo": 2,
@@ -5044,7 +5044,7 @@
             "numero_pedido_rma": "79992059688",
             "cliente": "Empresa_986",
             "data_chegada": "06/05/2025",
-            "data_saida": "23/12/2025",
+            "finalizado": "False",
             "pecas": [
                 {
                     "tipo": 2,
@@ -5157,7 +5157,7 @@
             "numero_pedido_rma": "51980415228",
             "cliente": "Empresa_466",
             "data_chegada": "06/11/2025",
-            "data_saida": "23/07/2025",
+            "finalizado": "False",
             "pecas": [
                 {
                     "tipo": 3,
@@ -5305,7 +5305,7 @@
             "numero_pedido_rma": "94169892328",
             "cliente": "Empresa_433",
             "data_chegada": "12/10/2025",
-            "data_saida": "22/03/2025",
+            "finalizado": "False",
             "pecas": [
                 {
                     "tipo": 1,
@@ -5453,7 +5453,7 @@
             "numero_pedido_rma": "60940082547",
             "cliente": "Empresa_480",
             "data_chegada": "01/04/2025",
-            "data_saida": "14/12/2025",
+            "finalizado": "False",
             "pecas": [
                 {
                     "tipo": 2,
@@ -5538,7 +5538,7 @@
             "numero_pedido_rma": "75150640647",
             "cliente": "Empresa_292",
             "data_chegada": "03/02/2025",
-            "data_saida": "20/06/2025",
+            "finalizado": "False",
             "pecas": [
                 {
                     "tipo": 5,
@@ -5630,7 +5630,7 @@
             "numero_pedido_rma": "10317928557",
             "cliente": "Empresa_189",
             "data_chegada": "04/08/2025",
-            "data_saida": "27/11/2025",
+            "finalizado": "False",
             "pecas": [
                 {
                     "tipo": 1,
@@ -5729,7 +5729,7 @@
             "numero_pedido_rma": "88889357740",
             "cliente": "Empresa_726",
             "data_chegada": "19/11/2025",
-            "data_saida": "12/05/2025",
+            "finalizado": "False",
             "pecas": [
                 {
                     "tipo": 2,
@@ -5863,7 +5863,7 @@
             "numero_pedido_rma": "48722540498",
             "cliente": "Empresa_164",
             "data_chegada": "28/05/2025",
-            "data_saida": "04/08/2025",
+            "finalizado": "False",
             "pecas": [
                 {
                     "tipo": 3,
@@ -5948,7 +5948,7 @@
             "numero_pedido_rma": "49122943935",
             "cliente": "Empresa_334",
             "data_chegada": "04/12/2025",
-            "data_saida": "21/03/2025",
+            "finalizado": "False",
             "pecas": [
                 {
                     "tipo": 2,
@@ -6089,7 +6089,7 @@
             "numero_pedido_rma": "65602027387",
             "cliente": "Empresa_107",
             "data_chegada": "23/01/2025",
-            "data_saida": "19/03/2025",
+            "finalizado": "False",
             "pecas": [
                 {
                     "tipo": 3,
@@ -6188,7 +6188,7 @@
             "numero_pedido_rma": "46130135998",
             "cliente": "Empresa_942",
             "data_chegada": "04/03/2025",
-            "data_saida": "01/06/2025",
+            "finalizado": "False",
             "pecas": [
                 {
                     "tipo": 2,
@@ -6294,7 +6294,7 @@
             "numero_pedido_rma": "28568485791",
             "cliente": "Empresa_553",
             "data_chegada": "24/06/2025",
-            "data_saida": "10/12/2025",
+            "finalizado": "False",
             "pecas": [
                 {
                     "tipo": 1,
@@ -6386,7 +6386,7 @@
             "numero_pedido_rma": "95778747786",
             "cliente": "Empresa_884",
             "data_chegada": "13/12/2025",
-            "data_saida": "25/04/2025",
+            "finalizado": "False",
             "pecas": [
                 {
                     "tipo": 4,
@@ -6471,7 +6471,7 @@
             "numero_pedido_rma": "58529129539",
             "cliente": "Empresa_455",
             "data_chegada": "25/05/2025",
-            "data_saida": "02/12/2025",
+            "finalizado": "False",
             "pecas": [
                 {
                     "tipo": 5,
@@ -6556,7 +6556,7 @@
             "numero_pedido_rma": "40476306301",
             "cliente": "Empresa_763",
             "data_chegada": "01/08/2025",
-            "data_saida": "02/09/2025",
+            "finalizado": "False",
             "pecas": [
                 {
                     "tipo": 3,
@@ -6641,7 +6641,7 @@
             "numero_pedido_rma": "85061655824",
             "cliente": "Empresa_291",
             "data_chegada": "05/05/2025",
-            "data_saida": "14/08/2025",
+            "finalizado": "False",
             "pecas": [
                 {
                     "tipo": 2,
@@ -6747,7 +6747,7 @@
             "numero_pedido_rma": "26746735920",
             "cliente": "Empresa_564",
             "data_chegada": "14/02/2025",
-            "data_saida": "22/06/2025",
+            "finalizado": "False",
             "pecas": [
                 {
                     "tipo": 1,
@@ -6881,7 +6881,7 @@
             "numero_pedido_rma": "78502508916",
             "cliente": "Empresa_480",
             "data_chegada": "06/02/2025",
-            "data_saida": "20/04/2025",
+            "finalizado": "False",
             "pecas": [
                 {
                     "tipo": 3,
@@ -7015,7 +7015,7 @@
             "numero_pedido_rma": "51892351289",
             "cliente": "Empresa_814",
             "data_chegada": "08/04/2025",
-            "data_saida": "27/12/2025",
+            "finalizado": "False",
             "pecas": [
                 {
                     "tipo": 3,
@@ -7121,7 +7121,7 @@
             "numero_pedido_rma": "89133843701",
             "cliente": "Empresa_129",
             "data_chegada": "24/07/2025",
-            "data_saida": "13/05/2025",
+            "finalizado": "False",
             "pecas": [
                 {
                     "tipo": 2,
@@ -7248,7 +7248,7 @@
             "numero_pedido_rma": "89874619819",
             "cliente": "Empresa_947",
             "data_chegada": "20/06/2025",
-            "data_saida": "04/02/2025",
+            "finalizado": "False",
             "pecas": [
                 {
                     "tipo": 3,
@@ -7396,7 +7396,7 @@
             "numero_pedido_rma": "64519356195",
             "cliente": "Empresa_710",
             "data_chegada": "19/12/2025",
-            "data_saida": "23/10/2025",
+            "finalizado": "False",
             "pecas": [
                 {
                     "tipo": 1,
@@ -7495,7 +7495,7 @@
             "numero_pedido_rma": "74901301350",
             "cliente": "Empresa_535",
             "data_chegada": "05/11/2025",
-            "data_saida": "06/08/2025",
+            "finalizado": "False",
             "pecas": [
                 {
                     "tipo": 4,
@@ -7587,7 +7587,7 @@
             "numero_pedido_rma": "93622343645",
             "cliente": "Empresa_145",
             "data_chegada": "20/06/2025",
-            "data_saida": "02/08/2025",
+            "finalizado": "False",
             "pecas": [
                 {
                     "tipo": 4,
@@ -7714,7 +7714,7 @@
             "numero_pedido_rma": "75809200217",
             "cliente": "Empresa_891",
             "data_chegada": "19/12/2025",
-            "data_saida": "05/04/2025",
+            "finalizado": "False",
             "pecas": [
                 {
                     "tipo": 2,
@@ -7834,7 +7834,7 @@
             "numero_pedido_rma": "39775819093",
             "cliente": "Empresa_842",
             "data_chegada": "17/06/2025",
-            "data_saida": "15/02/2025",
+            "finalizado": "False",
             "pecas": [
                 {
                     "tipo": 1,
@@ -7968,7 +7968,7 @@
             "numero_pedido_rma": "75643505035",
             "cliente": "Empresa_527",
             "data_chegada": "15/07/2025",
-            "data_saida": "03/01/2025",
+            "finalizado": "False",
             "pecas": [
                 {
                     "tipo": 1,
@@ -8102,7 +8102,7 @@
             "numero_pedido_rma": "39952261043",
             "cliente": "Empresa_617",
             "data_chegada": "11/12/2025",
-            "data_saida": "21/03/2025",
+            "finalizado": "False",
             "pecas": [
                 {
                     "tipo": 5,
@@ -8236,7 +8236,7 @@
             "numero_pedido_rma": "55782209249",
             "cliente": "Empresa_716",
             "data_chegada": "12/02/2025",
-            "data_saida": "15/07/2025",
+            "finalizado": "False",
             "pecas": [
                 {
                     "tipo": 1,
@@ -8384,7 +8384,7 @@
             "numero_pedido_rma": "32984643855",
             "cliente": "Empresa_587",
             "data_chegada": "03/11/2025",
-            "data_saida": "11/10/2025",
+            "finalizado": "False",
             "pecas": [
                 {
                     "tipo": 5,
@@ -8532,7 +8532,7 @@
             "numero_pedido_rma": "55903120564",
             "cliente": "Empresa_397",
             "data_chegada": "08/06/2025",
-            "data_saida": "28/12/2025",
+            "finalizado": "False",
             "pecas": [
                 {
                     "tipo": 3,
@@ -8680,7 +8680,7 @@
             "numero_pedido_rma": "42686714443",
             "cliente": "Empresa_627",
             "data_chegada": "27/08/2025",
-            "data_saida": "06/04/2025",
+            "finalizado": "False",
             "pecas": [
                 {
                     "tipo": 3,
@@ -8793,7 +8793,7 @@
             "numero_pedido_rma": "53707950612",
             "cliente": "Empresa_246",
             "data_chegada": "18/09/2025",
-            "data_saida": "06/08/2025",
+            "finalizado": "False",
             "pecas": [
                 {
                     "tipo": 1,
@@ -8885,7 +8885,7 @@
             "numero_pedido_rma": "96335774974",
             "cliente": "Empresa_735",
             "data_chegada": "04/12/2025",
-            "data_saida": "05/10/2025",
+            "finalizado": "False",
             "pecas": [
                 {
                     "tipo": 1,
@@ -8970,7 +8970,7 @@
             "numero_pedido_rma": "38751337772",
             "cliente": "Empresa_701",
             "data_chegada": "23/07/2025",
-            "data_saida": "15/04/2025",
+            "finalizado": "False",
             "pecas": [
                 {
                     "tipo": 1,
@@ -9062,7 +9062,7 @@
             "numero_pedido_rma": "53947338954",
             "cliente": "Empresa_869",
             "data_chegada": "04/01/2025",
-            "data_saida": "10/01/2025",
+            "finalizado": "False",
             "pecas": [
                 {
                     "tipo": 1,
@@ -9196,7 +9196,7 @@
             "numero_pedido_rma": "29786539454",
             "cliente": "Empresa_196",
             "data_chegada": "18/10/2025",
-            "data_saida": "16/01/2025",
+            "finalizado": "False",
             "pecas": [
                 {
                     "tipo": 1,
@@ -9323,7 +9323,7 @@
             "numero_pedido_rma": "71208737893",
             "cliente": "Empresa_673",
             "data_chegada": "14/10/2025",
-            "data_saida": "05/11/2025",
+            "finalizado": "False",
             "pecas": [
                 {
                     "tipo": 3,
@@ -9408,7 +9408,7 @@
             "numero_pedido_rma": "46766089466",
             "cliente": "Empresa_854",
             "data_chegada": "20/01/2025",
-            "data_saida": "27/07/2025",
+            "finalizado": "False",
             "pecas": [
                 {
                     "tipo": 3,
@@ -9486,7 +9486,7 @@
             "numero_pedido_rma": "60529988278",
             "cliente": "Empresa_541",
             "data_chegada": "07/04/2025",
-            "data_saida": "19/03/2025",
+            "finalizado": "False",
             "pecas": [
                 {
                     "tipo": 4,
@@ -9585,7 +9585,7 @@
             "numero_pedido_rma": "38171146429",
             "cliente": "Empresa_357",
             "data_chegada": "22/01/2025",
-            "data_saida": "22/09/2025",
+            "finalizado": "False",
             "pecas": [
                 {
                     "tipo": 1,
@@ -9691,7 +9691,7 @@
             "numero_pedido_rma": "20997697845",
             "cliente": "Empresa_834",
             "data_chegada": "23/09/2025",
-            "data_saida": "23/06/2025",
+            "finalizado": "False",
             "pecas": [
                 {
                     "tipo": 5,
@@ -9776,7 +9776,7 @@
             "numero_pedido_rma": "97603282797",
             "cliente": "Empresa_965",
             "data_chegada": "10/08/2025",
-            "data_saida": "23/03/2025",
+            "finalizado": "False",
             "pecas": [
                 {
                     "tipo": 5,
@@ -9889,7 +9889,7 @@
             "numero_pedido_rma": "14690915055",
             "cliente": "Empresa_715",
             "data_chegada": "01/08/2025",
-            "data_saida": "16/11/2025",
+            "finalizado": "False",
             "pecas": [
                 {
                     "tipo": 2,
@@ -9981,7 +9981,7 @@
             "numero_pedido_rma": "99537787886",
             "cliente": "Empresa_809",
             "data_chegada": "11/12/2025",
-            "data_saida": "20/04/2025",
+            "finalizado": "False",
             "pecas": [
                 {
                     "tipo": 2,
@@ -10059,7 +10059,7 @@
             "numero_pedido_rma": "44506475012",
             "cliente": "Empresa_901",
             "data_chegada": "28/02/2025",
-            "data_saida": "26/01/2025",
+            "finalizado": "False",
             "pecas": [
                 {
                     "tipo": 3,
@@ -10144,7 +10144,7 @@
             "numero_pedido_rma": "45621378796",
             "cliente": "Empresa_314",
             "data_chegada": "18/11/2025",
-            "data_saida": "10/02/2025",
+            "finalizado": "False",
             "pecas": [
                 {
                     "tipo": 2,
@@ -10292,7 +10292,7 @@
             "numero_pedido_rma": "46446573156",
             "cliente": "Empresa_677",
             "data_chegada": "07/12/2025",
-            "data_saida": "17/03/2025",
+            "finalizado": "False",
             "pecas": [
                 {
                     "tipo": 3,
@@ -10405,7 +10405,7 @@
             "numero_pedido_rma": "24271872277",
             "cliente": "Empresa_310",
             "data_chegada": "09/02/2025",
-            "data_saida": "11/12/2025",
+            "finalizado": "False",
             "pecas": [
                 {
                     "tipo": 1,
@@ -10490,7 +10490,7 @@
             "numero_pedido_rma": "10866882454",
             "cliente": "Empresa_969",
             "data_chegada": "26/12/2025",
-            "data_saida": "14/04/2025",
+            "finalizado": "False",
             "pecas": [
                 {
                     "tipo": 1,
@@ -10617,7 +10617,7 @@
             "numero_pedido_rma": "29996422497",
             "cliente": "Empresa_738",
             "data_chegada": "14/11/2025",
-            "data_saida": "02/05/2025",
+            "finalizado": "False",
             "pecas": [
                 {
                     "tipo": 4,
@@ -10737,7 +10737,7 @@
             "numero_pedido_rma": "97609471554",
             "cliente": "Empresa_335",
             "data_chegada": "22/07/2025",
-            "data_saida": "04/04/2025",
+            "finalizado": "False",
             "pecas": [
                 {
                     "tipo": 4,
@@ -10850,7 +10850,7 @@
             "numero_pedido_rma": "30571120535",
             "cliente": "Empresa_370",
             "data_chegada": "02/07/2025",
-            "data_saida": "08/02/2025",
+            "finalizado": "False",
             "pecas": [
                 {
                     "tipo": 4,
@@ -10998,7 +10998,7 @@
             "numero_pedido_rma": "34654946312",
             "cliente": "Empresa_595",
             "data_chegada": "21/09/2025",
-            "data_saida": "08/02/2025",
+            "finalizado": "False",
             "pecas": [
                 {
                     "tipo": 5,
@@ -11125,7 +11125,7 @@
             "numero_pedido_rma": "49020763221",
             "cliente": "Empresa_425",
             "data_chegada": "09/09/2025",
-            "data_saida": "05/03/2025",
+            "finalizado": "False",
             "pecas": [
                 {
                     "tipo": 2,
@@ -11259,7 +11259,7 @@
             "numero_pedido_rma": "45254611190",
             "cliente": "Empresa_742",
             "data_chegada": "16/03/2025",
-            "data_saida": "05/10/2025",
+            "finalizado": "False",
             "pecas": [
                 {
                     "tipo": 1,
@@ -11344,7 +11344,7 @@
             "numero_pedido_rma": "28769010309",
             "cliente": "Empresa_651",
             "data_chegada": "16/02/2025",
-            "data_saida": "21/06/2025",
+            "finalizado": "False",
             "pecas": [
                 {
                     "tipo": 3,
@@ -11457,7 +11457,7 @@
             "numero_pedido_rma": "85695374677",
             "cliente": "Empresa_996",
             "data_chegada": "24/03/2025",
-            "data_saida": "03/10/2025",
+            "finalizado": "False",
             "pecas": [
                 {
                     "tipo": 1,
@@ -11567,4 +11567,4 @@
             ]
         }
     ]
-}  
+}

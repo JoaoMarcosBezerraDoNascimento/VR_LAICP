@@ -1,25 +1,42 @@
-using UnityEngine;
+ï»¿using UnityEngine;
 using UnityEngine.UI;
+using System.Linq;
 
 public class AcionaBotaoPorDistancia : MonoBehaviour
 {
+    [Header("Indicador")]
     public string nomeDoIndicador = "XRHand_IndexTip";
-    public float distanciaLimite = 0.03f;
+    public float distanciaLimite = 0.04f;
     public float distanciaAtual;
+
+    [Header("UI (use apenas um)")]
     public Button botao;
+    public Toggle toggle;
 
+    [Header("Delay inicial")]
     public float delayInicial = 1.0f;
-    private float tempoDecorrido = 0f;
+    float tempoDecorrido;
 
-    private Transform indicador;
+    [Header("Cooldown")]
+    public float cooldownClique = 0.5f;
+    float ultimoCliqueTime = -999f;
 
-    // Controle de clique único
-    private bool prontoParaDetectar = false;
-    private bool jaCliquei = false;
+    [Header("Debug")]
+    [SerializeField] Transform indicadorMaisProximo;
+
+    Transform[] indicadores;
+    bool prontoParaDetectar;
 
     void Start()
     {
-        indicador = GameObject.Find(nomeDoIndicador)?.transform;
+        AtualizarIndicadores();
+    }
+
+    void AtualizarIndicadores()
+    {
+        indicadores = FindObjectsOfType<Transform>()
+            .Where(t => t.name == nomeDoIndicador)
+            .ToArray();
     }
 
     void Update()
@@ -28,23 +45,44 @@ public class AcionaBotaoPorDistancia : MonoBehaviour
         if (!prontoParaDetectar && tempoDecorrido >= delayInicial)
             prontoParaDetectar = true;
 
-        if (!prontoParaDetectar) return;
-        if (indicador == null) return;
+        if (!prontoParaDetectar || indicadores.Length == 0)
+            return;
 
-        distanciaAtual = Vector3.Distance(transform.position, indicador.position);
+        float menorDist = float.MaxValue;
+        Transform maisProximo = null;
 
-        // Quando entra na zona e ainda não clicou
-        if (distanciaAtual < distanciaLimite && !jaCliquei)
+        foreach (var t in indicadores)
         {
-            jaCliquei = true;
-            Debug.Log("Botão Clicado");
-            botao.onClick.Invoke();
+            if (t == null) continue;
+
+            float d = Vector3.Distance(transform.position, t.position);
+            if (d < menorDist)
+            {
+                menorDist = d;
+                maisProximo = t;
+            }
         }
 
-        // Quando sai da zona, libera para clicar de novo no futuro
-        if (distanciaAtual >= distanciaLimite && jaCliquei)
+        distanciaAtual = menorDist;
+        indicadorMaisProximo = maisProximo;
+
+        bool dentroDaZona = menorDist < distanciaLimite;
+        bool cooldownOk = Time.time >= ultimoCliqueTime + cooldownClique;
+
+        if (dentroDaZona && cooldownOk)
         {
-            jaCliquei = false;
+            ultimoCliqueTime = Time.time;
+
+            if (botao != null)
+            {
+                Debug.Log("[AcionaBotao] Clique em Button");
+                botao.onClick.Invoke();
+            }
+            else if (toggle != null)
+            {
+                Debug.Log("[AcionaBotao] Toggle alternado");
+                toggle.isOn = !toggle.isOn;
+            }
         }
     }
 }

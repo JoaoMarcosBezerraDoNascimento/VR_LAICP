@@ -1,13 +1,77 @@
-/AR_Zillia/Temp
+AR_Zillia/UserSettings/Layouts/default-6000.dwlt
+AR_Zillia/UserSettings/EditorUserSettings.asset
+AR_Zillia/Logs/AssetImportWorker1.log
+AR_Zillia/Logs/AssetImportWorker0.log
+AR_Zillia/Assembly-CSharp.csproj
+
+# =========================
+# UNITY - TEMP / CACHE
+# =========================
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]serSettings/
+MemoryCaptures/
+
+# =========================
+# LOGS
+# =========================
 *.log
-*.log
-/AR_Zillia/Logs
-/AR_Zillia/Logs
-*.log
+*.tmp
+*.bak
+*.swp
+*.swo
 *.csproj
+*.dwlt
+.temp
+# =========================
+# IDEs
+# =========================
+.vscode/
+.idea/
+*.csproj
+*.sln
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.apk
+
+# =========================
+# OS
+# =========================
+.DS_Store
+Thumbs.db
+desktop.ini
+Library
+UserSettings
+ProjectSettings/EditorUserSettings.asset
+*.apk
+# Ignorar ambiente virtual (onde estão as bibliotecas instaladas)
+venv/
+__pycache__/
+
+# Ignorar banco de dados local e logs (não queremos dados reais no GitHub)
+database.json
+sistema_rma.log
+
+# Arquivos de sistema operacional (lixo eletrônico do Windows)
+.DS_Store
+Thumbs.db
+*.log
+*.log
+*.dwlt
+*.asset
+AR_Zillia/Logs/shadercompiler-UnityShaderCompiler.exe-0.log
 *.meta
 *.log
-*.log
-*.log
-*.log
+AR_Zillia/Assembly-CSharp.csproj
+AR_Zillia/UserSettings/Layouts/default-6000.dwlt
+/AR_Zillia/UserSettings
+AR_Zillia/Assembly-CSharp.csproj
+AR_Zillia/UserSettings/Layouts/default-6000.dwlt
+*.dwlt
 *.dwlt

@@ -1,0 +1,2 @@
+C:\Users\joahi\Documents\Projetos\VR_LAICP\AR_Zillia\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\CMakeLists.txt
+C:\Users\joahi\Documents\Projetos\VR_LAICP\AR_Zillia\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\GameActivity\CMakeLists.txt

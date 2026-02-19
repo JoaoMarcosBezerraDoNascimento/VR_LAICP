@@ -1,10 +1,19 @@
 # ninja log v5
 166	4780	7860659489065302	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	a71e55ead129335f
 83	4822	7860659489409428	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	9ff7ce6275b84891
-1	4842	7860659489560667	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	e93e0e3415701d9
-137	4883	7860659490103981	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	cade18d3db836f46
-59	4914	7860659490438800	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	52ac6462840bddf1
-38	5157	7860659492880218	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	5662c90b0ec0cc8b
 110	5274	7860659494079971	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	f0d29066796aee88
-21	5300	7860659494323952	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	3aebd04c88f0e57f
+1	4842	7860659489560667	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	e93e0e3415701d9
+59	4914	7860659490438800	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	52ac6462840bddf1
+137	4883	7860659490103981	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	cade18d3db836f46
+38	5157	7860659492880218	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	5662c90b0ec0cc8b
 5300	5507	7860659496522725	C:/Users/joahi/Documents/Projetos/VR_LAICP/AR_Zillia/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/Debug/5x4r1i2y/obj/arm64-v8a/libgame.so	f9dd089c4d163288
+21	5300	7860659494323952	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	3aebd04c88f0e57f
+76	3011	7875895015194125	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	a71e55ead129335f
+26	3037	7875895015395548	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	9ff7ce6275b84891
+16	3041	7875895015380336	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	e93e0e3415701d9
+55	3073	7875895015812478	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	cade18d3db836f46
+45	3087	7875895015961955	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	52ac6462840bddf1
+65	3253	7875895017689426	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	5662c90b0ec0cc8b
+36	3330	7875895018465629	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	3aebd04c88f0e57f
+89	3528	7875895020445063	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	f0d29066796aee88
+3528	3743	7875895022615613	C:/Users/joahi/Documents/Projetos/VR_LAICP/AR_Zillia/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/Debug/5x4r1i2y/obj/arm64-v8a/libgame.so	f9dd089c4d163288

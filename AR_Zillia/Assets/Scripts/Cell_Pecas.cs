@@ -2,7 +2,6 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-using System;
 
 public class Cell_Pecas : MonoBehaviour
 {
@@ -12,59 +11,75 @@ public class Cell_Pecas : MonoBehaviour
 
     public Image ImgTipo;
     public TMP_Text txtTipo;
-    public TMP_Text txtserial;
-    public TMP_Text txtdivergencia;
-    public TMP_Text txtgarantia;
-    public TMP_Text txtcomentario;
-    public Button botaoAbrirMenuComentario;
+    public TMP_Text txtSerial;
+    public TMP_Text txtComentario;
 
-    private List<Controle_Menus.PecaItem> pecas;
-    private System.Action<List<Controle_Menus.PecaItem>> callbackMostrar;
+    [Header("Garantia")]
+    public Toggle toggleGarantia;
+
+    [Header("Divergência")]
+    public Toggle toggleDivergencia;
+
+    [Header("Menu Comentário")]
+    public Button botaoAbrirMenuComentario;
     public GameObject menuComentario;
+
     private bool aberto = false;
 
+    // 🔴 CONTROLE GLOBAL (apenas um menu aberto)
+    private static Cell_Pecas menuAbertoAtual;
+
     public void Configurar(
-        string tipo,
+        int tipo,
         string serial,
-        string divergencia,
-        string garantia,
+        bool garantia,
+        bool divergencia,
         string comentario
     )
     {
-        int Inumero = 0;
-        int.TryParse(tipo, out Inumero);
+        int index = tipo - 1;
 
-        Inumero -= 1;
+        if (index < 0 || index >= imagens.Length)
+        {
+            Debug.LogError($"[Cell_Pecas] Tipo inválido: {tipo}");
+            return;
+        }
 
-        Debug.Log(
-            $"[Cell_Pecas]\n" +
-            $" numero='{tipo}'  (int={Inumero})\n" +
-            $" imagens={imagens.Length}  placas={placas.Length}\n" +
-            $" placas={placas[Inumero]}\n" +
-            $" cliente='{serial}'\n" +
-            $" comentario='{comentario}'\n" +
-            $" garantia='{garantia}"
-        );
+        ImgTipo.overrideSprite = imagens[index];
+        txtTipo.text = placas[index];
 
-        ImgTipo.overrideSprite = imagens[Inumero];
-        txtTipo.text = placas[Inumero];
+        txtSerial.text = serial;
+        txtComentario.text = comentario;
 
-        txtserial.text = serial;
-        txtdivergencia.text = divergencia;
-        txtcomentario.text = comentario;
-        txtgarantia.text = garantia;
+        toggleGarantia.isOn = garantia;
+        toggleDivergencia.isOn = divergencia;
+
+        // Garante que inicia fechado
+        menuComentario.SetActive(false);
+        aberto = false;
 
         botaoAbrirMenuComentario.onClick.RemoveAllListeners();
-        botaoAbrirMenuComentario.onClick.AddListener(() =>
-        {
-            aberto = !aberto;
-            menuComentario.SetActive(aberto);
-            Debug.Log("Botãoo comentario Apertado");
-        });
+        botaoAbrirMenuComentario.onClick.AddListener(ToggleMenuComentario);
     }
 
-    public void DefinirPecas(List<Controle_Menus.PecaItem> lista)
+    private void ToggleMenuComentario()
     {
-        pecas = lista;
+        // Se outro menu estiver aberto, fecha ele
+        if (menuAbertoAtual != null && menuAbertoAtual != this)
+        {
+            menuAbertoAtual.FecharMenu();
+        }
+
+        // Alterna o menu atual
+        aberto = !aberto;
+        menuComentario.SetActive(aberto);
+
+        menuAbertoAtual = aberto ? this : null;
+    }
+
+    private void FecharMenu()
+    {
+        aberto = false;
+        menuComentario.SetActive(false);
     }
 }

@@ -87,7 +87,7 @@ public class Controle_Menus : MonoBehaviour
             }
 
             string chegada = item.data_chegada.Length >= 5 ? item.data_chegada.Substring(0, 5) : item.data_chegada;
-            string saida = item.data_saida.Length >= 5 ? item.data_saida.Substring(0, 5) : item.data_saida;
+            string saida = "A Finalizar";
 
             // Passa a lista de peças para a célula
             cell.DefinirPecas(item.pecas);
@@ -101,7 +101,7 @@ public class Controle_Menus : MonoBehaviour
                 MostrarPecas
             );
         }
-        StartCoroutine(VoltarScrollParaTopo());
+        SubirScrollTopo();
     }
 
     void MostrarPecas(List<PecaItem> pecas)
@@ -117,13 +117,11 @@ public class Controle_Menus : MonoBehaviour
 
             if (cell != null)
             {
-                cell.DefinirPecas(pecas);
-
                 cell.Configurar(
-                    p.tipo.ToString(),                   // numero (índice da imagem)
+                    p.tipo,                   // numero (índice da imagem)
                     p.serial,                            // cliente
-                    p.divergencia ? "Divergente" : "Normal",      // divergencia
-                    p.garantia ? "Com Garantia" : "Sem Garantia",          // chegada
+                    p.divergencia,
+                    p.garantia,
                     p.comentario
                 );
             }
@@ -133,15 +131,34 @@ public class Controle_Menus : MonoBehaviour
             }
         }
 
-        StartCoroutine(VoltarScrollParaTopo());
+        SubirScrollTopo();
     }
 
+    Coroutine _coTopo;
+    void SubirScrollTopo()
+    {
+        if (_coTopo != null) StopCoroutine(_coTopo);
+        _coTopo = StartCoroutine(VoltarScrollParaTopo());
+    }
     IEnumerator VoltarScrollParaTopo()
     {
-        yield return null; // espera 1 frame
-        scrollPecas.verticalNormalizedPosition = 1f;
-        scrollPedidos.verticalNormalizedPosition = 1f;
-    }
+        yield return null;
 
+        if (this == null) yield break;
+
+        Canvas.ForceUpdateCanvases();
+
+        if (scrollPecas != null && scrollPecas.isActiveAndEnabled && scrollPecas.content != null)
+        {
+            LayoutRebuilder.ForceRebuildLayoutImmediate(scrollPecas.content);
+            scrollPecas.verticalNormalizedPosition = 1f;
+        }
+
+        if (scrollPedidos != null && scrollPedidos.isActiveAndEnabled && scrollPedidos.content != null)
+        {
+            LayoutRebuilder.ForceRebuildLayoutImmediate(scrollPedidos.content);
+            scrollPedidos.verticalNormalizedPosition = 1f;
+        }
+    }
 
 }

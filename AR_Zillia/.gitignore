@@ -1,1 +1,45 @@
+# =========================
+# UNITY - TEMP / CACHE
+# =========================
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]serSettings/
+MemoryCaptures/
+
+# =========================
+# LOGS
+# =========================
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+.log
+
+# =========================
+# IDEs
+# =========================
+.vscode/
+.idea/
+*.csproj
+*.sln
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.apk
+
+# =========================
+# OS
+# =========================
+.DS_Store
+Thumbs.db
+desktop.ini
 Library
+UserSettings
+ProjectSettings/EditorUserSettings.asset
+
