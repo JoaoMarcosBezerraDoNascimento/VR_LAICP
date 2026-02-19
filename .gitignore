@@ -71,3 +71,6 @@ AR_Zillia/Logs/shadercompiler-UnityShaderCompiler.exe-0.log
 AR_Zillia/Assembly-CSharp.csproj
 AR_Zillia/UserSettings/Layouts/default-6000.dwlt
 /AR_Zillia/UserSettings
+AR_Zillia/Assembly-CSharp.csproj
+AR_Zillia/UserSettings/Layouts/default-6000.dwlt
+*.dwlt
