@@ -111,7 +111,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -145, y: 110}
+  m_AnchoredPosition: {x: -300, y: 110}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &3681932245900311834
@@ -301,6 +301,7 @@ GameObject:
   - component: {fileID: 3021369399595027617}
   - component: {fileID: 6307086243533303050}
   - component: {fileID: 8125077511282337167}
+  - component: {fileID: 2655899246058521955}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -421,6 +422,26 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 1
+--- !u!114 &2655899246058521955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1735331567131338597}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b43e0c7a380b9fc4a94af901a29e178a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AcionaBotaoPorDistancia
+  nomeDoIndicador: XRHand_IndexTip
+  distanciaLimite: 0.04
+  distanciaAtual: 0
+  botao: {fileID: 8125077511282337167}
+  toggle: {fileID: 0}
+  delayInicial: 1
+  cooldownClique: 0.5
+  indicadorMaisProximo: {fileID: 0}
 --- !u!1 &1816786903070187677
 GameObject:
   m_ObjectHideFlags: 0
@@ -586,7 +607,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2832096128781526814}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
@@ -594,7 +615,7 @@ RectTransform:
   - {fileID: 5092471088086382880}
   - {fileID: 3218007633362954364}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
@@ -1104,7 +1125,6 @@ RectTransform:
   - {fileID: 7373460770099812}
   - {fileID: 4644485296256155464}
   - {fileID: 3243849788012424566}
-  - {fileID: 4102115820412814114}
   m_Father: {fileID: 6746584650517052140}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -1255,6 +1275,7 @@ GameObject:
   - component: {fileID: 93703146188924524}
   - component: {fileID: 7807809621437160320}
   - component: {fileID: 8239803849632430721}
+  - component: {fileID: 3816801552923534337}
   m_Layer: 5
   m_Name: Content
   m_TagString: Untagged
@@ -1321,6 +1342,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_HorizontalFit: 2
   m_VerticalFit: 2
+--- !u!114 &3816801552923534337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4560337694350750578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3484662c72f3d774d9599b37eb4e4ef9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PinchScrollVR
+  nomeIndexTip: XRHand_IndexTip
+  nomeThumbTip: XRHand_ThumbTip
+  distanciaLimite: 0.015
+  sensibilidade: 0.5
+  delayInicial: 1
+  refreshIndicadoresSeg: 1
+  distanciaAtual: 0
+  indexMaisProximo: {fileID: 0}
+  thumbCorrespondente: {fileID: 0}
 --- !u!1 &5368789559620610342
 GameObject:
   m_ObjectHideFlags: 0
@@ -1518,6 +1560,7 @@ GameObject:
   - component: {fileID: 5601103539683429945}
   - component: {fileID: 5750117647817597988}
   - component: {fileID: 1413811340310604768}
+  - component: {fileID: 3572884930725904651}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -1638,6 +1681,26 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 1
+--- !u!114 &3572884930725904651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5852187146308443870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b43e0c7a380b9fc4a94af901a29e178a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AcionaBotaoPorDistancia
+  nomeDoIndicador: XRHand_IndexTip
+  distanciaLimite: 0.04
+  distanciaAtual: 0
+  botao: {fileID: 1413811340310604768}
+  toggle: {fileID: 0}
+  delayInicial: 1
+  cooldownClique: 0.5
+  indicadorMaisProximo: {fileID: 0}
 --- !u!1 &6542225742009724077
 GameObject:
   m_ObjectHideFlags: 0
@@ -2307,6 +2370,7 @@ GameObject:
   - component: {fileID: 9136866715097667373}
   - component: {fileID: 355158212567110754}
   - component: {fileID: 4959968210656619653}
+  - component: {fileID: 7868076638031526979}
   m_Layer: 5
   m_Name: Content
   m_TagString: Untagged
@@ -2373,6 +2437,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_HorizontalFit: 2
   m_VerticalFit: 2
+--- !u!114 &7868076638031526979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7190815166727912702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3484662c72f3d774d9599b37eb4e4ef9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PinchScrollVR
+  nomeIndexTip: XRHand_IndexTip
+  nomeThumbTip: XRHand_ThumbTip
+  distanciaLimite: 0.015
+  sensibilidade: 0.5
+  delayInicial: 1
+  refreshIndicadoresSeg: 1
+  distanciaAtual: 0
+  indexMaisProximo: {fileID: 0}
+  thumbCorrespondente: {fileID: 0}
 --- !u!1 &7284152652559006195
 GameObject:
   m_ObjectHideFlags: 0
@@ -2871,6 +2956,7 @@ GameObject:
   - component: {fileID: 1335248070538575806}
   - component: {fileID: 6096479649674068147}
   - component: {fileID: 8582608847040859092}
+  - component: {fileID: 2143662492226972450}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -2991,6 +3077,26 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 1
+--- !u!114 &2143662492226972450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8029088914672883925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b43e0c7a380b9fc4a94af901a29e178a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AcionaBotaoPorDistancia
+  nomeDoIndicador: XRHand_IndexTip
+  distanciaLimite: 0.04
+  distanciaAtual: 0
+  botao: {fileID: 8582608847040859092}
+  toggle: {fileID: 0}
+  delayInicial: 1
+  cooldownClique: 0.5
+  indicadorMaisProximo: {fileID: 0}
 --- !u!1 &8104113336331764977
 GameObject:
   m_ObjectHideFlags: 0
@@ -3461,85 +3567,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!1001 &4198757048082155686
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 5092471088086382880}
-    m_Modifications:
-    - target: {fileID: 191789809355557764, guid: 496b70509f0c04e49864e5a73547e32f,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -13.008789
-      objectReference: {fileID: 0}
-    - target: {fileID: 191789809355557764, guid: 496b70509f0c04e49864e5a73547e32f,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -289.00003
-      objectReference: {fileID: 0}
-    - target: {fileID: 191789809355557764, guid: 496b70509f0c04e49864e5a73547e32f,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 4246.799
-      objectReference: {fileID: 0}
-    - target: {fileID: 191789809355557764, guid: 496b70509f0c04e49864e5a73547e32f,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 191789809355557764, guid: 496b70509f0c04e49864e5a73547e32f,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 191789809355557764, guid: 496b70509f0c04e49864e5a73547e32f,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 191789809355557764, guid: 496b70509f0c04e49864e5a73547e32f,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 191789809355557764, guid: 496b70509f0c04e49864e5a73547e32f,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 191789809355557764, guid: 496b70509f0c04e49864e5a73547e32f,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 191789809355557764, guid: 496b70509f0c04e49864e5a73547e32f,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3642417671438949391, guid: 496b70509f0c04e49864e5a73547e32f,
-        type: 3}
-      propertyPath: m_Name
-      value: Controle_PC
-      objectReference: {fileID: 0}
-    - target: {fileID: 3642417671438949391, guid: 496b70509f0c04e49864e5a73547e32f,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 496b70509f0c04e49864e5a73547e32f, type: 3}
---- !u!4 &4102115820412814114 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 191789809355557764, guid: 496b70509f0c04e49864e5a73547e32f,
-    type: 3}
-  m_PrefabInstance: {fileID: 4198757048082155686}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7049624333464304355
 PrefabInstance:
   m_ObjectHideFlags: 0
