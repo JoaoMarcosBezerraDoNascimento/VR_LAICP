@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿// PinchScrollVR.cs
+using UnityEngine;
 using UnityEngine.UI;
 using System.Linq;
 
@@ -43,7 +44,7 @@ public class PinchScrollVR : MonoBehaviour
 
     void AtualizarIndicadores()
     {
-        var all = FindObjectsOfType<Transform>();
+        var all = FindObjectsOfType<Transform>(true);
         indices = all.Where(t => t != null && t.name == nomeIndexTip).ToArray();
         thumbs = all.Where(t => t != null && t.name == nomeThumbTip).ToArray();
     }
@@ -62,7 +63,8 @@ public class PinchScrollVR : MonoBehaviour
             AtualizarIndicadores();
         }
 
-        if (indices.Length == 0 || thumbs.Length == 0) return;
+        if (indices == null || thumbs == null || indices.Length == 0 || thumbs.Length == 0)
+            return;
 
         // 1) acha o IndexTip mais perto do objeto (alvo)
         float menor = float.MaxValue;
@@ -139,7 +141,6 @@ public class PinchScrollVR : MonoBehaviour
 
             float deltaY = idx.position.y - ultimoY;
 
-            // move o ScrollRect (clamp para não sair do range)
             scroll.verticalNormalizedPosition = Mathf.Clamp01(
                 scroll.verticalNormalizedPosition + (deltaY * sensibilidade * -1f)
             );

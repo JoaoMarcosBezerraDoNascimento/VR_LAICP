@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿// AcionaBotaoPorDistancia.cs
+using UnityEngine;
 using UnityEngine.UI;
 using System.Linq;
 
@@ -21,22 +22,26 @@ public class AcionaBotaoPorDistancia : MonoBehaviour
     public float cooldownClique = 0.5f;
     float ultimoCliqueTime = -999f;
 
+    [Header("Auto-refresh (caso os hands apareçam depois)")]
+    public float refreshIndicadoresSeg = 1.0f;
+    private float proxRefresh;
+
     [Header("Debug")]
     [SerializeField] Transform indicadorMaisProximo;
 
-    Transform[] indicadores;
+    Transform[] indicadores = new Transform[0];
     bool prontoParaDetectar;
 
     void Start()
     {
         AtualizarIndicadores();
+        proxRefresh = Time.time + refreshIndicadoresSeg;
     }
 
     void AtualizarIndicadores()
     {
-        indicadores = FindObjectsOfType<Transform>()
-            .Where(t => t.name == nomeDoIndicador)
-            .ToArray();
+        var all = FindObjectsOfType<Transform>(true);
+        indicadores = all.Where(t => t != null && t.name == nomeDoIndicador).ToArray();
     }
 
     void Update()
@@ -45,14 +50,24 @@ public class AcionaBotaoPorDistancia : MonoBehaviour
         if (!prontoParaDetectar && tempoDecorrido >= delayInicial)
             prontoParaDetectar = true;
 
-        if (!prontoParaDetectar || indicadores.Length == 0)
+        if (!prontoParaDetectar)
+            return;
+
+        if (Time.time >= proxRefresh)
+        {
+            proxRefresh = Time.time + refreshIndicadoresSeg;
+            AtualizarIndicadores();
+        }
+
+        if (indicadores == null || indicadores.Length == 0)
             return;
 
         float menorDist = float.MaxValue;
         Transform maisProximo = null;
 
-        foreach (var t in indicadores)
+        for (int i = 0; i < indicadores.Length; i++)
         {
+            var t = indicadores[i];
             if (t == null) continue;
 
             float d = Vector3.Distance(transform.position, t.position);
