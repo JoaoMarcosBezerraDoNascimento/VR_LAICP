@@ -5,11 +5,16 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Cena_Oficial.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/Scenes/Cena_Camera.unity
+    guid: 7c10c9ffdb9381e4c8dc916f955c23b0
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 0ff6cf971319bd14090d8267de25ffd7,
+      type: 2}
+    UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 7c538d95854a3474687c594128a5d272,
       type: 2}
     com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: e0d9121ce7841d148a8a6cacfde2433f,
       type: 2}
