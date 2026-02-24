@@ -42,6 +42,36 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_LoaderManagerInstance: {fileID: 1090010767403002908}
   m_InitManagerOnStart: 1
+--- !u!114 &-5769632697969412732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4c3631f5e58749a59194e0cf6baf6d5, type: 3}
+  m_Name: VisionOS Providers
+  m_EditorClassIdentifier: Unity.XR.Management::UnityEngine.XR.Management.XRManagerSettings
+  m_RequiresSettingsUpdate: 0
+  m_AutomaticLoading: 0
+  m_AutomaticRunning: 0
+  m_Loaders: []
+--- !u!114 &-3000300499884101531
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d236b7d11115f2143951f1e14045df39, type: 3}
+  m_Name: VisionOS Settings
+  m_EditorClassIdentifier: Unity.XR.Management::UnityEngine.XR.Management.XRGeneralSettings
+  m_LoaderManagerInstance: {fileID: -5769632697969412732}
+  m_InitManagerOnStart: 1
 --- !u!114 &-699973792465866242
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -71,8 +101,7 @@ MonoBehaviour:
   m_RequiresSettingsUpdate: 0
   m_AutomaticLoading: 0
   m_AutomaticRunning: 0
-  m_Loaders:
-  - {fileID: 11400000, guid: d23bee0af4235e84e8ea20f9e30212d3, type: 2}
+  m_Loaders: []
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -85,12 +114,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2dc886499c26824283350fa532d087d, type: 3}
   m_Name: XRGeneralSettingsPerBuildTarget
   m_EditorClassIdentifier: 
-  Keys: 07000000010000000d0000000e000000
+  Keys: 07000000010000000d0000000e00000024000000
   Values:
   - {fileID: -7596639799515485624}
   - {fileID: -8329968075216435692}
   - {fileID: -699973792465866242}
   - {fileID: -6260091655161493448}
+  - {fileID: -3000300499884101531}
 --- !u!114 &1090010767403002908
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -106,8 +136,7 @@ MonoBehaviour:
   m_RequiresSettingsUpdate: 0
   m_AutomaticLoading: 0
   m_AutomaticRunning: 0
-  m_Loaders:
-  - {fileID: 11400000, guid: d23bee0af4235e84e8ea20f9e30212d3, type: 2}
+  m_Loaders: []
 --- !u!114 &6593296627428028052
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -124,7 +153,7 @@ MonoBehaviour:
   m_AutomaticLoading: 0
   m_AutomaticRunning: 0
   m_Loaders:
-  - {fileID: 11400000, guid: d23bee0af4235e84e8ea20f9e30212d3, type: 2}
+  - {fileID: 11400000, guid: 3e1abfa9f929fc14499110b95638e246, type: 2}
 --- !u!114 &8121193314008505122
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -140,5 +169,4 @@ MonoBehaviour:
   m_RequiresSettingsUpdate: 0
   m_AutomaticLoading: 0
   m_AutomaticRunning: 0
-  m_Loaders:
-  - {fileID: 11400000, guid: d23bee0af4235e84e8ea20f9e30212d3, type: 2}
+  m_Loaders: []

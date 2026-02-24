@@ -3,6 +3,10 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{11717F12-C21A-483A-014D-4E865095DFB1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NativeGallery.Runtime", "NativeGallery.Runtime.csproj", "{3FC393D5-1C02-6F98-FC8D-6657B8190913}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NativeGallery.Editor", "NativeGallery.Editor.csproj", "{71D3E020-F235-4C02-48A9-36E261A142DB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +17,14 @@ Global
 		{11717F12-C21A-483A-014D-4E865095DFB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{11717F12-C21A-483A-014D-4E865095DFB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{11717F12-C21A-483A-014D-4E865095DFB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FC393D5-1C02-6F98-FC8D-6657B8190913}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FC393D5-1C02-6F98-FC8D-6657B8190913}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FC393D5-1C02-6F98-FC8D-6657B8190913}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FC393D5-1C02-6F98-FC8D-6657B8190913}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71D3E020-F235-4C02-48A9-36E261A142DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71D3E020-F235-4C02-48A9-36E261A142DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71D3E020-F235-4C02-48A9-36E261A142DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71D3E020-F235-4C02-48A9-36E261A142DB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

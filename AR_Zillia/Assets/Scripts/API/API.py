@@ -1,12 +1,29 @@
+# servidor/api.py
+import requests
 import json
 import logging
 from http import HTTPStatus
 from datetime import date
 from typing import List, Optional
+import httpx
 
-from fastapi import FastAPI, HTTPException, Depends, Header, Query
+from fastapi import FastAPI, HTTPException, Depends, Header, Query, responses
+from fastapi.responses import StreamingResponse
 from pydantic import BaseModel
 from IA.server_mcp import router as mcp_router
+
+import time
+from typing import Dict, Optional
+from fastapi import Request
+import threading
+
+LAST_FRAME: Dict[str, dict] = {}
+
+# Rodar:
+# cd IA_VR
+# source .venv/bin/activate
+# uvicorn API.API:app --host 0.0.0.0 --port 8555
+# dar curl http://100.122.253.126:8555/docs no cmd do windows para ativar o túnel
 
 # ==============================================================================
 # 1. CONFIGURAÇÕES GERAIS E INICIALIZAÇÃO
@@ -41,13 +58,11 @@ API_TOKEN = "VR_2026"
 # Contratos de dados. Eles garantem que o Front-end envia os dados no formato certo.
 # ==============================================================================
 
-
 class PecaSchema(BaseModel):
     """Representa uma peça individual dentro de um RMA."""
     nome: str
     codigo: str
     comentario: Optional[str] = None  # Campo não obrigatório
-
 
 class RmaSchema(BaseModel):
     """
@@ -60,7 +75,6 @@ class RmaSchema(BaseModel):
     pecas: List[PecaSchema] = []  # Uma lista de peças baseada no modelo acima
     status: str = "Pendente"  # Se o front-end não enviar status, assume "Pendente"
 
-
 class RmaPublic(RmaSchema):
     """
     Modelo de SAÍDA (Output).
@@ -70,11 +84,9 @@ class RmaPublic(RmaSchema):
     id: int
     data_criacao: str
 
-
 class RmaList(BaseModel):
     """Modelo para devolver uma lista de RMAs no formato {"rmas": [...] }"""
     rmas: List[RmaPublic]
-
 
 class Message(BaseModel):
     """Modelo para respostas simples de texto (ex: sucesso, erro)."""
@@ -84,7 +96,6 @@ class Message(BaseModel):
 # 3. CAMADA DE PERSISTÊNCIA (BANCO DE DADOS EM JSON)
 # Funções para ler e escrever no arquivo JSON.
 # ==============================================================================
-
 
 def read_db() -> List[dict]:
     """
@@ -97,7 +108,6 @@ def read_db() -> List[dict]:
     except (FileNotFoundError, json.JSONDecodeError):
         return []
 
-
 def save_db(data: List[dict]):
     """
     Recebe a lista de dados atualizada e sobrescreve o arquivo JSON.
@@ -109,7 +119,6 @@ def save_db(data: List[dict]):
 # ==============================================================================
 # 4. CAMADA DE SEGURANÇA (AUTENTICAÇÃO)
 # ==============================================================================
-
 
 def get_current_user(x_token: str = Header(default=None)):
     """
@@ -128,14 +137,12 @@ def get_current_user(x_token: str = Header(default=None)):
 # Os pontos de contato onde o Front-end faz as requisições.
 # ==============================================================================
 
-
 @app.get("/", status_code=HTTPStatus.OK, response_model=Message)
 def root():
     """Rota de teste de conexão (Health Check)."""
     return {"message": "API de RMA online! Acesse /docs para documentação."}
 
 # [ CREATE ] - Rota para CRIAR um novo RMA
-
 
 @app.post("/rmas/", status_code=HTTPStatus.CREATED, response_model=RmaPublic)
 def create_rma(rma: RmaSchema, token: str = Depends(get_current_user)):
@@ -165,7 +172,6 @@ def create_rma(rma: RmaSchema, token: str = Depends(get_current_user)):
     return rma_with_id
 
 # [ READ ] - Rota para LISTAR os RMAs (Com filtros opcionais)
-
 
 @app.get("/rmas/", status_code=HTTPStatus.OK, response_model=RmaList)
 def read_rmas(
@@ -213,7 +219,6 @@ def read_rma_by_id(rma_id: int, token: str = Depends(get_current_user)):
 
 # [ UPDATE ] - Rota para ATUALIZAR UM RMA
 
-
 @app.put("/rmas/{rma_id}", status_code=HTTPStatus.OK, response_model=RmaPublic)
 def update_rma(rma_id: int, rma_atualizado: RmaSchema, token: str = Depends(get_current_user)):
     """
@@ -241,7 +246,6 @@ def update_rma(rma_id: int, rma_atualizado: RmaSchema, token: str = Depends(get_
 
 # [ DELETE ] - Rota para DELETAR UM RMA
 
-
 @app.delete("/rmas/{rma_id}", status_code=HTTPStatus.OK, response_model=Message)
 def delete_rma(rma_id: int, token: str = Depends(get_current_user)):
     """Remove o RMA do banco de dados e gera um Log de segurança."""
@@ -260,3 +264,95 @@ def delete_rma(rma_id: int, token: str = Depends(get_current_user)):
     # Registra no log a exclusão para auditoria
     logging.warning(f"DELETE: RMA ID {rma_id} removido do sistema.")
     return {"message": "RMA deletado com sucesso"}
+
+# [Stream e Controle do PC remotamente] - Rotas para registrar, receber as telas e executar comandos de clique e de digitação
+
+PC_REGISTRY = {}
+
+class RegisterIn(BaseModel):
+    pc_name: str
+    host: str
+    port: int
+
+@app.post("/register")
+def register_pc(payload: RegisterIn, token: str = Depends(get_current_user)):
+    PC_REGISTRY[payload.pc_name] = {"host": payload.host, "port": payload.port}
+    return {"ok": True, "pc_name": payload.pc_name}
+
+@app.post("/{pc_name}/click")
+def remote_click(pc_name: str, payload: dict, token: str = Depends(get_current_user)):
+    target = PC_REGISTRY.get(pc_name)
+    if not target:
+        raise HTTPException(status_code=404, detail="PC não registrado.")
+    url = f"http://{target['host']}:{target['port']}/click"
+    r = requests.post(url, json=payload, timeout=5)
+    r.raise_for_status()
+    return r.json()
+
+LAST_FRAME: Dict[str, dict] = {}
+FRAME_EVENT: Dict[str, threading.Event] = {}
+FRAME_SEQ: Dict[str, int] = {}
+
+@app.post("/ingest/{pc_name}")
+async def ingest_frame(pc_name: str, request: Request, token: str = Depends(get_current_user)):
+    body = await request.body()
+    if not body:
+        raise HTTPException(status_code=400, detail="Sem body")
+
+    seq = FRAME_SEQ.get(pc_name, 0) + 1
+    FRAME_SEQ[pc_name] = seq
+
+    LAST_FRAME[pc_name] = {
+        "ts": time.time(),
+        "seq": seq,
+        "jpg": body,
+        "host": request.headers.get("x-host", ""),
+        "user": request.headers.get("x-user", ""),
+        "w": request.headers.get("x-w", ""),
+        "h": request.headers.get("x-h", ""),
+    }
+
+    ev = FRAME_EVENT.get(pc_name)
+    if ev is None:
+        ev = threading.Event()
+        FRAME_EVENT[pc_name] = ev
+    ev.set()
+
+    return {"ok": True, "pc_name": pc_name, "bytes": len(body), "seq": seq}
+
+@app.get("/{pc_name}/stream")
+def stream_from_cache(pc_name: str):
+    def gen():
+        boundary = b"--frame\r\n"
+        last_sent = 0
+
+        ev = FRAME_EVENT.get(pc_name)
+        if ev is None:
+            ev = threading.Event()
+            FRAME_EVENT[pc_name] = ev
+
+        while True:
+            # espera até chegar frame novo (reduz CPU e latência)
+            ev.wait(timeout=2.0)
+            ev.clear()
+
+            item = LAST_FRAME.get(pc_name)
+            if not item:
+                continue
+
+            seq = int(item.get("seq", 0))
+            if seq == last_sent:
+                continue
+            last_sent = seq
+
+            payload = item["jpg"]
+            yield (
+                boundary
+                + b"Content-Type: image/jpeg\r\n"
+                + b"Content-Length: " + str(len(payload)).encode("ascii") + b"\r\n\r\n"
+                + payload
+                + b"\r\n"
+            )
+
+    return StreamingResponse(gen(), media_type="multipart/x-mixed-replace; boundary=frame")
+

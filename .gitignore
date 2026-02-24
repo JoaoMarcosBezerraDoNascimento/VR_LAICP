@@ -75,3 +75,6 @@ AR_Zillia/Assembly-CSharp.csproj
 AR_Zillia/UserSettings/Layouts/default-6000.dwlt
 *.dwlt
 *.dwlt
+*.dwlt
+*.dwlt
+*.cache

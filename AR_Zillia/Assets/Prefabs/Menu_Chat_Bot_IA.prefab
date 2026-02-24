@@ -519,6 +519,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8831892863886714454}
   - component: {fileID: 7872792099491951259}
+  - component: {fileID: 4928223787605929877}
   m_Layer: 0
   m_Name: Menu_Chat_Bot_IA
   m_TagString: Untagged
@@ -559,6 +560,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Controle_Menu_IA
   apiBaseUrl: http://172.26.1.39:8555
   apiToken: VR_2026
+--- !u!114 &4928223787605929877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1678296526106715405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 275aece2eba288249befc8d26e3805e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Envia_Foto
+  apiUrl: http://100.122.253.126:8555/mcp/analisar_PCP
+  captureCamera: {fileID: 0}
+  width: 1280
+  height: 720
+  usePng: 1
+  jpgQuality: 90
 --- !u!1 &1800359759646658538
 GameObject:
   m_ObjectHideFlags: 0

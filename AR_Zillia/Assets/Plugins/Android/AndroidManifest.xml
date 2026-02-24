@@ -22,6 +22,14 @@
   <uses-feature android:name="com.oculus.experimental.enabled" android:required="true" />
   <uses-permission android:name="com.oculus.permission.USE_ANCHOR_API" />
   <uses-feature android:name="com.oculus.feature.PASSTHROUGH" android:required="false" />
+  <uses-feature android:name="horizonos.permission.HEADSET_CAMERA" />
+  <uses-feature android:name="android.permission.CAMERA" />
+<uses-permission android:name="android.permission.CAMERA" />
   <uses-permission android:name="com.oculus.permission.USE_SCENE" />
+<uses-permission android:name="horizonos.permission.HEADSET_CAMERA" />
   <uses-permission android:name="horizonos.permission.HEADSET_CAMERA" />
+	<uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+	<uses-permission
+		android:name="android.permission.READ_EXTERNAL_STORAGE"
+		android:maxSdkVersion="32" />
 </manifest>
