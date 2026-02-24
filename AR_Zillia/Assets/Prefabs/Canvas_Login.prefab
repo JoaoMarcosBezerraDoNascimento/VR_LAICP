@@ -392,6 +392,7 @@ MonoBehaviour:
   toggle: {fileID: 0}
   delayInicial: 1
   cooldownClique: 0.5
+  refreshIndicadoresSeg: 1
   indicadorMaisProximo: {fileID: 0}
 --- !u!1 &834646008912724960
 GameObject:
@@ -2335,7 +2336,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.017973004}
+  m_AnchoredPosition: {x: 0, y: -0.0015318571}
   m_SizeDelta: {x: -350, y: 0}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &3728262363693569110

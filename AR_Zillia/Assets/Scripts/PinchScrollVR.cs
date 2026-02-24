@@ -1,58 +1,90 @@
-﻿// PinchScrollVR.cs
+﻿// PinchScrollRect.cs
 using UnityEngine;
 using UnityEngine.UI;
 using System.Linq;
 
-public class PinchScrollVR : MonoBehaviour
+public class PinchScrollRect : MonoBehaviour
 {
-    [Header("Nomes dos indicadores (Transform)")]
-    public string nomeIndexTip = "XRHand_IndexTip";
-    public string nomeThumbTip = "XRHand_ThumbTip";
+    [Header("Nomes dos indicadores (Meta/OVR/XR Hands)")]
+    public string nomeIndicadorIndexTip = "XRHand_IndexTip";
+    public string nomePolegarTip = "XRHand_ThumbTip";
 
-    [Header("Pinch")]
-    public float distanciaLimite = 0.015f;
-    public float sensibilidade = 0.5f;
+    [Header("Scroll")]
+    public ScrollRect scrollRect;
+    [Tooltip("Quanto o movimento em metros vira scroll. Ex: 2.0 = move 1cm -> 0.02*2 = 0.04 de scroll")]
+    public float sensibilidade = -2.0f;
+    [Tooltip("Inverte o sentido do scroll")]
+    public bool inverter = false;
+
+    [Header("Pinça (histerese)")]
+    [Tooltip("Distância em metros para considerar PINÇA FECHADA")]
+    public float pinchFechado = 0.025f;
+    [Tooltip("Distância em metros para considerar PINÇA ABERTA (deve ser maior que fechado)")]
+    public float pinchAberto = 0.035f;
 
     [Header("Delay inicial")]
     public float delayInicial = 1.0f;
     private float tempoDecorrido;
-    private bool pronto;
 
-    [Header("Auto-refresh (caso os hands apareçam depois)")]
+    [Header("Auto-refresh (hands podem aparecer depois)")]
     public float refreshIndicadoresSeg = 1.0f;
     private float proxRefresh;
 
     [Header("Debug")]
-    public float distanciaAtual;
-    [SerializeField] private Transform indexMaisProximo;
-    [SerializeField] private Transform thumbCorrespondente;
+    public bool debugLogs = true;
+    public float distanciaPinchAtual;
+    [SerializeField] private Transform indexTipMaisProximo;
+    [SerializeField] private Transform thumbTipMaisProximo;
+    public bool pinçando;
 
-    private ScrollRect scroll;
+    private Transform[] indexTips = new Transform[0];
+    private Transform[] thumbTips = new Transform[0];
 
-    private Transform[] indices = new Transform[0];
-    private Transform[] thumbs = new Transform[0];
-
-    private bool pinchAtivo;
-    private float ultimoY;
+    private bool pronto;
+    private Vector3 posIndexNoInicioPinch;
+    private float scrollNoInicioPinch;
 
     void Start()
     {
-        scroll = GetComponent<ScrollRect>();
         AtualizarIndicadores();
         proxRefresh = Time.time + refreshIndicadoresSeg;
+
+        if (scrollRect == null)
+            scrollRect = GetComponentInChildren<ScrollRect>(true);
     }
 
     void AtualizarIndicadores()
     {
         var all = FindObjectsOfType<Transform>(true);
-        indices = all.Where(t => t != null && t.name == nomeIndexTip).ToArray();
-        thumbs = all.Where(t => t != null && t.name == nomeThumbTip).ToArray();
+        indexTips = all.Where(t => t != null && t.name == nomeIndicadorIndexTip).ToArray();
+        thumbTips = all.Where(t => t != null && t.name == nomePolegarTip).ToArray();
+    }
+
+    Transform AcharMaisProximo(Transform[] arr)
+    {
+        if (arr == null || arr.Length == 0) return null;
+
+        float menor = float.MaxValue;
+        Transform best = null;
+
+        for (int i = 0; i < arr.Length; i++)
+        {
+            var t = arr[i];
+            if (t == null) continue;
+
+            float d = Vector3.Distance(transform.position, t.position);
+            if (d < menor)
+            {
+                menor = d;
+                best = t;
+            }
+        }
+
+        return best;
     }
 
     void Update()
     {
-        if (scroll == null) return;
-
         tempoDecorrido += Time.deltaTime;
         if (!pronto && tempoDecorrido >= delayInicial) pronto = true;
         if (!pronto) return;
@@ -63,93 +95,50 @@ public class PinchScrollVR : MonoBehaviour
             AtualizarIndicadores();
         }
 
-        if (indices == null || thumbs == null || indices.Length == 0 || thumbs.Length == 0)
+        if (scrollRect == null || scrollRect.content == null)
             return;
 
-        // 1) acha o IndexTip mais perto do objeto (alvo)
-        float menor = float.MaxValue;
-        Transform idx = null;
+        indexTipMaisProximo = AcharMaisProximo(indexTips);
+        thumbTipMaisProximo = AcharMaisProximo(thumbTips);
 
-        for (int i = 0; i < indices.Length; i++)
+        if (indexTipMaisProximo == null || thumbTipMaisProximo == null)
+            return;
+
+        distanciaPinchAtual = Vector3.Distance(indexTipMaisProximo.position, thumbTipMaisProximo.position);
+
+        // estado da pinça com histerese (evita flicker)
+        if (!pinçando)
         {
-            var t = indices[i];
-            if (t == null) continue;
-
-            float d = Vector3.Distance(transform.position, t.position);
-            if (d < menor)
+            if (distanciaPinchAtual <= pinchFechado)
             {
-                menor = d;
-                idx = t;
+                pinçando = true;
+                posIndexNoInicioPinch = indexTipMaisProximo.position;
+                scrollNoInicioPinch = scrollRect.verticalNormalizedPosition;
+
+                if (debugLogs) Debug.Log("[PinchScroll] Pinça começou");
             }
-        }
-
-        if (idx == null) return;
-
-        // 2) tenta achar o ThumbTip da mesma mão (mesmo parent), senão pega o mais próximo do Index
-        Transform th = null;
-
-        var parent = idx.parent;
-        if (parent != null)
-        {
-            for (int i = 0; i < thumbs.Length; i++)
-            {
-                var t = thumbs[i];
-                if (t == null) continue;
-
-                if (t.parent == parent)
-                {
-                    th = t;
-                    break;
-                }
-            }
-        }
-
-        if (th == null)
-        {
-            float menorThumb = float.MaxValue;
-            for (int i = 0; i < thumbs.Length; i++)
-            {
-                var t = thumbs[i];
-                if (t == null) continue;
-
-                float d = Vector3.Distance(idx.position, t.position);
-                if (d < menorThumb)
-                {
-                    menorThumb = d;
-                    th = t;
-                }
-            }
-        }
-
-        if (th == null) return;
-
-        indexMaisProximo = idx;
-        thumbCorrespondente = th;
-
-        // 3) pinch = distância entre index e thumb
-        float dist = Vector3.Distance(idx.position, th.position);
-        distanciaAtual = dist;
-
-        if (dist < distanciaLimite)
-        {
-            if (!pinchAtivo)
-            {
-                pinchAtivo = true;
-                ultimoY = idx.position.y;
-                return;
-            }
-
-            float deltaY = idx.position.y - ultimoY;
-
-            scroll.verticalNormalizedPosition = Mathf.Clamp01(
-                scroll.verticalNormalizedPosition + (deltaY * sensibilidade * -1f)
-            );
-
-            ultimoY = idx.position.y;
         }
         else
         {
-            pinchAtivo = false;
+            if (distanciaPinchAtual >= pinchAberto)
+            {
+                pinçando = false;
+                if (debugLogs) Debug.Log("[PinchScroll] Pinça terminou");
+                return;
+            }
+
+            // enquanto pinçando: movimento do dedo -> scroll
+            float deltaY = indexTipMaisProximo.position.y - posIndexNoInicioPinch.y;
+            float deltaScroll = deltaY * sensibilidade;
+            if (inverter) deltaScroll = -deltaScroll;
+
+            float novo = scrollNoInicioPinch + deltaScroll;
+
+            // clamp 0..1 (ScrollRect usa normalized)
+            if (novo < 0f) novo = 0f;
+            if (novo > 1f) novo = 1f;
+
+            scrollRect.verticalNormalizedPosition = novo;
         }
     }
 }

@@ -52,4 +52,48 @@ public class UIManager : MonoBehaviour
         // Mostra só a desejada
         telaParaMostrar.SetActive(true);
     }
+    public void Mostrar_Tela_Por_indice(int index)
+    {
+        Debug.Log("Trocando de Tela...");
+
+        if (index < 0 || index >= telas.Count)
+        {
+            Debug.LogError("Índice inválido: " + index);
+            return;
+        }
+
+        GameObject tela = telas[index];
+        if (tela == null)
+        {
+            Debug.LogError("Tela no índice " + index + " é NULL");
+            return;
+        }
+
+        OcultarTodas();
+        tela.SetActive(true);
+    }
+
+    public void Mostrar_Tela_Indice_Fixo()
+    {
+        Debug.Log("Trocando para Tela 1...");
+
+        int index = 1;
+
+        if (index < 0 || index >= telas.Count)
+        {
+            Debug.LogError("Índice inválido: " + index);
+            return;
+        }
+
+        GameObject tela = telas[index];
+        if (tela == null)
+        {
+            Debug.LogError("Tela no índice " + index + " é NULL");
+            return;
+        }
+
+        OcultarTodas();
+        tela.SetActive(true);
+    }
+
 }
