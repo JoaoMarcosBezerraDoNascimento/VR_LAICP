@@ -44,6 +44,7 @@ public class Controle_Menus : MonoBehaviour
     public Transform pecaContentParent;
     public ScrollRect scrollPecas;
 
+    public UIManager ui;
     void Start()
     {
         CarregarHistorico();
