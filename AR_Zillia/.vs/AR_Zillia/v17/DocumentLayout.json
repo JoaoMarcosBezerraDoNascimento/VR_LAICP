@@ -1,12 +1,54 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\joahi\\Documents\\Projetos\\VR_LAICP\\AR_Zillia\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{11717F12-C21A-483A-014D-4E865095DFB1}|Assembly-CSharp.csproj|c:\\users\\joahi\\documents\\projetos\\vr_laicp\\ar_zillia\\assets\\scripts\\ui\\stream_api.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11717F12-C21A-483A-014D-4E865095DFB1}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\stream_api.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11717F12-C21A-483A-014D-4E865095DFB1}|Assembly-CSharp.csproj|c:\\users\\joahi\\documents\\projetos\\vr_laicp\\ar_zillia\\assets\\textmesh pro\\examples \u0026 extras\\scripts\\cameracontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11717F12-C21A-483A-014D-4E865095DFB1}|Assembly-CSharp.csproj|solutionrelative:assets\\textmesh pro\\examples \u0026 extras\\scripts\\cameracontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CameraController.cs",
+              "DocumentMoniker": "C:\\Users\\joahi\\Documents\\Projetos\\VR_LAICP\\AR_Zillia\\Assets\\TextMesh Pro\\Examples \u0026 Extras\\Scripts\\CameraController.cs",
+              "RelativeDocumentMoniker": "Assets\\TextMesh Pro\\Examples \u0026 Extras\\Scripts\\CameraController.cs",
+              "ToolTip": "C:\\Users\\joahi\\Documents\\Projetos\\VR_LAICP\\AR_Zillia\\Assets\\TextMesh Pro\\Examples \u0026 Extras\\Scripts\\CameraController.cs",
+              "RelativeToolTip": "Assets\\TextMesh Pro\\Examples \u0026 Extras\\Scripts\\CameraController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-24T22:10:43.295Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Stream_API.cs",
+              "DocumentMoniker": "C:\\Users\\joahi\\Documents\\Projetos\\VR_LAICP\\AR_Zillia\\Assets\\Scripts\\UI\\Stream_API.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\Stream_API.cs",
+              "ToolTip": "C:\\Users\\joahi\\Documents\\Projetos\\VR_LAICP\\AR_Zillia\\Assets\\Scripts\\UI\\Stream_API.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UI\\Stream_API.cs",
+              "ViewState": "AgIAAFsBAAAAAAAAAAAswIQBAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-24T21:56:57.464Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

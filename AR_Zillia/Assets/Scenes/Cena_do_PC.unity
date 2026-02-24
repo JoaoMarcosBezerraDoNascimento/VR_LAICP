@@ -142,6 +142,26 @@ PrefabInstance:
       propertyPath: m_AnchorMin.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 500320104807746837, guid: 93531a412c88d1e4e9a13ecebfa863b2,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 500320104807746837, guid: 93531a412c88d1e4e9a13ecebfa863b2,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 500320104807746837, guid: 93531a412c88d1e4e9a13ecebfa863b2,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 500320104807746837, guid: 93531a412c88d1e4e9a13ecebfa863b2,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 632910610889413801, guid: 93531a412c88d1e4e9a13ecebfa863b2,
         type: 3}
       propertyPath: m_IsActive
@@ -157,6 +177,16 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 1521721809040930718, guid: 93531a412c88d1e4e9a13ecebfa863b2,
+        type: 3}
+      propertyPath: clickUrl
+      value: http://10.0.1.108:8555/click
+      objectReference: {fileID: 0}
+    - target: {fileID: 1521721809040930718, guid: 93531a412c88d1e4e9a13ecebfa863b2,
+        type: 3}
+      propertyPath: streamUrl
+      value: http://10.0.1.108:8555/stream
+      objectReference: {fileID: 0}
     - target: {fileID: 1561584725234669925, guid: 93531a412c88d1e4e9a13ecebfa863b2,
         type: 3}
       propertyPath: m_SizeDelta.y
@@ -572,7 +602,8 @@ PrefabInstance:
       propertyPath: m_PresetInfoIsWorld
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2127363455144548733, guid: 93531a412c88d1e4e9a13ecebfa863b2, type: 3}
     m_RemovedGameObjects:
     - {fileID: 2721718228829009836, guid: 93531a412c88d1e4e9a13ecebfa863b2, type: 3}
     - {fileID: 3576964352018673545, guid: 93531a412c88d1e4e9a13ecebfa863b2, type: 3}

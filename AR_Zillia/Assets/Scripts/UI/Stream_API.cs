@@ -5,17 +5,36 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Net.Http;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.InputSystem;
 
 public class Stream_API : MonoBehaviour
 {
     [Header("MJPEG URL (proxy)")]
-    public string streamUrl = "http://localhost:8555/remote/JONH_PC/stream";
+    public string streamUrl = "http://10.0.1.108:8555/stream";
 
-    [Header("Target Quad (Renderer)")]
-    public Renderer targetRenderer; // arraste o Quad aqui
+    [Header("Click API URL")]
+    public string clickUrl = "http://10.0.1.108:8555/click";
+
+    [Header("Render destino (use apenas UM)")]
+    public Renderer targetRenderer;     // opcional
+    public RawImage targetRawImage;     // opcional (UI)
+
+    [Header("Origem do clique (TOP-LEFT)")]
+    [Tooltip("Para RawImage: use o próprio RectTransform dela (ou um filho no TOP-LEFT).\nPara Quad: um GameObject no canto superior esquerdo do Quad.")]
+    public Transform topLeftOrigin;
 
     [Header("Texture Settings")]
     public bool usePointFilter = false;
+
+    [Header("Novo Input System (auto-cria se vazio)")]
+    public InputActionAsset inputActions;
+    public string actionMapName = "UI";
+    public string clickActionName = "Click";
+    public string pointerPositionActionName = "Point";
+
+    private InputAction _clickAction;
+    private InputAction _pointAction;
 
     private HttpClient _http;
     private CancellationTokenSource _cts;
@@ -27,19 +46,24 @@ public class Stream_API : MonoBehaviour
 
     void Awake()
     {
-        if (targetRenderer == null) targetRenderer = GetComponent<Renderer>();
         _http = new HttpClient();
         _http.Timeout = Timeout.InfiniteTimeSpan;
+
+        SetupInputActions();
     }
 
     void OnEnable()
     {
+        EnableInput();
+
         _cts = new CancellationTokenSource();
         _ = Task.Run(() => StreamLoop(_cts.Token), _cts.Token);
     }
 
     void OnDisable()
     {
+        DisableInput();
+
         try { _cts?.Cancel(); } catch { }
         try { _cts?.Dispose(); } catch { }
         _cts = null;
@@ -53,11 +77,16 @@ public class Stream_API : MonoBehaviour
 
     void Update()
     {
+        HandleClick();
+
         if (!_hasNewFrame) return;
 
-        // pega frame "atomico" (cópia local)
         int len = _jpegLen;
-        if (len <= 0 || _jpegBuffer == null || _jpegBuffer.Length < len) { _hasNewFrame = false; return; }
+        if (len <= 0 || _jpegBuffer == null || _jpegBuffer.Length < len)
+        {
+            _hasNewFrame = false;
+            return;
+        }
 
         if (_tex == null)
         {
@@ -65,23 +94,57 @@ public class Stream_API : MonoBehaviour
             _tex.wrapMode = TextureWrapMode.Clamp;
             _tex.filterMode = usePointFilter ? FilterMode.Point : FilterMode.Bilinear;
 
-            if (targetRenderer != null)
+            // Se RawImage foi atribuído, renderiza nele
+            if (targetRawImage != null)
+                targetRawImage.texture = _tex;
+
+            // Se Renderer foi atribuído (fallback), renderiza no material
+            if (targetRawImage == null && targetRenderer != null)
                 targetRenderer.material.mainTexture = _tex;
         }
 
-        // decodifica JPEG -> textura
-        // (usa o buffer inteiro, mas só até "len")
-        // ImageConversion.LoadImage precisa do array exato; então copiamos somente o tamanho do JPEG.
         byte[] jpg = new byte[len];
         Buffer.BlockCopy(_jpegBuffer, 0, jpg, 0, len);
 
-        bool ok = ImageConversion.LoadImage(_tex, jpg, false);
+        ImageConversion.LoadImage(_tex, jpg, false);
         _hasNewFrame = false;
+    }
 
-        if (!ok)
+    private void SetupInputActions()
+    {
+        if (inputActions != null)
         {
-            // se falhar, mantém a última imagem e segue
+            var map = inputActions.FindActionMap(actionMapName, true);
+            _clickAction = map.FindAction(clickActionName, true);
+            _pointAction = map.FindAction(pointerPositionActionName, true);
+            return;
         }
+
+        var mapRuntime = new InputActionMap("RuntimeUI");
+
+        _clickAction = mapRuntime.AddAction("Click", InputActionType.Button);
+        _clickAction.AddBinding("<Mouse>/leftButton");
+        _clickAction.AddBinding("<Touchscreen>/primaryTouch/press");
+        _clickAction.AddBinding("<Pen>/tip");
+
+        _pointAction = mapRuntime.AddAction("Point", InputActionType.Value);
+        _pointAction.AddBinding("<Mouse>/position");
+        _pointAction.AddBinding("<Touchscreen>/primaryTouch/position");
+        _pointAction.AddBinding("<Pen>/position");
+    }
+
+    private void EnableInput()
+    {
+        try { _clickAction?.Enable(); } catch { }
+        try { _pointAction?.Enable(); } catch { }
+        try { inputActions?.Enable(); } catch { }
+    }
+
+    private void DisableInput()
+    {
+        try { _clickAction?.Disable(); } catch { }
+        try { _pointAction?.Disable(); } catch { }
+        try { inputActions?.Disable(); } catch { }
     }
 
     private async Task StreamLoop(CancellationToken ct)
@@ -92,24 +155,15 @@ public class Stream_API : MonoBehaviour
 
         using Stream s = await resp.Content.ReadAsStreamAsync();
 
-        // Lê como MJPEG multipart:
-        // --frame\r\n
-        // Content-Type: image/jpeg\r\n
-        // Content-Length: N\r\n
-        // \r\n
-        // <N bytes JPEG>
-        // \r\n
         while (!ct.IsCancellationRequested)
         {
-            // 1) sincroniza no boundary "--frame"
             if (!await ReadUntilBoundary(s, ct)) break;
 
-            // 2) lê headers até linha vazia
             int contentLength = await ReadHeadersGetContentLength(s, ct);
             if (contentLength <= 0) continue;
 
-            // 3) lê exatamente N bytes do JPEG
             EnsureBuffer(contentLength);
+
             int readTotal = 0;
             while (readTotal < contentLength && !ct.IsCancellationRequested)
             {
@@ -117,12 +171,11 @@ public class Stream_API : MonoBehaviour
                 if (n <= 0) break;
                 readTotal += n;
             }
+
             if (readTotal != contentLength) break;
 
-            // 4) consome CRLF final (se vier)
             await ConsumeOptionalCrlf(s, ct);
 
-            // publica frame pro Update()
             _jpegLen = contentLength;
             _hasNewFrame = true;
         }
@@ -136,15 +189,14 @@ public class Stream_API : MonoBehaviour
 
     private async Task<bool> ReadUntilBoundary(Stream s, CancellationToken ct)
     {
-        // procura a sequência "\r\n--frame" ou "--frame" no começo.
-        // estratégia: varre linhas até achar uma que começa com "--frame"
         while (!ct.IsCancellationRequested)
         {
             string line = await ReadLineAscii(s, ct);
             if (line == null) return false;
 
             line = line.Trim();
-            if (line.StartsWith("--frame", StringComparison.Ordinal)) return true;
+            if (line.StartsWith("--frame", StringComparison.Ordinal))
+                return true;
         }
         return false;
     }
@@ -158,11 +210,9 @@ public class Stream_API : MonoBehaviour
             string line = await ReadLineAscii(s, ct);
             if (line == null) return -1;
 
-            // linha vazia = fim dos headers
-            if (line == "\r\n" || line == "\n" || line.Trim().Length == 0) break;
+            if (line == "\r\n" || line == "\n" || line.Trim().Length == 0)
+                break;
 
-            // Content-Length
-            // ex: "Content-Length: 12345"
             int idx = line.IndexOf(':');
             if (idx > 0)
             {
@@ -170,7 +220,8 @@ public class Stream_API : MonoBehaviour
                 if (key.Equals("Content-Length", StringComparison.OrdinalIgnoreCase))
                 {
                     string val = line.Substring(idx + 1).Trim();
-                    if (int.TryParse(val, out int n) && n > 0) contentLength = n;
+                    if (int.TryParse(val, out int n) && n > 0)
+                        contentLength = n;
                 }
             }
         }
@@ -180,31 +231,18 @@ public class Stream_API : MonoBehaviour
 
     private async Task ConsumeOptionalCrlf(Stream s, CancellationToken ct)
     {
-        // tenta ler \r\n sem travar: se não for, “devolve” não dá em Stream.
-        // então fazemos um read pequeno e ignoramos se vier.
         if (!s.CanRead) return;
 
         byte[] tmp = new byte[2];
-        s.ReadTimeout = Timeout.Infinite;
-
-        // usa ReadAsync com timeout via cancellation
         int n1 = await s.ReadAsync(tmp, 0, 1, ct);
         if (n1 <= 0) return;
 
         if (tmp[0] == (byte)'\r')
-        {
-            int n2 = await s.ReadAsync(tmp, 1, 1, ct);
-            return;
-        }
-
-        // se não era \r, era byte já do próximo boundary/linha.
-        // não dá pra "unread" num Stream normal; porém como o boundary vem em linha,
-        // o parser ReadLineAscii vai se realinhar (vai pegar o resto daquela linha).
+            await s.ReadAsync(tmp, 1, 1, ct);
     }
 
     private async Task<string> ReadLineAscii(Stream s, CancellationToken ct)
     {
-        // lê até '\n' (inclui '\n' na string), ASCII
         using var ms = new MemoryStream(256);
         byte[] one = new byte[1];
 
@@ -222,5 +260,131 @@ public class Stream_API : MonoBehaviour
         }
 
         return Encoding.ASCII.GetString(ms.ToArray());
+    }
+
+    private void HandleClick()
+    {
+        if (_clickAction == null || _pointAction == null) return;
+        if (!_clickAction.WasPressedThisFrame()) return;
+
+        Vector2 screenPos = _pointAction.ReadValue<Vector2>();
+
+        // Caso UI (RawImage)
+        if (targetRawImage != null)
+        {
+            RectTransform rt = targetRawImage.rectTransform;
+            Camera uiCam = null;
+
+            // Se Canvas for ScreenSpace-Camera/WorldSpace, precisa de camera
+            var canvas = targetRawImage.canvas;
+            if (canvas != null && canvas.renderMode != RenderMode.ScreenSpaceOverlay)
+                uiCam = canvas.worldCamera != null ? canvas.worldCamera : Camera.main;
+
+            if (!RectTransformUtility.ScreenPointToLocalPointInRectangle(rt, screenPos, uiCam, out Vector2 local))
+                return;
+
+            Rect r = rt.rect;
+
+            // local: centro = (0,0). Converter para 0..1 com origem TOP-LEFT
+            float x = Mathf.InverseLerp(r.xMin, r.xMax, local.x);      // 0..1 esquerda->direita
+            float y = 1f - Mathf.InverseLerp(r.yMin, r.yMax, local.y); // 0..1 cima->baixo
+
+            x = Mathf.Clamp01(x);
+            y = Mathf.Clamp01(y);
+
+            _ = SendClick(x, y);
+            return;
+        }
+
+        // Caso 3D (Renderer/Quad)
+        if (targetRenderer == null) return;
+        if (topLeftOrigin == null)
+        {
+            Debug.LogWarning("topLeftOrigin não foi atribuído (canto superior esquerdo).");
+            return;
+        }
+
+        Camera cam = Camera.main;
+        if (cam == null) return;
+
+        Ray ray = cam.ScreenPointToRay(screenPos);
+
+        if (!Physics.Raycast(ray, out RaycastHit hit)) return;
+        if (hit.collider.gameObject != targetRenderer.gameObject) return;
+
+        Vector3 down = -targetRenderer.transform.up;
+        Vector3 right = targetRenderer.transform.right;
+
+        float widthWorld, heightWorld;
+        GetTargetWorldSize(out widthWorld, out heightWorld);
+        if (widthWorld <= 0.000001f || heightWorld <= 0.000001f)
+        {
+            Debug.LogWarning("Não foi possível calcular o tamanho do target (width/height).");
+            return;
+        }
+
+        Vector3 delta = hit.point - topLeftOrigin.position;
+
+        float x3d = Vector3.Dot(delta, right) / widthWorld;
+        float y3d = Vector3.Dot(delta, down) / heightWorld;
+
+        x3d = Mathf.Clamp01(x3d);
+        y3d = Mathf.Clamp01(y3d);
+
+        _ = SendClick(x3d, y3d);
+    }
+
+    private void GetTargetWorldSize(out float widthWorld, out float heightWorld)
+    {
+        widthWorld = 0f;
+        heightWorld = 0f;
+
+        var mf = targetRenderer.GetComponent<MeshFilter>();
+        if (mf != null && mf.sharedMesh != null)
+        {
+            Vector3 localSize = mf.sharedMesh.bounds.size;
+            Vector3 scale = targetRenderer.transform.lossyScale;
+
+            widthWorld = Mathf.Abs(localSize.x * scale.x);
+            heightWorld = Mathf.Abs(localSize.y * scale.y);
+
+            if (heightWorld <= 0.000001f && Mathf.Abs(localSize.z * scale.z) > 0.000001f)
+                heightWorld = Mathf.Abs(localSize.z * scale.z);
+
+            return;
+        }
+
+        Bounds b = targetRenderer.bounds;
+        widthWorld = Mathf.Max(b.size.x, b.size.y, b.size.z);
+        heightWorld = widthWorld;
+    }
+
+    private async Task SendClick(float x, float y)
+    {
+        try
+        {
+            x = Mathf.Clamp01(x);
+            y = Mathf.Clamp01(y);
+
+            // garante ponto decimal no JSON (compatível com FastAPI/Pydantic)
+            string xs = x.ToString("0.######", System.Globalization.CultureInfo.InvariantCulture);
+            string ys = y.ToString("0.######", System.Globalization.CultureInfo.InvariantCulture);
+
+            string json = $"{{\"x\":{xs},\"y\":{ys}}}";
+            StringContent content = new StringContent(json, Encoding.UTF8, "application/json");
+
+            HttpResponseMessage resp = await _http.PostAsync(clickUrl, content);
+
+            // opcional: log em caso de erro (ex: 422)
+            if (!resp.IsSuccessStatusCode)
+            {
+                string body = await resp.Content.ReadAsStringAsync();
+                Debug.LogWarning($"Click HTTP {(int)resp.StatusCode}: {body}");
+            }
+        }
+        catch (Exception e)
+        {
+            Debug.LogWarning("Erro ao enviar clique: " + e.Message);
+        }
     }
 }

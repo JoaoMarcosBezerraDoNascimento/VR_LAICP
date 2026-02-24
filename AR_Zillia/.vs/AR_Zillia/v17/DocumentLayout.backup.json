@@ -3,28 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\joahi\\Documents\\Projetos\\VR_LAICP\\AR_Zillia\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{11717F12-C21A-483A-014D-4E865095DFB1}|Assembly-CSharp.csproj|C:\\Users\\joahi\\Documents\\Projetos\\VR_LAICP\\AR_Zillia\\assets\\scripts\\ui\\uimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{11717F12-C21A-483A-014D-4E865095DFB1}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\uimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{11717F12-C21A-483A-014D-4E865095DFB1}|Assembly-CSharp.csproj|c:\\users\\joahi\\documents\\projetos\\vr_laicp\\ar_zillia\\assets\\scripts\\canvasfollow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{11717F12-C21A-483A-014D-4E865095DFB1}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\canvasfollow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{11717F12-C21A-483A-014D-4E865095DFB1}|Assembly-CSharp.csproj|C:\\Users\\joahi\\Documents\\Projetos\\VR_LAICP\\AR_Zillia\\assets\\scripts\\pinchscrollvr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{11717F12-C21A-483A-014D-4E865095DFB1}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pinchscrollvr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{11717F12-C21A-483A-014D-4E865095DFB1}|Assembly-CSharp.csproj|C:\\Users\\joahi\\Documents\\Projetos\\VR_LAICP\\AR_Zillia\\assets\\scripts\\acionabotaopordistancia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{11717F12-C21A-483A-014D-4E865095DFB1}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\acionabotaopordistancia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{11717F12-C21A-483A-014D-4E865095DFB1}|Assembly-CSharp.csproj|C:\\Users\\joahi\\Documents\\Projetos\\VR_LAICP\\AR_Zillia\\assets\\scripts\\controle_menu_ia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{11717F12-C21A-483A-014D-4E865095DFB1}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\controle_menu_ia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\joahi\\Documents\\Projetos\\VR_LAICP\\AR_Zillia\\Assets\\Scripts\\UI\\QuestHandGestures.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\UI\\QuestHandGestures.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{11717F12-C21A-483A-014D-4E865095DFB1}|Assembly-CSharp.csproj|c:\\users\\joahi\\documents\\projetos\\vr_laicp\\ar_zillia\\assets\\mrtk-keyboard-main\\mrtk\\sdk\\experimental\\nonnativekeyboard\\scripts\\nonnativekeyboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11717F12-C21A-483A-014D-4E865095DFB1}|Assembly-CSharp.csproj|solutionrelative:assets\\mrtk-keyboard-main\\mrtk\\sdk\\experimental\\nonnativekeyboard\\scripts\\nonnativekeyboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,81 +14,20 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CanvasFollow.cs",
-              "DocumentMoniker": "C:\\Users\\joahi\\Documents\\Projetos\\VR_LAICP\\AR_Zillia\\Assets\\Scripts\\CanvasFollow.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\CanvasFollow.cs",
-              "ToolTip": "C:\\Users\\joahi\\Documents\\Projetos\\VR_LAICP\\AR_Zillia\\Assets\\Scripts\\CanvasFollow.cs",
-              "RelativeToolTip": "Assets\\Scripts\\CanvasFollow.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-23T19:52:56.439Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "UIManager.cs",
-              "DocumentMoniker": "C:\\Users\\joahi\\Documents\\Projetos\\VR_LAICP\\AR_Zillia\\Assets\\Scripts\\UI\\UIManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\UIManager.cs",
-              "ToolTip": "C:\\Users\\joahi\\Documents\\Projetos\\VR_LAICP\\AR_Zillia\\Assets\\Scripts\\UI\\UIManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\UI\\UIManager.cs",
-              "ViewState": "AgIAAD4AAAAAAAAAAADwv00AAAAmAAAAAAAAAA==",
+              "Title": "NonNativeKeyboard.cs",
+              "DocumentMoniker": "C:\\Users\\joahi\\Documents\\Projetos\\VR_LAICP\\AR_Zillia\\Assets\\MRTK-Keyboard-main\\MRTK\\SDK\\Experimental\\NonNativeKeyboard\\Scripts\\NonNativeKeyboard.cs",
+              "RelativeDocumentMoniker": "Assets\\MRTK-Keyboard-main\\MRTK\\SDK\\Experimental\\NonNativeKeyboard\\Scripts\\NonNativeKeyboard.cs",
+              "ToolTip": "C:\\Users\\joahi\\Documents\\Projetos\\VR_LAICP\\AR_Zillia\\Assets\\MRTK-Keyboard-main\\MRTK\\SDK\\Experimental\\NonNativeKeyboard\\Scripts\\NonNativeKeyboard.cs",
+              "RelativeToolTip": "Assets\\MRTK-Keyboard-main\\MRTK\\SDK\\Experimental\\NonNativeKeyboard\\Scripts\\NonNativeKeyboard.cs",
+              "ViewState": "AgIAAEYBAAAAAAAAAAAswFABAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-23T16:34:22.9Z",
+              "WhenOpened": "2026-02-24T21:18:05.128Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "PinchScrollVR.cs",
-              "DocumentMoniker": "C:\\Users\\joahi\\Documents\\Projetos\\VR_LAICP\\AR_Zillia\\Assets\\Scripts\\PinchScrollVR.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\PinchScrollVR.cs",
-              "ToolTip": "C:\\Users\\joahi\\Documents\\Projetos\\VR_LAICP\\AR_Zillia\\Assets\\Scripts\\PinchScrollVR.cs",
-              "RelativeToolTip": "Assets\\Scripts\\PinchScrollVR.cs",
-              "ViewState": "AgIAAH4AAAAAAAAAAAAAAIsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-23T15:41:01.806Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AcionaBotaoPorDistancia.cs",
-              "DocumentMoniker": "C:\\Users\\joahi\\Documents\\Projetos\\VR_LAICP\\AR_Zillia\\Assets\\Scripts\\AcionaBotaoPorDistancia.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\AcionaBotaoPorDistancia.cs",
-              "ToolTip": "C:\\Users\\joahi\\Documents\\Projetos\\VR_LAICP\\AR_Zillia\\Assets\\Scripts\\AcionaBotaoPorDistancia.cs",
-              "RelativeToolTip": "Assets\\Scripts\\AcionaBotaoPorDistancia.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAnwCoAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-23T15:40:42.082Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "QuestHandGestures.cs",
-              "DocumentMoniker": "C:\\Users\\joahi\\Documents\\Projetos\\VR_LAICP\\AR_Zillia\\Assets\\Scripts\\UI\\QuestHandGestures.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\QuestHandGestures.cs",
-              "ToolTip": "C:\\Users\\joahi\\Documents\\Projetos\\VR_LAICP\\AR_Zillia\\Assets\\Scripts\\UI\\QuestHandGestures.cs",
-              "RelativeToolTip": "Assets\\Scripts\\UI\\QuestHandGestures.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-23T15:38:12.07Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Controle_Menu_IA.cs",
-              "DocumentMoniker": "C:\\Users\\joahi\\Documents\\Projetos\\VR_LAICP\\AR_Zillia\\Assets\\Scripts\\Controle_Menu_IA.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Controle_Menu_IA.cs",
-              "ToolTip": "C:\\Users\\joahi\\Documents\\Projetos\\VR_LAICP\\AR_Zillia\\Assets\\Scripts\\Controle_Menu_IA.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Controle_Menu_IA.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-23T15:16:47.712Z"
             }
           ]
         }

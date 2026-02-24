@@ -1054,7 +1054,7 @@ GameObject:
   - component: {fileID: 6967822722269935872}
   - component: {fileID: 1778355282358155599}
   - component: {fileID: 8992564615084667967}
-  - component: {fileID: 5272459321462689428}
+  - component: {fileID: 3850344468585763847}
   m_Layer: 5
   m_Name: SCRLVW_Chat_History
   m_TagString: Untagged
@@ -1150,7 +1150,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &5272459321462689428
+--- !u!114 &3850344468585763847
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1159,23 +1159,34 @@ MonoBehaviour:
   m_GameObject: {fileID: 4389799412731067348}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3484662c72f3d774d9599b37eb4e4ef9, type: 3}
+  m_Script: {fileID: 11500000, guid: b43e0c7a380b9fc4a94af901a29e178a, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PinchScrollRect
+  m_EditorClassIdentifier: Assembly-CSharp::AcionaBotaoPorDistancia
+  habilitarCliquePorDistancia: 1
+  nomeDoIndicador: XRHand_IndexTip
+  distanciaLimite: 0.04
+  distanciaAtual: 0
+  botao: {fileID: 0}
+  toggle: {fileID: 0}
+  delayInicial: 1
+  cooldownClique: 0.5
+  refreshIndicadoresSeg: 1
+  indicadorMaisProximo: {fileID: 0}
+  habilitarScrollPorPinca: 1
   nomeIndicadorIndexTip: XRHand_IndexTip
   nomePolegarTip: XRHand_ThumbTip
   scrollRect: {fileID: 8992564615084667967}
   sensibilidade: -2
   inverter: 0
-  pinchFechado: 0.015
+  pinchFechado: 0.025
   pinchAberto: 0.035
-  delayInicial: 1
-  refreshIndicadoresSeg: 1
   debugLogs: 1
   distanciaPinchAtual: 0
   indexTipMaisProximo: {fileID: 0}
   thumbTipMaisProximo: {fileID: 0}
   "pin\xE7ando": 0
+  bloquearCliqueDurantePinca: 1
+  bloqueioAposSoltarSeg: 0.15
 --- !u!1 &4676026234702379227
 GameObject:
   m_ObjectHideFlags: 0
@@ -1387,6 +1398,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b43e0c7a380b9fc4a94af901a29e178a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AcionaBotaoPorDistancia
+  habilitarCliquePorDistancia: 1
   nomeDoIndicador: XRHand_IndexTip
   distanciaLimite: 0.03
   distanciaAtual: 0
@@ -1396,6 +1408,21 @@ MonoBehaviour:
   cooldownClique: 0.5
   refreshIndicadoresSeg: 1
   indicadorMaisProximo: {fileID: 0}
+  habilitarScrollPorPinca: 1
+  nomeIndicadorIndexTip: XRHand_IndexTip
+  nomePolegarTip: XRHand_ThumbTip
+  scrollRect: {fileID: 0}
+  sensibilidade: -2
+  inverter: 0
+  pinchFechado: 0.025
+  pinchAberto: 0.035
+  debugLogs: 1
+  distanciaPinchAtual: 0
+  indexTipMaisProximo: {fileID: 0}
+  thumbTipMaisProximo: {fileID: 0}
+  "pin\xE7ando": 0
+  bloquearCliqueDurantePinca: 1
+  bloqueioAposSoltarSeg: 0.15
 --- !u!1 &5284460280624673438
 GameObject:
   m_ObjectHideFlags: 0
@@ -1870,6 +1897,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b43e0c7a380b9fc4a94af901a29e178a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AcionaBotaoPorDistancia
+  habilitarCliquePorDistancia: 1
   nomeDoIndicador: XRHand_IndexTip
   distanciaLimite: 0.03
   distanciaAtual: 0
@@ -1879,6 +1907,21 @@ MonoBehaviour:
   cooldownClique: 0.5
   refreshIndicadoresSeg: 1
   indicadorMaisProximo: {fileID: 0}
+  habilitarScrollPorPinca: 1
+  nomeIndicadorIndexTip: XRHand_IndexTip
+  nomePolegarTip: XRHand_ThumbTip
+  scrollRect: {fileID: 0}
+  sensibilidade: -2
+  inverter: 0
+  pinchFechado: 0.025
+  pinchAberto: 0.035
+  debugLogs: 1
+  distanciaPinchAtual: 0
+  indexTipMaisProximo: {fileID: 0}
+  thumbTipMaisProximo: {fileID: 0}
+  "pin\xE7ando": 0
+  bloquearCliqueDurantePinca: 1
+  bloqueioAposSoltarSeg: 0.15
 --- !u!1 &8410829983911257631
 GameObject:
   m_ObjectHideFlags: 0
