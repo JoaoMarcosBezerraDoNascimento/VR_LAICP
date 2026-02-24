@@ -864,7 +864,6 @@ MonoBehaviour:
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
-  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -1001,7 +1000,6 @@ MonoBehaviour:
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
-  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -1249,6 +1247,13 @@ MonoBehaviour:
   - {fileID: 5722006671096228604}
   - {fileID: 8250611978288177248}
   telaInicial: {fileID: 6575634295696863684}
+  imagens:
+  - {fileID: 6525068099036705326}
+  - {fileID: 724159853774262128}
+  - {fileID: 8024579440360628668}
+  - {fileID: 1585213351527013739}
+  corPadrao: {r: 0.09411765, g: 0.22352941, b: 0.5294118, a: 0}
+  corSelecionada: {r: 0.3254902, g: 0.5294118, b: 1, a: 0}
 --- !u!114 &9209393003199574689
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1270,6 +1275,7 @@ MonoBehaviour:
     type: 3}
   pecaContentParent: {fileID: 4027828653262228227}
   scrollPecas: {fileID: 8381923318182621901}
+  ui: {fileID: 0}
 --- !u!1 &3167090244219452553
 GameObject:
   m_ObjectHideFlags: 0
@@ -1373,7 +1379,6 @@ MonoBehaviour:
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
-  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -1467,7 +1472,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.09411765, g: 0.22352941, b: 0.5294118, a: 0.78431374}
+  m_Color: {r: 0.09411765, g: 0.22352941, b: 0.5294118, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1818,7 +1823,6 @@ MonoBehaviour:
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
-  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -1912,7 +1916,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.09411765, g: 0.22352941, b: 0.5294118, a: 0.78431374}
+  m_Color: {r: 0.3254902, g: 0.5294118, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2160,7 +2164,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.09411765, g: 0.22352941, b: 0.5294118, a: 0.78431374}
+  m_Color: {r: 0.09411765, g: 0.22352941, b: 0.5294118, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2195,7 +2199,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &4644485296256155464
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2580,7 +2584,6 @@ MonoBehaviour:
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
-  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -2717,7 +2720,6 @@ MonoBehaviour:
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
-  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -2962,7 +2964,6 @@ MonoBehaviour:
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
-  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -3099,7 +3100,6 @@ MonoBehaviour:
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
-  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -3758,7 +3758,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.09411765, g: 0.22352941, b: 0.5294118, a: 0.78431374}
+  m_Color: {r: 0.09411765, g: 0.22352941, b: 0.5294118, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -3969,7 +3969,6 @@ MonoBehaviour:
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
-  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -4089,7 +4088,6 @@ GameObject:
   - component: {fileID: 3839906276484376985}
   - component: {fileID: 1778461915087703502}
   - component: {fileID: 198622458207694834}
-  - component: {fileID: 2613824197982776258}
   m_Layer: 5
   m_Name: Console
   m_TagString: Untagged
@@ -4182,7 +4180,6 @@ MonoBehaviour:
   m_VerticalAlignment: 1024
   m_textAlignment: 65535
   m_characterSpacing: 0
-  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -4216,23 +4213,6 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &2613824197982776258
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8989475036913041332}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e0ceef382fd61f49bfc4aedc65b27b3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DebugLogToCanvas
-  output: {fileID: 198622458207694834}
-  maxChars: 120000
-  maxLines: 2000
-  showStackTraceOnErrors: 1
-  includeTimestamps: 1
 --- !u!1001 &3046682514061097001
 PrefabInstance:
   m_ObjectHideFlags: 0

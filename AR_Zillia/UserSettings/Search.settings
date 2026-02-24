@@ -9,7 +9,7 @@ onBoardingDoNotAskAgain = true
 showPackageIndexes = false
 showStatusBar = false
 scopes = {
-	"last_search.66F56946" = "Campo	Clear Flags"
+	"last_search.66F56946" = "CameraController.cs"
 	"OpenInspectorPreview.66F56946" = "0"
 	"currentGroup.66F56946" = "all"
 	"picker_window_position_offset.00000000" = "124;300;505;644"
@@ -72,6 +72,9 @@ providers = {
 objectSelectors = {
 }
 recentSearches = [
+	"CameraController.cs"
+	""
+	"Input.Get"
 	"Campo	Valor Clear Flags"
 ]
 searchItemFavorites = [

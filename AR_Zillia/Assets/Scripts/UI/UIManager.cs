@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
@@ -11,6 +12,13 @@ public class UIManager : MonoBehaviour
 
     [Header("Tela inicial (opcional)")]
     [SerializeField] private GameObject telaInicial;
+
+    [Header("Bot√µes do menu (alinhado com os menus)")]
+    [SerializeField] private List<Graphic> imagens = new(); 
+
+    [Header("Cores")]
+    public Color corPadrao; // 183987
+    public Color corSelecionada; //5387FF
 
     void Awake()
     {
@@ -38,62 +46,39 @@ public class UIManager : MonoBehaviour
         }
     }
 
-    public void MostrarTela(GameObject telaParaMostrar)
+    public void CorPadrao()
     {
-        Debug.Log("Trocando de Tela...");
-        if (telaParaMostrar == null) return;
-
-        // Garante que ela est· registrada
-        Registrar(telaParaMostrar);
-
-        // Oculta tudo
-        OcultarTodas();
-
-        // Mostra sÛ a desejada
-        telaParaMostrar.SetActive(true);
+        Debug.Log("Setando cores...");
+        for (int i = 0; i < imagens.Count; i++)
+        {
+            if (imagens[i] != null)
+                imagens[i].color = corPadrao;
+        }
     }
+
+
     public void Mostrar_Tela_Por_indice(int index)
     {
-        Debug.Log("Trocando de Tela...");
-
         if (index < 0 || index >= telas.Count)
         {
-            Debug.LogError("Õndice inv·lido: " + index);
-            return;
-        }
-
-        GameObject tela = telas[index];
-        if (tela == null)
-        {
-            Debug.LogError("Tela no Ìndice " + index + " È NULL");
+            Debug.LogError("√çndice inv√°lido: " + index);
             return;
         }
 
         OcultarTodas();
-        tela.SetActive(true);
+        CorPadrao();
+
+        telas[index].SetActive(true);
+
+        if (index < imagens.Count && imagens[index] != null)
+            imagens[index].color = corSelecionada;
     }
 
-    public void Mostrar_Tela_Indice_Fixo()
+    public void MostrarTela(GameObject tela)
     {
-        Debug.Log("Trocando para Tela 1...");
-
-        int index = 1;
-
-        if (index < 0 || index >= telas.Count)
-        {
-            Debug.LogError("Õndice inv·lido: " + index);
-            return;
-        }
-
-        GameObject tela = telas[index];
-        if (tela == null)
-        {
-            Debug.LogError("Tela no Ìndice " + index + " È NULL");
-            return;
-        }
-
         OcultarTodas();
-        tela.SetActive(true);
-    }
+        CorPadrao();
 
+        tela.SetActive(true);
+    }  
 }
