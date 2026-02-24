@@ -1,103 +1,93 @@
-﻿// AcionaBotaoPorDistancia.cs
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
-using System.Linq;
+using UnityEngine.XR.Hands;
+using UnityEngine.XR;
+using System.Collections.Generic;
 
-public class AcionaBotaoPorDistancia : MonoBehaviour
+public class PinchScrollVR_WithButton : MonoBehaviour
 {
-    [Header("Indicador")]
-    public string nomeDoIndicador = "XRHand_IndexTip";
-    public float distanciaLimite = 0.04f;
-    public float distanciaAtual;
+    [Header("UI")]
+    public ScrollRect scroll;
+    public Button pinchToggleButton;
+    public Text pinchStatusText;
 
-    [Header("UI (use apenas um)")]
-    public Button botao;
-    public Toggle toggle;
+    [Header("Ajustes da Pinça")]
+    public float distanciaLimite = 0.015f;
+    public float sensibilidade = 0.5f;
 
-    [Header("Delay inicial")]
-    public float delayInicial = 1.0f;
-    float tempoDecorrido;
+    private XRHandSubsystem handSubsystem;
 
-    [Header("Cooldown")]
-    public float cooldownClique = 0.5f;
-    float ultimoCliqueTime = -999f;
-
-    [Header("Auto-refresh (caso os hands apareçam depois)")]
-    public float refreshIndicadoresSeg = 1.0f;
-    private float proxRefresh;
-
-    [Header("Debug")]
-    [SerializeField] Transform indicadorMaisProximo;
-
-    Transform[] indicadores = new Transform[0];
-    bool prontoParaDetectar;
+    private float ultimoY;
+    private bool pinchAtivo = false;
+    private bool pinchEnabled = false;
 
     void Start()
     {
-        AtualizarIndicadores();
-        proxRefresh = Time.time + refreshIndicadoresSeg;
+        if (scroll == null)
+            scroll = GetComponent<ScrollRect>();
+
+        // pegar o subsistema XR Hands ativo
+        var subsystems = new List<XRHandSubsystem>();
+        SubsystemManager.GetSubsystems(subsystems);
+
+        if (subsystems.Count > 0)
+            handSubsystem = subsystems[0];
+
+        // botão ativa/desativa
+        pinchToggleButton.onClick.AddListener(TogglePinchMode);
+
+        AtualizarTextoStatus();
     }
 
-    void AtualizarIndicadores()
+    void TogglePinchMode()
     {
-        var all = FindObjectsOfType<Transform>(true);
-        indicadores = all.Where(t => t != null && t.name == nomeDoIndicador).ToArray();
+        pinchEnabled = !pinchEnabled;
+        AtualizarTextoStatus();
+    }
+
+    void AtualizarTextoStatus()
+    {
+        pinchStatusText.text = pinchEnabled ? "Pinça: ON" : "Pinça: OFF";
     }
 
     void Update()
     {
-        tempoDecorrido += Time.deltaTime;
-        if (!prontoParaDetectar && tempoDecorrido >= delayInicial)
-            prontoParaDetectar = true;
+        if (!pinchEnabled) return;
+        if (scroll == null || handSubsystem == null) return;
 
-        if (!prontoParaDetectar)
+        var leftHand = handSubsystem.leftHand;
+        if (!leftHand.isTracked) return;
+
+        // pegar juntas modernas
+        bool okIndex = leftHand.GetJoint(XRHandJointID.IndexTip, out XRHandJoint indexTip);
+        bool okThumb = leftHand.GetJoint(XRHandJointID.ThumbTip, out XRHandJoint thumbTip);
+
+        if (!okIndex || !okThumb) return;
+
+        Vector3 indicadorPos = indexTip.Pose.position;
+        Vector3 dedaoPos = thumbTip.Pose.position;
+
+        float dist = Vector3.Distance(indicadorPos, dedaoPos);
+
+        // ativa pinch quando os dedos encostam
+        if (dist < distanciaLimite)
+        {
+            if (!pinchAtivo)
+            {
+                pinchAtivo = true;
+                ultimoY = indicadorPos.y;
+            }
+        }
+        else
+        {
+            pinchAtivo = false;
             return;
-
-        if (Time.time >= proxRefresh)
-        {
-            proxRefresh = Time.time + refreshIndicadoresSeg;
-            AtualizarIndicadores();
         }
 
-        if (indicadores == null || indicadores.Length == 0)
-            return;
+        float movimentoY = indicadorPos.y - ultimoY;
 
-        float menorDist = float.MaxValue;
-        Transform maisProximo = null;
+        scroll.verticalNormalizedPosition += movimentoY * sensibilidade * -1;
 
-        for (int i = 0; i < indicadores.Length; i++)
-        {
-            var t = indicadores[i];
-            if (t == null) continue;
-
-            float d = Vector3.Distance(transform.position, t.position);
-            if (d < menorDist)
-            {
-                menorDist = d;
-                maisProximo = t;
-            }
-        }
-
-        distanciaAtual = menorDist;
-        indicadorMaisProximo = maisProximo;
-
-        bool dentroDaZona = menorDist < distanciaLimite;
-        bool cooldownOk = Time.time >= ultimoCliqueTime + cooldownClique;
-
-        if (dentroDaZona && cooldownOk)
-        {
-            ultimoCliqueTime = Time.time;
-
-            if (botao != null)
-            {
-                Debug.Log("[AcionaBotao] Clique em Button");
-                botao.onClick.Invoke();
-            }
-            else if (toggle != null)
-            {
-                Debug.Log("[AcionaBotao] Toggle alternado");
-                toggle.isOn = !toggle.isOn;
-            }
-        }
+        ultimoY = indicadorPos.y;
     }
 }
