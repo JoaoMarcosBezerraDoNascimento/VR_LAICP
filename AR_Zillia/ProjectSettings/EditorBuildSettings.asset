@@ -16,10 +16,10 @@ EditorBuildSettings:
       type: 2}
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 7c538d95854a3474687c594128a5d272,
       type: 2}
-    com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: e0d9121ce7841d148a8a6cacfde2433f,
+    com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: d4d126aca44632248b8aec59442ebcbc,
       type: 2}
-    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: cce605bcbe872f440bdd8e33845a4d06,
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: a971eac5e950046e586c5e153e32d05c,
       type: 2}
-    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: f4ef475a063f0a74e81ea77049b75f25,
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 9165b3c3dec8d446f9b11d1a99b6e245,
       type: 2}
   m_UseUCBPForAssetBundles: 0

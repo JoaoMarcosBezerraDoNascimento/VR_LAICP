@@ -557,7 +557,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c9da770c94140d40917e7d0492ede2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Controle_Menu_IA
-  apiBaseUrl: http://172.26.1.39:8555
+  apiBaseUrl: http://172.26.1.39:8555/
   apiToken: VR_2026
 --- !u!1 &1800359759646658538
 GameObject:
