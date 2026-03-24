@@ -554,10 +554,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1678296526106715405}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9c9da770c94140d40917e7d0492ede2e, type: 3}
+  m_Script: {fileID: 11500000, guid: 81e90b9128301d4479ca263cb3308817, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Controle_Menu_IA
-  apiBaseUrl: http://172.26.1.39:8555/
+  apiBaseUrl: http://172.26.1.39:8555
   apiToken: VR_2026
 --- !u!1 &1800359759646658538
 GameObject:
@@ -1159,7 +1159,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4389799412731067348}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b43e0c7a380b9fc4a94af901a29e178a, type: 3}
+  m_Script: {fileID: 11500000, guid: 5f454609eb1fda943bf206ffb61567b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AcionaBotaoPorDistancia
   habilitarCliquePorDistancia: 1
@@ -1395,12 +1395,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 5200173137901483654}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b43e0c7a380b9fc4a94af901a29e178a, type: 3}
+  m_Script: {fileID: 11500000, guid: 5f454609eb1fda943bf206ffb61567b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AcionaBotaoPorDistancia
   habilitarCliquePorDistancia: 1
   nomeDoIndicador: XRHand_IndexTip
-  distanciaLimite: 0.03
+  distanciaLimite: 0.04
   distanciaAtual: 0
   botao: {fileID: 7655218506990476755}
   toggle: {fileID: 0}
@@ -1894,12 +1894,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 7247191716446813214}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b43e0c7a380b9fc4a94af901a29e178a, type: 3}
+  m_Script: {fileID: 11500000, guid: 5f454609eb1fda943bf206ffb61567b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AcionaBotaoPorDistancia
   habilitarCliquePorDistancia: 1
   nomeDoIndicador: XRHand_IndexTip
-  distanciaLimite: 0.03
+  distanciaLimite: 0.04
   distanciaAtual: 0
   botao: {fileID: 7005201878728100708}
   toggle: {fileID: 0}

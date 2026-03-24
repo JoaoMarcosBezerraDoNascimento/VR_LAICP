@@ -11,17 +11,17 @@ using UnityEngine.InputSystem;
 public class Stream_API : MonoBehaviour
 {
     [Header("MJPEG URL (proxy)")]
-    public string streamUrl = "http://10.0.1.108:8555/stream";
+    public string streamUrl => System_Config.IP_atual + "/stream";
 
     [Header("Click API URL")]
-    public string clickUrl = "http://10.0.1.108:8555/click";
+    public string clickUrl => System_Config.IP_atual + "/click";
 
     [Header("Render destino (use apenas UM)")]
     public Renderer targetRenderer;     // opcional
     public RawImage targetRawImage;     // opcional (UI)
 
     [Header("Origem do clique (TOP-LEFT)")]
-    [Tooltip("Para RawImage: use o próprio RectTransform dela (ou um filho no TOP-LEFT).\nPara Quad: um GameObject no canto superior esquerdo do Quad.")]
+    [Tooltip("Para RawImage: use o prï¿½prio RectTransform dela (ou um filho no TOP-LEFT).\nPara Quad: um GameObject no canto superior esquerdo do Quad.")]
     public Transform topLeftOrigin;
 
     [Header("Texture Settings")]
@@ -94,11 +94,11 @@ public class Stream_API : MonoBehaviour
             _tex.wrapMode = TextureWrapMode.Clamp;
             _tex.filterMode = usePointFilter ? FilterMode.Point : FilterMode.Bilinear;
 
-            // Se RawImage foi atribuído, renderiza nele
+            // Se RawImage foi atribuï¿½do, renderiza nele
             if (targetRawImage != null)
                 targetRawImage.texture = _tex;
 
-            // Se Renderer foi atribuído (fallback), renderiza no material
+            // Se Renderer foi atribuï¿½do (fallback), renderiza no material
             if (targetRawImage == null && targetRenderer != null)
                 targetRenderer.material.mainTexture = _tex;
         }
@@ -300,7 +300,7 @@ public class Stream_API : MonoBehaviour
         if (targetRenderer == null) return;
         if (topLeftOrigin == null)
         {
-            Debug.LogWarning("topLeftOrigin não foi atribuído (canto superior esquerdo).");
+            Debug.LogWarning("topLeftOrigin nï¿½o foi atribuï¿½do (canto superior esquerdo).");
             return;
         }
 
@@ -319,7 +319,7 @@ public class Stream_API : MonoBehaviour
         GetTargetWorldSize(out widthWorld, out heightWorld);
         if (widthWorld <= 0.000001f || heightWorld <= 0.000001f)
         {
-            Debug.LogWarning("Não foi possível calcular o tamanho do target (width/height).");
+            Debug.LogWarning("Nï¿½o foi possï¿½vel calcular o tamanho do target (width/height).");
             return;
         }
 
@@ -366,7 +366,7 @@ public class Stream_API : MonoBehaviour
             x = Mathf.Clamp01(x);
             y = Mathf.Clamp01(y);
 
-            // garante ponto decimal no JSON (compatível com FastAPI/Pydantic)
+            // garante ponto decimal no JSON (compatï¿½vel com FastAPI/Pydantic)
             string xs = x.ToString("0.######", System.Globalization.CultureInfo.InvariantCulture);
             string ys = y.ToString("0.######", System.Globalization.CultureInfo.InvariantCulture);
 

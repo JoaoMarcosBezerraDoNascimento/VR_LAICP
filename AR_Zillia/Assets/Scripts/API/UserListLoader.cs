@@ -8,7 +8,7 @@ using UnityEngine.UI;
 public class UserListLoader : MonoBehaviour
 {
     [Header("Configuração do Servidor")]
-    public string apiUrl = "http://192.168.100.6:8000/usuarios-logados";
+    public string apiUrl => System_Config.IP_atual + "/usuarios-logados";
 
     [Header("UI")]
     public Transform content;             // Content do ScrollView

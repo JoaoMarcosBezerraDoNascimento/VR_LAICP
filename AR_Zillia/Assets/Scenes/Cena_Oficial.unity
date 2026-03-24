@@ -346,10 +346,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 419d98ac7f6e4c443a1390c1a3628ca8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  smoothSpeed: 5
-  checkInterval: 1
-  distanciaMinima: 0.2
-  rotationOffset: {x: 0, y: 180, z: 0}
 --- !u!114 &64256490
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -362,12 +358,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ef7475597aebcb4db12636746920ffa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UI.MenuSummonerUI
-  menuTransform: {fileID: 64256488}
-  headCamera: {fileID: 937342591}
-  distanciaMaxima: 1
-  distanciaAoPuxar: 0.1
-  heightOffset: -0.3
-  olharParaCamera: 1
 --- !u!1 &73432799
 GameObject:
   m_ObjectHideFlags: 0
@@ -778,13 +768,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39b8e9ecd1faa5a418cf025bede83c30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Enviar_camera_para_API
-  cameraDeCaptura: {fileID: 0}
-  largura: 4000
-  altura: 4000
-  qualidadeJpg: 100
-  urlApi: http://192.168.0.10:8000/
-  intervaloEnvio: 1
-  envioAutomatico: 0
 --- !u!1 &495591301
 GameObject:
   m_ObjectHideFlags: 0
@@ -2001,7 +1984,7 @@ PrefabInstance:
     - target: {fileID: 3218007633362954364, guid: 93531a412c88d1e4e9a13ecebfa863b2,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -95
+      value: -54
       objectReference: {fileID: 0}
     - target: {fileID: 3647973728618396034, guid: 93531a412c88d1e4e9a13ecebfa863b2,
         type: 3}

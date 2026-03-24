@@ -9,7 +9,7 @@ public class Enviar_camera_para_API : MonoBehaviour
     public int altura = 4000;
     [Range(1, 100)] public int qualidadeJpg = 100;
 
-    public string urlApi = "http://192.168.0.10:8000/";
+    public string urlApi => System_Config.IP_atual;
     public float intervaloEnvio = 1.0f;
     public bool envioAutomatico = true;
 

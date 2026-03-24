@@ -121,7 +121,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6819251597402926608}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
         m_MethodName: Mostrar_Tela_Por_indice
         m_Mode: 3
@@ -142,12 +142,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 201014840064918383}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b43e0c7a380b9fc4a94af901a29e178a, type: 3}
+  m_Script: {fileID: 11500000, guid: 5f454609eb1fda943bf206ffb61567b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AcionaBotaoPorDistancia
   habilitarCliquePorDistancia: 1
   nomeDoIndicador: XRHand_IndexTip
-  distanciaLimite: 0.03
+  distanciaLimite: 0.04
   distanciaAtual: 0
   botao: {fileID: 8859218704687534837}
   toggle: {fileID: 0}
@@ -377,6 +377,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 699800076524494219}
   - {fileID: 8094601299088494092}
   - {fileID: 6105373674229002050}
   - {fileID: 3647973728618396034}
@@ -386,7 +387,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -271.4, y: -90}
+  m_AnchoredPosition: {x: -271.4, y: -51.4}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &3681932245900311834
@@ -532,7 +533,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1061486897895328369}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b43e0c7a380b9fc4a94af901a29e178a, type: 3}
+  m_Script: {fileID: 11500000, guid: 5f454609eb1fda943bf206ffb61567b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AcionaBotaoPorDistancia
   habilitarCliquePorDistancia: 1
@@ -548,10 +549,10 @@ MonoBehaviour:
   habilitarScrollPorPinca: 1
   nomeIndicadorIndexTip: XRHand_IndexTip
   nomePolegarTip: XRHand_ThumbTip
-  scrollRect: {fileID: 5748188175239242283}
+  scrollRect: {fileID: 0}
   sensibilidade: -2
   inverter: 0
-  pinchFechado: 0.015
+  pinchFechado: 0.025
   pinchAberto: 0.035
   debugLogs: 1
   distanciaPinchAtual: 0
@@ -833,7 +834,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6819251597402926608}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
         m_MethodName: Mostrar_Tela_Por_indice
         m_Mode: 3
@@ -854,12 +855,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1735331567131338597}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b43e0c7a380b9fc4a94af901a29e178a, type: 3}
+  m_Script: {fileID: 11500000, guid: 5f454609eb1fda943bf206ffb61567b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AcionaBotaoPorDistancia
   habilitarCliquePorDistancia: 1
   nomeDoIndicador: XRHand_IndexTip
-  distanciaLimite: 0.03
+  distanciaLimite: 0.04
   distanciaAtual: 0
   botao: {fileID: 8125077511282337167}
   toggle: {fileID: 0}
@@ -1259,7 +1260,6 @@ GameObject:
   - component: {fileID: 8011728799367649993}
   - component: {fileID: 8907230607451012622}
   - component: {fileID: 1524132644673690607}
-  - component: {fileID: 6819251597402926608}
   - component: {fileID: 9209393003199574689}
   m_Layer: 5
   m_Name: Menu_Principal
@@ -1353,31 +1353,6 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &6819251597402926608
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2832096128781526814}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e2a8f1399e03e24282b614cf642751a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  telas:
-  - {fileID: 6575634295696863684}
-  - {fileID: 5722006671096228604}
-  - {fileID: 4197906879791117209}
-  - {fileID: 5874603724393910727}
-  telaInicial: {fileID: 6575634295696863684}
-  imagens:
-  - {fileID: 6525068099036705326}
-  - {fileID: 724159853774262128}
-  - {fileID: 8024579440360628668}
-  - {fileID: 1585213351527013739}
-  corPadrao: {r: 0.09411765, g: 0.22352941, b: 0.5294118, a: 0}
-  corSelecionada: {r: 0.31764707, g: 0.34509805, b: 0.49019608, a: 0}
 --- !u!114 &9209393003199574689
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1387,18 +1362,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 2832096128781526814}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3bc74a6a225a3e14c8a718b10b2bed94, type: 3}
+  m_Script: {fileID: 11500000, guid: 6aed164f90a1a2147956c2a97069c79c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Controle_Menus
-  jsonFile: {fileID: 4900000, guid: 1acf135bedf29bb4ba81812430078239, type: 3}
-  rmaCellPrefab: {fileID: 1052268251255500293, guid: 72db942628f5ab24f87c03464a80d5fd,
-    type: 3}
-  rmaContentParent: {fileID: 3896618902622293988}
-  scrollPedidos: {fileID: 5748188175239242283}
-  pecaCellPrefab: {fileID: 1052268251255500293, guid: 45bf2f264bc4ce245ae333351682bd79,
-    type: 3}
-  pecaContentParent: {fileID: 4027828653262228227}
-  scrollPecas: {fileID: 8381923318182621901}
+  jsonFile: {fileID: 0}
+  rmaCellPrefab: {fileID: 0}
+  rmaContentParent: {fileID: 0}
+  scrollPedidos: {fileID: 0}
+  pecaCellPrefab: {fileID: 0}
+  pecaContentParent: {fileID: 0}
+  scrollPecas: {fileID: 0}
   ui: {fileID: 0}
 --- !u!1 &3167090244219452553
 GameObject:
@@ -1614,6 +1587,83 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!1 &3257558630306575932
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 699800076524494219}
+  - component: {fileID: 4313148366802730823}
+  - component: {fileID: 5969670750159219966}
+  m_Layer: 5
+  m_Name: SYSCONFIG
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &699800076524494219
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3257558630306575932}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2048477676940417207}
+  - {fileID: 7267257798998297700}
+  m_Father: {fileID: 3218007633362954364}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 134, y: 41.6288}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &4313148366802730823
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3257558630306575932}
+  m_CullTransparentMesh: 1
+--- !u!114 &5969670750159219966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3257558630306575932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.09411765, g: 0.22352941, b: 0.5294118, a: 0.78431374}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &3259531901178091257
 GameObject:
   m_ObjectHideFlags: 0
@@ -1801,6 +1851,7 @@ RectTransform:
   - {fileID: 4644485296256155464}
   - {fileID: 8914040325764880538}
   - {fileID: 6312454690332520642}
+  - {fileID: 1494896049561511576}
   m_Father: {fileID: 6746584650517052140}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -2181,7 +2232,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6819251597402926608}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
         m_MethodName: Mostrar_Tela_Por_indice
         m_Mode: 3
@@ -2202,12 +2253,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 4026759027175739991}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b43e0c7a380b9fc4a94af901a29e178a, type: 3}
+  m_Script: {fileID: 11500000, guid: 5f454609eb1fda943bf206ffb61567b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AcionaBotaoPorDistancia
   habilitarCliquePorDistancia: 1
   nomeDoIndicador: XRHand_IndexTip
-  distanciaLimite: 0.03
+  distanciaLimite: 0.04
   distanciaAtual: 0
   botao: {fileID: 8419080873149965456}
   toggle: {fileID: 0}
@@ -2384,7 +2435,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5324163398286885877}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b43e0c7a380b9fc4a94af901a29e178a, type: 3}
+  m_Script: {fileID: 11500000, guid: 5f454609eb1fda943bf206ffb61567b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AcionaBotaoPorDistancia
   habilitarCliquePorDistancia: 1
@@ -2400,10 +2451,180 @@ MonoBehaviour:
   habilitarScrollPorPinca: 1
   nomeIndicadorIndexTip: XRHand_IndexTip
   nomePolegarTip: XRHand_ThumbTip
-  scrollRect: {fileID: 8381923318182621901}
+  scrollRect: {fileID: 0}
   sensibilidade: -2
   inverter: 0
-  pinchFechado: 0.015
+  pinchFechado: 0.025
+  pinchAberto: 0.035
+  debugLogs: 1
+  distanciaPinchAtual: 0
+  indexTipMaisProximo: {fileID: 0}
+  thumbTipMaisProximo: {fileID: 0}
+  "pin\xE7ando": 0
+  bloquearCliqueDurantePinca: 1
+  bloqueioAposSoltarSeg: 0.15
+--- !u!1 &5327951398801542895
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2048477676940417207}
+  - component: {fileID: 4907078659126130576}
+  - component: {fileID: 6574362841990968220}
+  - component: {fileID: 1360257616442117795}
+  - component: {fileID: 7110459071563254208}
+  m_Layer: 5
+  m_Name: Button
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2048477676940417207
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5327951398801542895}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 699800076524494219}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -0.0000875}
+  m_SizeDelta: {x: 134, y: 41.629}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &4907078659126130576
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5327951398801542895}
+  m_CullTransparentMesh: 1
+--- !u!114 &6574362841990968220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5327951398801542895}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!114 &1360257616442117795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5327951398801542895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 6574362841990968220}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: Mostrar_Tela_Por_indice
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
+--- !u!114 &7110459071563254208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5327951398801542895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f454609eb1fda943bf206ffb61567b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AcionaBotaoPorDistancia
+  habilitarCliquePorDistancia: 1
+  nomeDoIndicador: XRHand_IndexTip
+  distanciaLimite: 0.04
+  distanciaAtual: 0
+  botao: {fileID: 1360257616442117795}
+  toggle: {fileID: 0}
+  delayInicial: 1
+  cooldownClique: 0.5
+  refreshIndicadoresSeg: 1
+  indicadorMaisProximo: {fileID: 0}
+  habilitarScrollPorPinca: 1
+  nomeIndicadorIndexTip: XRHand_IndexTip
+  nomePolegarTip: XRHand_ThumbTip
+  scrollRect: {fileID: 0}
+  sensibilidade: -2
+  inverter: 0
+  pinchFechado: 0.025
   pinchAberto: 0.035
   debugLogs: 1
   distanciaPinchAtual: 0
@@ -2756,7 +2977,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6819251597402926608}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
         m_MethodName: Mostrar_Tela_Por_indice
         m_Mode: 3
@@ -2777,12 +2998,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 5852187146308443870}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b43e0c7a380b9fc4a94af901a29e178a, type: 3}
+  m_Script: {fileID: 11500000, guid: 5f454609eb1fda943bf206ffb61567b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AcionaBotaoPorDistancia
   habilitarCliquePorDistancia: 1
   nomeDoIndicador: XRHand_IndexTip
-  distanciaLimite: 0.03
+  distanciaLimite: 0.04
   distanciaAtual: 0
   botao: {fileID: 1413811340310604768}
   toggle: {fileID: 0}
@@ -3046,6 +3267,145 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: GigaTeste
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 24
+  m_fontSizeBase: 24
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_characterHorizontalScale: 1
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!1 &6365032459512841907
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7267257798998297700}
+  - component: {fileID: 127541582185737585}
+  - component: {fileID: 2002779410326583922}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &7267257798998297700
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6365032459512841907}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 699800076524494219}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -0.000061035156}
+  m_SizeDelta: {x: 0, y: 0.00020217896}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &127541582185737585
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6365032459512841907}
+  m_CullTransparentMesh: 1
+--- !u!114 &2002779410326583922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6365032459512841907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 'SysConfig
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4101,7 +4461,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6819251597402926608}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
         m_MethodName: Mostrar_Tela_Por_indice
         m_Mode: 3
@@ -4122,12 +4482,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 8029088914672883925}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b43e0c7a380b9fc4a94af901a29e178a, type: 3}
+  m_Script: {fileID: 11500000, guid: 5f454609eb1fda943bf206ffb61567b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AcionaBotaoPorDistancia
   habilitarCliquePorDistancia: 1
   nomeDoIndicador: XRHand_IndexTip
-  distanciaLimite: 0.03
+  distanciaLimite: 0.04
   distanciaAtual: 0
   botao: {fileID: 8582608847040859092}
   toggle: {fileID: 0}
@@ -5017,15 +5377,89 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 23a93e827575229438eb14b5b2847af3, type: 3}
---- !u!1 &4197906879791117209 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1678296526106715405, guid: 23a93e827575229438eb14b5b2847af3,
-    type: 3}
-  m_PrefabInstance: {fileID: 3245819746318472852}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6312454690332520642 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8831892863886714454, guid: 23a93e827575229438eb14b5b2847af3,
     type: 3}
   m_PrefabInstance: {fileID: 3245819746318472852}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8832421785791021278
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5092471088086382880}
+    m_Modifications:
+    - target: {fileID: 4306847537820688824, guid: d14f272f5ec8d754e90afe33b2c87b2c,
+        type: 3}
+      propertyPath: m_Name
+      value: Menu_System_Config
+      objectReference: {fileID: 0}
+    - target: {fileID: 4306847537820688824, guid: d14f272f5ec8d754e90afe33b2c87b2c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7939248936479450694, guid: d14f272f5ec8d754e90afe33b2c87b2c,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7939248936479450694, guid: d14f272f5ec8d754e90afe33b2c87b2c,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7939248936479450694, guid: d14f272f5ec8d754e90afe33b2c87b2c,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7939248936479450694, guid: d14f272f5ec8d754e90afe33b2c87b2c,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7939248936479450694, guid: d14f272f5ec8d754e90afe33b2c87b2c,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7939248936479450694, guid: d14f272f5ec8d754e90afe33b2c87b2c,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7939248936479450694, guid: d14f272f5ec8d754e90afe33b2c87b2c,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7939248936479450694, guid: d14f272f5ec8d754e90afe33b2c87b2c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7939248936479450694, guid: d14f272f5ec8d754e90afe33b2c87b2c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7939248936479450694, guid: d14f272f5ec8d754e90afe33b2c87b2c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects:
+    - {fileID: 1663622449734268863, guid: d14f272f5ec8d754e90afe33b2c87b2c, type: 3}
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d14f272f5ec8d754e90afe33b2c87b2c, type: 3}
+--- !u!4 &1494896049561511576 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7939248936479450694, guid: d14f272f5ec8d754e90afe33b2c87b2c,
+    type: 3}
+  m_PrefabInstance: {fileID: 8832421785791021278}
   m_PrefabAsset: {fileID: 0}
