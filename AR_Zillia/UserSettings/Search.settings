@@ -9,9 +9,13 @@ onBoardingDoNotAskAgain = true
 showPackageIndexes = false
 showStatusBar = false
 scopes = {
-	"last_search.66F56946" = "Campo	Clear Flags"
+	"last_search.66F56946" = "CameraController.cs"
 	"OpenInspectorPreview.66F56946" = "0"
 	"currentGroup.66F56946" = "all"
+	"picker_window_position_offset.00000000" = "-122;300;505;644"
+	"picker_visibility_flags.00000000" = "0"
+	"picker_item_size.00000000" = "32"
+	"picker_inspector.00000000" = "0"
 }
 providers = {
 	asset = {
@@ -68,9 +72,13 @@ providers = {
 objectSelectors = {
 }
 recentSearches = [
+	"CameraController.cs"
+	""
+	"Input.Get"
 	"Campo	Valor Clear Flags"
 ]
 searchItemFavorites = [
+	"43b55fca80d4fe045a60b2498302da72"
 ]
 savedSearchesSortOrder = 0
 showSavedSearchPanel = false
@@ -83,4 +91,4 @@ helperWidgetCurrentArea = "all"
 disabledIndexers = ""
 minIndexVariations = 2
 findProviderIndexHelper = true
-itemIconSize = 32
+itemIconSize = 0

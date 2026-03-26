@@ -381,6 +381,7 @@ MonoBehaviour:
   toggle: {fileID: 0}
   delayInicial: 1
   cooldownClique: 0.5
+  refreshIndicadoresSeg: 1
   indicadorMaisProximo: {fileID: 0}
 --- !u!1 &2656737449722757135
 GameObject:
@@ -667,12 +668,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AcionaBotaoPorDistancia
   nomeDoIndicador: XRHand_IndexTip
-  distanciaLimite: 0.04
+  distanciaLimite: 0.03
   distanciaAtual: 0
   botao: {fileID: 0}
   toggle: {fileID: 7317065509567717282}
   delayInicial: 1
   cooldownClique: 0.5
+  refreshIndicadoresSeg: 1
   indicadorMaisProximo: {fileID: 0}
 --- !u!1 &3221851553054742399
 GameObject:
@@ -989,12 +991,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nomeDoIndicador: XRHand_IndexTip
-  distanciaLimite: 0.04
+  distanciaLimite: 0.03
   distanciaAtual: 0
   botao: {fileID: 406859024328771156}
   toggle: {fileID: 0}
   delayInicial: 1
   cooldownClique: 0.5
+  refreshIndicadoresSeg: 1
   indicadorMaisProximo: {fileID: 0}
 --- !u!1 &3370091820551491274
 GameObject:
@@ -2394,12 +2397,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nomeDoIndicador: XRHand_IndexTip
-  distanciaLimite: 0.04
+  distanciaLimite: 0.03
   distanciaAtual: 0
   botao: {fileID: 5099869894794317490}
   toggle: {fileID: 0}
   delayInicial: 1
   cooldownClique: 0.5
+  refreshIndicadoresSeg: 1
   indicadorMaisProximo: {fileID: 0}
 --- !u!1 &8439692148727549955
 GameObject:
@@ -2431,6 +2435,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 8056582369086349895}
   - {fileID: 8540952291376682386}
   - {fileID: 2191755288467638112}
   - {fileID: 3215801427779010669}
@@ -2541,6 +2546,81 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!1 &8566536737907441359
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8056582369086349895}
+  - component: {fileID: 4613948126721585064}
+  - component: {fileID: 4310745367717991989}
+  m_Layer: 5
+  m_Name: Background
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &8056582369086349895
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8566536737907441359}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2851519901206815730}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -20}
+  m_SizeDelta: {x: 280, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &4613948126721585064
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8566536737907441359}
+  m_CullTransparentMesh: 1
+--- !u!114 &4310745367717991989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8566536737907441359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.2}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &8866783728157851309
 GameObject:
   m_ObjectHideFlags: 0
@@ -2698,12 +2778,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AcionaBotaoPorDistancia
   nomeDoIndicador: XRHand_IndexTip
-  distanciaLimite: 0.04
+  distanciaLimite: 0.03
   distanciaAtual: 0
-  botao: {fileID: 7355551098119845453}
+  botao: {fileID: 0}
   toggle: {fileID: 3423892603849962981}
   delayInicial: 1
   cooldownClique: 0.5
+  refreshIndicadoresSeg: 1
   indicadorMaisProximo: {fileID: 0}
 --- !u!1 &8970373404647317814
 GameObject:
@@ -3030,10 +3111,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nomeDoIndicador: XRHand_IndexTip
-  distanciaLimite: 0.04
+  distanciaLimite: 0.03
   distanciaAtual: 0
   botao: {fileID: 6129568805404129250}
   toggle: {fileID: 0}
   delayInicial: 1
   cooldownClique: 0.5
+  refreshIndicadoresSeg: 1
   indicadorMaisProximo: {fileID: 0}

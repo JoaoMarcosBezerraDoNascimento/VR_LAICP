@@ -5,10 +5,10 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Cena_Oficial.unity
     guid: 99c9720ab356a0642a771bea13969a05
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Cena_Camera.unity
     guid: 7c10c9ffdb9381e4c8dc916f955c23b0
   m_configObjects:
@@ -16,10 +16,10 @@ EditorBuildSettings:
       type: 2}
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 7c538d95854a3474687c594128a5d272,
       type: 2}
-    com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: de1c612a75e456e4dbac92932b5214b9,
+    com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: d4d126aca44632248b8aec59442ebcbc,
       type: 2}
-    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: cce605bcbe872f440bdd8e33845a4d06,
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: a971eac5e950046e586c5e153e32d05c,
       type: 2}
-    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: f4ef475a063f0a74e81ea77049b75f25,
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 9165b3c3dec8d446f9b11d1a99b6e245,
       type: 2}
   m_UseUCBPForAssetBundles: 0
