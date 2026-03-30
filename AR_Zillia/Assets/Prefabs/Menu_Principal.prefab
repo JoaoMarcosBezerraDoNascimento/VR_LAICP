@@ -142,14 +142,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 201014840064918383}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f454609eb1fda943bf206ffb61567b0, type: 3}
+  m_Script: {fileID: 11500000, guid: b43e0c7a380b9fc4a94af901a29e178a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AcionaBotaoPorDistancia
   habilitarCliquePorDistancia: 1
   nomeDoIndicador: XRHand_IndexTip
   distanciaLimite: 0.04
   distanciaAtual: 0
-  botao: {fileID: 8859218704687534837}
+  botao: {fileID: 0}
   toggle: {fileID: 0}
   delayInicial: 1
   cooldownClique: 0.5
@@ -387,7 +387,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -271.4, y: -51.4}
+  m_AnchoredPosition: {x: -518, y: -51.4}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &3681932245900311834
@@ -533,7 +533,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1061486897895328369}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f454609eb1fda943bf206ffb61567b0, type: 3}
+  m_Script: {fileID: 11500000, guid: b43e0c7a380b9fc4a94af901a29e178a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AcionaBotaoPorDistancia
   habilitarCliquePorDistancia: 1
@@ -588,14 +588,14 @@ RectTransform:
   m_GameObject: {fileID: 1320637056489171112}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.2387, y: 1.2387, z: 1.2387}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 5092471088086382880}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -135, y: 220}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 100, y: -70}
   m_SizeDelta: {x: 100, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4006387910192522912
@@ -855,14 +855,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1735331567131338597}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f454609eb1fda943bf206ffb61567b0, type: 3}
+  m_Script: {fileID: 11500000, guid: b43e0c7a380b9fc4a94af901a29e178a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AcionaBotaoPorDistancia
   habilitarCliquePorDistancia: 1
   nomeDoIndicador: XRHand_IndexTip
   distanciaLimite: 0.04
   distanciaAtual: 0
-  botao: {fileID: 8125077511282337167}
+  botao: {fileID: 0}
   toggle: {fileID: 0}
   delayInicial: 1
   cooldownClique: 0.5
@@ -1260,7 +1260,7 @@ GameObject:
   - component: {fileID: 8011728799367649993}
   - component: {fileID: 8907230607451012622}
   - component: {fileID: 1524132644673690607}
-  - component: {fileID: 9209393003199574689}
+  - component: {fileID: 6906526086633305448}
   m_Layer: 5
   m_Name: Menu_Principal
   m_TagString: Untagged
@@ -1353,7 +1353,7 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &9209393003199574689
+--- !u!114 &6906526086633305448
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1362,16 +1362,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 2832096128781526814}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6aed164f90a1a2147956c2a97069c79c, type: 3}
+  m_Script: {fileID: 11500000, guid: 3bc74a6a225a3e14c8a718b10b2bed94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Controle_Menus
-  jsonFile: {fileID: 0}
-  rmaCellPrefab: {fileID: 0}
-  rmaContentParent: {fileID: 0}
-  scrollPedidos: {fileID: 0}
-  pecaCellPrefab: {fileID: 0}
-  pecaContentParent: {fileID: 0}
-  scrollPecas: {fileID: 0}
+  jsonFile: {fileID: 4900000, guid: 1acf135bedf29bb4ba81812430078239, type: 3}
+  rmaCellPrefab: {fileID: 1052268251255500293, guid: 45bf2f264bc4ce245ae333351682bd79,
+    type: 3}
+  rmaContentParent: {fileID: 3896618902622293988}
+  scrollPedidos: {fileID: 5748188175239242283}
+  pecaCellPrefab: {fileID: 1052268251255500293, guid: 45bf2f264bc4ce245ae333351682bd79,
+    type: 3}
+  pecaContentParent: {fileID: 4027828653262228227}
+  scrollPecas: {fileID: 8381923318182621901}
   ui: {fileID: 0}
 --- !u!1 &3167090244219452553
 GameObject:
@@ -1768,10 +1770,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 5092471088086382880}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 190}
-  m_SizeDelta: {x: 400, y: 1}
+  m_SizeDelta: {x: 0, y: 1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1183951854857327840
 CanvasRenderer:
@@ -1838,8 +1840,8 @@ RectTransform:
   m_GameObject: {fileID: 3594899310772029212}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.55, y: 0.55, z: 0.55}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 4184981409402059636}
   - {fileID: 6682661961120008914}
@@ -1851,13 +1853,13 @@ RectTransform:
   - {fileID: 4644485296256155464}
   - {fileID: 8914040325764880538}
   - {fileID: 6312454690332520642}
-  - {fileID: 1494896049561511576}
+  - {fileID: 6563158728009486308}
   m_Father: {fileID: 6746584650517052140}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 400, y: 500}
+  m_SizeDelta: {x: 1600, y: 900}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1636380270353291010
 CanvasRenderer:
@@ -2253,14 +2255,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 4026759027175739991}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f454609eb1fda943bf206ffb61567b0, type: 3}
+  m_Script: {fileID: 11500000, guid: b43e0c7a380b9fc4a94af901a29e178a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AcionaBotaoPorDistancia
   habilitarCliquePorDistancia: 1
   nomeDoIndicador: XRHand_IndexTip
   distanciaLimite: 0.04
   distanciaAtual: 0
-  botao: {fileID: 8419080873149965456}
+  botao: {fileID: 0}
   toggle: {fileID: 0}
   delayInicial: 1
   cooldownClique: 0.5
@@ -2435,7 +2437,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5324163398286885877}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f454609eb1fda943bf206ffb61567b0, type: 3}
+  m_Script: {fileID: 11500000, guid: b43e0c7a380b9fc4a94af901a29e178a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AcionaBotaoPorDistancia
   habilitarCliquePorDistancia: 1
@@ -2605,14 +2607,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 5327951398801542895}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f454609eb1fda943bf206ffb61567b0, type: 3}
+  m_Script: {fileID: 11500000, guid: b43e0c7a380b9fc4a94af901a29e178a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AcionaBotaoPorDistancia
   habilitarCliquePorDistancia: 1
   nomeDoIndicador: XRHand_IndexTip
   distanciaLimite: 0.04
   distanciaAtual: 0
-  botao: {fileID: 1360257616442117795}
+  botao: {fileID: 0}
   toggle: {fileID: 0}
   delayInicial: 1
   cooldownClique: 0.5
@@ -2998,14 +3000,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 5852187146308443870}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f454609eb1fda943bf206ffb61567b0, type: 3}
+  m_Script: {fileID: 11500000, guid: b43e0c7a380b9fc4a94af901a29e178a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AcionaBotaoPorDistancia
   habilitarCliquePorDistancia: 1
   nomeDoIndicador: XRHand_IndexTip
   distanciaLimite: 0.04
   distanciaAtual: 0
-  botao: {fileID: 1413811340310604768}
+  botao: {fileID: 0}
   toggle: {fileID: 0}
   delayInicial: 1
   cooldownClique: 0.5
@@ -4482,14 +4484,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 8029088914672883925}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f454609eb1fda943bf206ffb61567b0, type: 3}
+  m_Script: {fileID: 11500000, guid: b43e0c7a380b9fc4a94af901a29e178a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AcionaBotaoPorDistancia
   habilitarCliquePorDistancia: 1
   nomeDoIndicador: XRHand_IndexTip
   distanciaLimite: 0.04
   distanciaAtual: 0
-  botao: {fileID: 8582608847040859092}
+  botao: {fileID: 0}
   toggle: {fileID: 0}
   delayInicial: 1
   cooldownClique: 0.5
@@ -5383,7 +5385,7 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 3245819746318472852}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &8832421785791021278
+--- !u!1001 &3835068859602430370
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -5391,75 +5393,75 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5092471088086382880}
     m_Modifications:
-    - target: {fileID: 4306847537820688824, guid: d14f272f5ec8d754e90afe33b2c87b2c,
+    - target: {fileID: 4306847537820688824, guid: 7f8b5c1bc36bb844ba6f32c81e700322,
         type: 3}
       propertyPath: m_Name
       value: Menu_System_Config
       objectReference: {fileID: 0}
-    - target: {fileID: 4306847537820688824, guid: d14f272f5ec8d754e90afe33b2c87b2c,
+    - target: {fileID: 4306847537820688824, guid: 7f8b5c1bc36bb844ba6f32c81e700322,
         type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7939248936479450694, guid: d14f272f5ec8d754e90afe33b2c87b2c,
+    - target: {fileID: 7939248936479450694, guid: 7f8b5c1bc36bb844ba6f32c81e700322,
         type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7939248936479450694, guid: d14f272f5ec8d754e90afe33b2c87b2c,
+    - target: {fileID: 7939248936479450694, guid: 7f8b5c1bc36bb844ba6f32c81e700322,
         type: 3}
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7939248936479450694, guid: d14f272f5ec8d754e90afe33b2c87b2c,
+    - target: {fileID: 7939248936479450694, guid: 7f8b5c1bc36bb844ba6f32c81e700322,
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7939248936479450694, guid: d14f272f5ec8d754e90afe33b2c87b2c,
+    - target: {fileID: 7939248936479450694, guid: 7f8b5c1bc36bb844ba6f32c81e700322,
         type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 7939248936479450694, guid: d14f272f5ec8d754e90afe33b2c87b2c,
+    - target: {fileID: 7939248936479450694, guid: 7f8b5c1bc36bb844ba6f32c81e700322,
         type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7939248936479450694, guid: d14f272f5ec8d754e90afe33b2c87b2c,
+    - target: {fileID: 7939248936479450694, guid: 7f8b5c1bc36bb844ba6f32c81e700322,
         type: 3}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7939248936479450694, guid: d14f272f5ec8d754e90afe33b2c87b2c,
+    - target: {fileID: 7939248936479450694, guid: 7f8b5c1bc36bb844ba6f32c81e700322,
         type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7939248936479450694, guid: d14f272f5ec8d754e90afe33b2c87b2c,
+    - target: {fileID: 7939248936479450694, guid: 7f8b5c1bc36bb844ba6f32c81e700322,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7939248936479450694, guid: d14f272f5ec8d754e90afe33b2c87b2c,
+    - target: {fileID: 7939248936479450694, guid: 7f8b5c1bc36bb844ba6f32c81e700322,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7939248936479450694, guid: d14f272f5ec8d754e90afe33b2c87b2c,
+    - target: {fileID: 7939248936479450694, guid: 7f8b5c1bc36bb844ba6f32c81e700322,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects:
-    - {fileID: 1663622449734268863, guid: d14f272f5ec8d754e90afe33b2c87b2c, type: 3}
+    m_RemovedComponents:
+    - {fileID: -7183000854988017210, guid: 7f8b5c1bc36bb844ba6f32c81e700322, type: 3}
+    m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: d14f272f5ec8d754e90afe33b2c87b2c, type: 3}
---- !u!4 &1494896049561511576 stripped
+  m_SourcePrefab: {fileID: 100100000, guid: 7f8b5c1bc36bb844ba6f32c81e700322, type: 3}
+--- !u!4 &6563158728009486308 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 7939248936479450694, guid: d14f272f5ec8d754e90afe33b2c87b2c,
+  m_CorrespondingSourceObject: {fileID: 7939248936479450694, guid: 7f8b5c1bc36bb844ba6f32c81e700322,
     type: 3}
-  m_PrefabInstance: {fileID: 8832421785791021278}
+  m_PrefabInstance: {fileID: 3835068859602430370}
   m_PrefabAsset: {fileID: 0}

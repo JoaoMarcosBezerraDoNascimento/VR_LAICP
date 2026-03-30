@@ -808,7 +808,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4306847537820688824}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -816,7 +816,7 @@ Transform:
   - {fileID: 9215230924146843045}
   - {fileID: 1077554389577847488}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &-7183000854988017210
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -826,12 +826,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 4306847537820688824}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a0b5b51eec05d464eb199a66f71b04f1, type: 3}
+  m_Script: {fileID: 11500000, guid: c44d28e71f0de7545bb79b0d2613eb0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::System_Config
   TIF_texto: {fileID: 2347609434306061427}
   Btn_Send: {fileID: 1428391004973874164}
-  Btn_Send_image: {fileID: 8019747271080621686}
+  Btn_Send_image: {fileID: 0}
 --- !u!1 &4747573251472916446
 GameObject:
   m_ObjectHideFlags: 0

@@ -105,14 +105,19 @@ public class Controle_Menu_IA : MonoBehaviour
     {
         BTN_Rec.interactable = false;
         BTN_Rec_Image.color = Cor_Hex("#ffffff50");
+
         string pergunta = TMP_Input_User.text;
         Gerar_Balão(pergunta, user);
-        yield return StartCoroutine(Resposta_da_IA_API(pergunta));
+
+        GameObject balao_carregando = Gerar_Balão("...", ia);
+
+        yield return StartCoroutine(Resposta_da_IA_API(pergunta, balao_carregando));
+
         TMP_Input_User.interactable = false;
         BTN_Send_Image.color = Cor_Hex("#28a745");
         TMP_Input_User.onValueChanged.RemoveListener(Verificar_Digitacao);
-        TMP_Input_User.text = ""; 
-        
+        TMP_Input_User.text = "";
+
         yield return new WaitForSeconds(0.5f);
         BTN_Send_Image.color = Cor_Hex("#ffffff00");
         BTN_Rec.interactable = true;
@@ -121,6 +126,7 @@ public class Controle_Menu_IA : MonoBehaviour
         TMP_Input_User.text = "Enter text...";
         TMP_Input_User.onValueChanged.AddListener(Verificar_Digitacao);
     }
+
     void Verificar_Digitacao(string texto)
     {
         BTN_Send.interactable = false;
@@ -144,27 +150,31 @@ public class Controle_Menu_IA : MonoBehaviour
         coroutine_digitacao_atual = null;
     }
 
-    public void Gerar_Balão(string mensagem, string tipo)
+    public GameObject Gerar_Balão(string mensagem, string tipo)
     {
         GameObject container = new GameObject("Container_Msg");
         container.transform.SetParent(SCRLVW_Chat_History_Content, false);
+
         RectTransform rect_Container = container.AddComponent<RectTransform>();
         rect_Container.localScale = Vector3.one;
+
         GameObject novo_Balao = Instantiate(Prefab_balao_chat, container.transform);
         Balao_chat script = novo_Balao.GetComponent<Balao_chat>();
+
         if (script != null)
         {
             script.Configurar_Balao(mensagem, tipo);
         }
+
         StartCoroutine(RolarParaOFinal());
+        return container;
     }
-    private IEnumerator Resposta_da_IA_API(string pergunta)
+
+    private IEnumerator Resposta_da_IA_API(string pergunta, GameObject balao_carregando)
     {
-        // Endpoint do seu MCP (ajuste se seu prefixo for diferente)
-        string url = apiBaseUrl.TrimEnd('/') + "/mcp/chat";
+        string url = apiBaseUrl.TrimEnd('/') + "/hd/chat";
         Debug.Log(url);
 
-        // Corpo JSON compatível com seu ChatReq: { pergunta: "...", modelo: null }
         string jsonBody = "{\"pergunta\":\"" + EscapeJson(pergunta) + "\",\"modelo\":null}";
 
         using (UnityWebRequest req = new UnityWebRequest(url, "POST"))
@@ -173,11 +183,14 @@ public class Controle_Menu_IA : MonoBehaviour
             req.uploadHandler = new UploadHandlerRaw(bodyRaw);
             req.downloadHandler = new DownloadHandlerBuffer();
             req.SetRequestHeader("Content-Type", "application/json");
-
-            // Se sua API exige token global, mande. (Se não exigir no /mcp/chat, pode remover)
             req.SetRequestHeader("x-token", apiToken);
 
             yield return req.SendWebRequest();
+
+            if (balao_carregando != null)
+            {
+                Destroy(balao_carregando);
+            }
 
             if (req.result != UnityWebRequest.Result.Success)
             {
@@ -186,7 +199,6 @@ public class Controle_Menu_IA : MonoBehaviour
                 yield break;
             }
 
-            // Resposta esperada: {"resposta":"..."}
             string body = req.downloadHandler.text;
             string resp = ExtrairCampoResposta(body);
 
